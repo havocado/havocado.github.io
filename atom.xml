@@ -65,11 +65,12 @@
     
       
       <item>
-        <title>Competitive Programming</title>
+        <title>Come back later!</title>
         
-          <description>&lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.
-&lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;
-&lt;/blockquote&gt;
+          <description>&lt;p&gt;Come back later!&lt;/p&gt;
+&lt;!--&lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.--&gt;
+&lt;!--&lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;--&gt;
+&lt;!--&lt;/blockquote&gt;--&gt;
 
 </description>
         
