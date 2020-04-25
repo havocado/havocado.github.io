@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-24T02:30:21+09:00</updated>
+  <updated>2020-04-25T20:04:26+09:00</updated>
   <id>http://localhost:4000/tag/getting-started/feed.xml</id>
 
   
@@ -46,7 +46,7 @@
       
 
       <author>
-          <name>ghost</name>
+          <name>Hailey Ahn</name>
         
         
       </author>
@@ -66,8 +66,8 @@
     </entry>
   
     <entry>
-      <title type="html">Come back later!</title>
-      <link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Come back later!" />
+      <title type="html">Competitive Programming</title>
+      <link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Competitive Programming" />
       <published>2020-04-22T17:00:00+09:00</published>
       <updated>2020-04-22T17:00:00+09:00</updated>
       <id>http://localhost:4000/competitive-programming</id>
@@ -88,7 +88,7 @@
       
 
       <author>
-          <name>ghost</name>
+          <name>Hailey Ahn</name>
         
         
       </author>

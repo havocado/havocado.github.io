@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/hailey/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-24T02:30:21+09:00</updated>
+  <updated>2020-04-25T20:04:26+09:00</updated>
   <id>http://localhost:4000/author/hailey/feed.xml</id>
 
   
@@ -30,5 +30,1209 @@
   
   
 
+  
+    <entry>
+      <title type="html">Welcome to my blog!</title>
+      <link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" />
+      <published>2020-04-23T19:00:00+09:00</published>
+      <updated>2020-04-23T19:00:00+09:00</updated>
+      <id>http://localhost:4000/welcome</id>
+      <content type="html" xml:base="http://localhost:4000/welcome">&lt;!--(TODO: Insert picture here)--&gt;
+&lt;p&gt;&lt;strong&gt;This blog is not done. Come back later!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
+&lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC, Canada. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
+&lt;p&gt;Below is more about me!&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;Math &amp; Computer Science&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;I’m a third year undergraduate student majoring in Mathematics and Computing Science (a.k.a. MACM). MACM is a program for students who came to decide their major between (1) Mathematics and (2) Computing Science, and thought:&lt;/p&gt;
+&lt;blockquote&gt;“Why give up one? Let’s learn both!”&lt;/blockquote&gt;
+&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I like it.&lt;/p&gt;
+&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to learn myself. I’m confident with my self-learning skills, but some things are better to learn in school – basic knowledge that won't change. I want to build up my cornerstone for math and programming in university, and I will build up the rest myself.&lt;/p&gt;
+
+&lt;h2&gt;My projects&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;(TODO: Projects list goes here)&lt;/p&gt;
+
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;(TODO: Write this)&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="about" />
+      
+
+      
+        <summary type="html">This blog is not done. Come back later!</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">ColorQuirrel</title>
+      <link href="http://localhost:4000/ColorQuirrel" rel="alternate" type="text/html" title="ColorQuirrel" />
+      <published>2020-04-23T17:00:00+09:00</published>
+      <updated>2020-04-23T17:00:00+09:00</updated>
+      <id>http://localhost:4000/ColorQuirrel</id>
+      <content type="html" xml:base="http://localhost:4000/ColorQuirrel">&lt;p style=&quot;display:none&quot;&gt;Project: A MATLAB program for image processing&lt;/p&gt;
+
+&lt;h1&gt;ColorQuirrel&lt;/h1&gt;
+&lt;br&gt;
+
+&lt;h3&gt;Motivation&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;ColorQuirrel&lt;/strong&gt; is my individual final project for SFU CMPT 365: Multimedia Systems for Fall 2019. It was planned to be [1] Course-related, [2] Available for incremental development, [3] Easy to check middle results, and [4] Contain enough depth as a final project for 300-level course.&lt;/p&gt;
+&lt;p&gt;ColorQuirrel is a MATLAB based program that plays around color spaces. It converts the image to several different ways to represent the data, extracts the representative color from the image by clustering the data, and uses down-sampling method to speed up the procedure.&lt;/p&gt;
+&lt;p&gt;Below is the description for my project.&lt;/p&gt;
+
+
+&lt;h3&gt;Instructions on running the program (General):&lt;/h3&gt;
+&lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-1.png&quot; alt=&quot;colorquirrel HSV conversion screenshot&quot;&gt;
+&lt;ol&gt;
+    &lt;li&gt;Run Colorquirrel.m on MATLAB (version at least R2018).&lt;/li&gt;
+    &lt;li&gt;When “Enter image path:” shows, enter the source path of the image with quotation marks ‘ ’ appended. (If quotation marks are not included, the program returns an error.)&lt;/li&gt;
+    &lt;li&gt;Select the mode. (If it doesn’t do anything, select any other mode and select again.) 4) If there are options available, choose the desired option. Otherwise, select ‘Go’.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;1.	Basic implementation of color space conversions.&lt;/h3&gt;
+&lt;br&gt;
+&lt;h4&gt;1.1.	RGB    [Replication of existing idea]&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;RGB color space is how the pictures are shown on monitors. In this feature, I focused on implementing the very basic feature to the GUI. The idea was very simple, but I spent most of the time on trial-and-errors, involving languages, understanding the GUI, and dealing with MATLAB data types, uint8 and double.&lt;/p&gt;
+&lt;p&gt;The program starts from reading the file. This step is done by MATLAB’s built-in imread function.&lt;/p&gt;
+&lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-rgb.png&quot; alt=&quot;colorquirrel RGB conversion screenshot&quot;&gt;
+&lt;p&gt;For dividing the RGB images, I used the way MATLAB deals with pixel images. I made 3 new matrices, each for R, G, and B, each taking only the needed entries from the original image. Then I showed the image using the built-in imshow function.&lt;/p&gt;
+
+
+&lt;h4&gt;1.2.	CMY    [Replication of existing idea]&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;CMY color space is the subtractive color space. It is also how pictures are shown on printed papers – it is actually CMYK, but CMYK is made after CMY.&lt;/p&gt;
+&lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-cmy.png&quot; alt=&quot;colorquirrel CMY conversion screenshot&quot;&gt;
+&lt;p&gt;The procedure is as follows:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Convert RGB to CMY. There exists a built-in function in MATLAB, but I wrote my own for project purpose. The formula was easy to obtain:&lt;/li&gt;
+    &lt;img style=&quot;width:30%&quot; src=&quot;assets/images/z-colorquirrel-cmy-formula.png&quot; alt=&quot;colorquirrel CMY conversion formula&quot;&gt;
+    &lt;li&gt;Generate 3 new matrices to contain each C, M, and Y, as done in 1.1.RGB.&lt;/li&gt;
+    &lt;li&gt;Convert each matrices to RGB color space. The inverse formula was obvious. There is also a built-in function in MATLAB, but I wrote my own for project purpose again.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h4&gt;1.3.	CMYK    [Replication of existing idea]&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;CMYK color space is an economic form of CMY color space. It is made because black ink is usually cheaper than other colors.&lt;/p&gt;
+&lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-cmyk.png&quot; alt=&quot;colorquirrel CMYK conversion screenshot&quot;&gt;
+&lt;p&gt;The procedure is as follows:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Perform a CMY color space conversion, as done in 1.2. CMY.&lt;/li&gt;
+    &lt;li&gt;Make a new matrix, with a fourth entry on each pixel. The fourth entry contains the minimum value among R, G, B of that specific pixel. Subtract the fourth entry from all other colors. This way, the smallest entry becomes 0.&lt;/li&gt;
+    &lt;li&gt;For displaying on the GUI, I processed the C, M, Y components as before. More specifically, the values for R, G, B are set to 255-(original), and non-used components are all set to 255. For K component, I made a new RGB matrix, and set all R/G/B values as 1/3 of the K value.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h4&gt;1.4.	HSV    [Replication of existing idea]&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;HSV color space is less obvious than CMY or CMYK. Some of the formulas I got from google didn’t consider the range of entries (sometimes R/G/B was mapped on [0, 1]; other times they were [0, 255].), so I had a few trials and errors on this part.&lt;/p&gt;
+&lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-error.png&quot; alt=&quot;colorquirrel error screenshot&quot;&gt;
+&lt;p&gt;(*This is one of the ‘wrong’ results the program produced while running. It is very non-obvious to check.)&lt;/p&gt;
+&lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-hsv.png&quot; alt=&quot;colorquirrel HSV conversion screenshot&quot;&gt;
+&lt;p&gt;The procedure was as follows:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Convert RGB to HSV. I wrote my own function for it. I obtained the formula from:
+    https://www.rapidtables.com/convert/color/rgb-to-hsv.html&lt;/li&gt;
+    &lt;li&gt;Since HSV entries per pixel are dependent to each other, they cannot be divided into three different images. In fact, dividing Hue-Saturation-Value of the image doesn’t really make sense. So I used the trick:&lt;/li&gt;
+    &lt;li&gt;For Hue, I made a new matrix with same hue, but all Saturation set to 0.5 and all Values set to 1. (Saturation 0 or 1 will be black/white image with no useful information, and high Value makes colors more intense.) Then I ran the HSV to RGB (own function) to that image: formula obtained from https://cs.stackexchange.com/questions/64549/convert-hsv-to-rgbcolors&lt;/li&gt;
+    &lt;li&gt;For Saturation and Value, I multiplied 255 and rounded the number, since the original is a floating point number in [0, 1] and I wanted a grayscale image. Then I saved the data to the fourth entry of CMYK image, with all other entries set to 0. Lastly I converted CMYK-&gt;CMY-&gt;RGB, and obtained the display-able image.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;2.	Color extractor&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;Color extraction from a photo is commonly used by artists, who needs inspiration for colors and moods. The idea is simple: Get a ‘representative’ color from a photo.&lt;/p&gt;
+
+&lt;h4&gt;2.1.	Trials and errors&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;For the most straightforward method, I decided to make a 256*256*256 ‘container’ that stores frequencies of colors, and extract the most frequent values of the container; which is also the most frequent colors of the image.&lt;/p&gt;
+&lt;p&gt;This turned out to be not the feature intended. Usually the colors were in a very narrow range, almost non distinguishable, for obvious reasons.&lt;/p&gt;
+
+
+&lt;h4&gt;2.2.	Colorpicker (k-means clustering)&lt;br&gt;[Replication of existing idea]  [Original solution]&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;The alternative method is k-means clustering. MATLAB built-in program imsegkmeans was used for clustering the colors. The program reads the color data, and clusters the data to the chosen number of clusters.&lt;/p&gt;
+&lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-picker.png&quot; alt=&quot;colorquirrel colorpicker screenshot&quot;&gt;
+&lt;p&gt;This turned out very well, with expected results. The scatterplot on the left is the distribution of colors. Red circles are where the selected colors are located.&lt;/p&gt;
+&lt;p&gt;Procedure was as follows:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Obtain the ‘mean’s of cluster by MATLAB function. The output data is returned as a k*3 matrix, each row containing R, G, B values of representative colors.&lt;/li&gt;
+    &lt;li&gt;To display the ‘palette’, generate a 1*k*3 matrix, which is the size of the palette image. Assign each values of the color entries to the palette.&lt;/li&gt;
+    &lt;li&gt;The scatterplot, showing the distribution of colors and the location of palette images, is drawn using the idea from 2.1. Trial and errors; all the image elements are saved into the containers, and scatterplot is drawn on 256*256*256, each representing R, G, B parameters.&lt;/li&gt;
+    &lt;li&gt;Red circles on the plot are the ‘representative’ colors shown on the palette. They are drawn after the whole scatterplot is drawn. This plot provides an intuitive way to understand how the colorpicker works.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;2.3.	Downsampling   [Original solution]&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;The above method doesn’t take a short time, since it has to work with big image data; the image size used for testing was around 1500*2000. The program has to cluster all the data, get the means of the cluster, plot all of them on the plot…..which is very ineffective for obtaining a few colors.&lt;/p&gt;
+&lt;p&gt;Downsampling is inspired by JPEG’s downsampling for scaling quality. Colors in image are usually similar to the color next to it, so some loss of pixels wouldn’t matter. Furthermore, people are not very sensitive to colors being slightly incorrect.&lt;/p&gt;
+&lt;p&gt;Procedure was as follows:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Create a new matrix, with desired size after downsampling.&lt;/li&gt;
+    &lt;li&gt;Go over the data, skipping the entries depending on the downsampling parameter. This is O(height*width), but still much better compared to the running time of data clustering.&lt;/li&gt;
+    &lt;li&gt;Use the downsampled image to 2.2. Colorpicker.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The result is almost non-distinguishable from the original version. However, the significant decrease of points displayed on the plot shows that the idea is successfully implemented.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">Project: A MATLAB program for image processing</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Title goes here</title>
+      <link href="http://localhost:4000/hi-does-this-work" rel="alternate" type="text/html" title="Title goes here" />
+      <published>2020-04-23T17:00:00+09:00</published>
+      <updated>2020-04-23T17:00:00+09:00</updated>
+      <id>http://localhost:4000/hi-does-this-work</id>
+      <content type="html" xml:base="http://localhost:4000/hi-does-this-work">&lt;p&gt;Hi! Does this work?&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Getting started" />
+      
+
+      
+        <summary type="html">Hi! Does this work?</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Special Fortification Unit</title>
+      <link href="http://localhost:4000/special-fortification-unit-proposal" rel="alternate" type="text/html" title="Special Fortification Unit" />
+      <published>2020-04-23T17:00:00+09:00</published>
+      <updated>2020-04-23T17:00:00+09:00</updated>
+      <id>http://localhost:4000/special-fortification-unit-proposal</id>
+      <content type="html" xml:base="http://localhost:4000/special-fortification-unit-proposal"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">(Code) ColorQuirrel</title>
+      <link href="http://localhost:4000/colorquirrel-code" rel="alternate" type="text/html" title="(Code) ColorQuirrel" />
+      <published>2020-04-23T17:00:00+09:00</published>
+      <updated>2020-04-23T17:00:00+09:00</updated>
+      <id>http://localhost:4000/colorquirrel-code</id>
+      <content type="html" xml:base="http://localhost:4000/colorquirrel-code">&lt;p&gt;MATLAB code for project ColorQuirrel. For details and explanation, please read: &lt;a href=&quot;/ColorQuirrel&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;storage/ColorquirrelUI.fig&quot;&gt;ColorquirrelUI.fig (Needed for running Colorquirrel)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;storage/sample.png&quot;&gt;sample.png (Sample PNG image)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;ColorQuirrel.m&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;matlab&quot;&gt;% Colorquirrel.m
+% Execute this file to run ColorQuirrel
+
+close ALL;
+
+% Prompt and open input image file
+img_source = input(&quot;Enter image path: &quot;);
+obj_image = imread(img_source);
+
+ColorquirrelUI(obj_image);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;ColorquirrelUI.m&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;matlab&quot;&gt;% ColorquirrelUI.m
+
+function varargout = ColorquirrelUI(varargin)
+    % Begin initialization code - DO NOT EDIT
+    gui_Singleton = 1;
+    gui_State = struct('gui_Name',       mfilename, ...
+        'gui_Singleton',  gui_Singleton, ...
+        'gui_OpeningFcn', @ColorquirrelUI_OpeningFcn, ...
+        'gui_OutputFcn',  @ColorquirrelUI_OutputFcn, ...
+        'gui_LayoutFcn',  [] , ...
+        'gui_Callback',   []);
+    if nargin &amp;&amp; ischar(varargin{1})
+        gui_State.gui_Callback = str2func(varargin{1});
+    end
+
+    if nargout
+        [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+    else
+        gui_mainfcn(gui_State, varargin{:});
+    end
+    % End initialization code - DO NOT EDIT
+end
+
+% --- Executes just before ColorquirrelUI is made visible.
+function ColorquirrelUI_OpeningFcn(hObject, eventdata, handles, varargin)
+    handles.output = hObject;
+
+    % Get image input from input variable.
+    handles.obj_input = varargin{1};
+    handles.obj_main = handles.obj_input;
+    axes(handles.axes_original);
+    imshow(handles.obj_main);
+
+    handles.mode = '';
+    handles.cont_2 = 1;
+    handles.cont_3 = 1;
+    initControlUI(hObject, eventdata, handles);
+    initResultUI(hObject, eventdata, handles);
+
+    guidata(hObject, handles);
+
+    % Update handles structure
+    guidata(hObject, handles);
+end
+
+% --- Outputs from this function are returned to the command line.
+function varargout = ColorquirrelUI_OutputFcn(hObject, eventdata, handles)
+    % varargout  cell array for returning output args (see VARARGOUT);
+    % hObject    handle to figure
+    % eventdata  reserved - to be defined in a future version of MATLAB
+    % handles    structure with handles and user data (see GUIDATA)
+
+    % Get default command line output from handles structure
+    varargout{1} = handles.output;
+end
+
+% --- Executes on selection change in popupmenu_control_1.
+function popupmenu_control_1_Callback(hObject, eventdata, handles)
+    handles = guidata(hObject);
+
+    initControlUI(hObject, eventdata, handles);
+    contents = cellstr(get(hObject,'String'));
+    handles.mode = contents{get(hObject,'Value')};
+    if (strcmp(handles.mode, 'RGB'))
+        mode_RGB(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'CMY'))
+        mode_CMY(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'CMYK'))
+        mode_CMYK(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'HSV'))
+        mode_HSV(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'HSV'))
+        mode_HSV(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'Colorpicker Basic'))
+        mode_ColorpickerBasic(hObject, eventdata, handles);
+    end
+
+    guidata(hObject, handles);
+    end
+
+    % --- Executes during object creation, after setting all properties.
+    function popupmenu_control_1_CreateFcn(hObject, eventdata, handles)
+
+    if ispc &amp;&amp; isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+        set(hObject,'BackgroundColor','white');
+    end
+
+end
+
+% --- Executes on button press in pushbutton_control_go.
+function pushbutton_control_go_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    initResultUI(hObject, eventdata, handles);
+
+    if (strcmp(handles.mode, 'RGB'))
+        run_RGB(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'CMY'))
+        run_CMY(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'CMYK'))
+        run_CMYK(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'HSV'))
+        run_HSV(hObject, eventdata, handles);
+    elseif (strcmp(handles.mode, 'Colorpicker Basic'))
+        run_ColorpickerBasic(hObject, eventdata, handles);
+    end
+
+    guidata(hObject, handles);
+end
+
+% --- Executes on button press in pushbotton_colorpicker_analysis.
+function pushbotton_colorpicker_analysis_Callback(hObject, eventdata, handles)
+%
+end
+% --- Executes on button press in pushbutton_colorpicker_color.
+function pushbutton_colorpicker_color_Callback(hObject, eventdata, handles)
+%
+end
+
+% --- Executes on selection change in popupmenu_control_2.
+function popupmenu_control_2_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+
+    contents = cellstr(get(hObject,'String'));
+    if (strcmp(handles.mode, 'Colorpicker Basic'))
+        handles.cont_2 = str2num(contents{get(hObject,'Value')});
+    end
+
+    guidata(hObject, handles);
+end
+
+% --- Executes during object creation, after setting all properties.
+function popupmenu_control_2_CreateFcn(hObject, eventdata, handles)
+
+    if ispc &amp;&amp; isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+        set(hObject,'BackgroundColor','white');
+    end
+
+end
+
+% --- Executes on selection change in popupmenu_control_3.
+function popupmenu_control_3_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    contents = cellstr(get(hObject,'String'));
+    chosen = contents{get(hObject,'Value')};
+    if (strcmp(handles.mode, 'Colorpicker Basic'))
+        if (strcmp(chosen, 'None'))
+            handles.cont_3 = 1;
+        elseif (strcmp(chosen, '2*2'))
+            handles.cont_3 = 2;
+        elseif (strcmp(chosen, '4*4'))
+            handles.cont_3 = 4;
+        elseif (strcmp(chosen, '5*5'))
+            handles.cont_3 = 5;
+        elseif (strcmp(chosen, '7*7'))
+            handles.cont_3 = 7;
+        elseif (strcmp(chosen, '10*10'))
+            handles.cont_3 = 10;
+        elseif (strcmp(chosen, '20*20'))
+            handles.cont_3 = 20;
+        elseif (strcmp(chosen, '100*100'))
+            handles.cont_3 = 100;
+        else
+            handles.cont_3 = 1;
+        end
+    end
+    guidata(hObject, handles);
+end
+
+% --- Executes during object creation, after setting all properties.
+function popupmenu_control_3_CreateFcn(hObject, eventdata, handles)
+
+    if ispc &amp;&amp; isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+        set(hObject,'BackgroundColor','white');
+    end
+
+end
+
+% --- Executes on button press in button_result_space_1.
+function button_result_space_1_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes on button press in button_result_space_2.
+function button_result_space_2_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes on button press in button_result_space_3.
+function button_result_space_3_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes on button press in button_result_space_4.
+function button_result_space_4_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes on selection change in saveoption_result_space_1.
+function saveoption_result_space_1_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes during object creation, after setting all properties.
+function saveoption_result_space_1_CreateFcn(hObject, eventdata, handles)
+
+    if ispc &amp;&amp; isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+        set(hObject,'BackgroundColor','white');
+    end
+
+end
+
+% --- Executes on selection change in saveoption_result_space_2.
+function saveoption_result_space_2_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes during object creation, after setting all properties.
+function saveoption_result_space_2_CreateFcn(hObject, eventdata, handles)
+
+    if ispc &amp;&amp; isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+        set(hObject,'BackgroundColor','white');
+    end
+
+end
+
+% --- Executes on selection change in saveoption_result_space_3.
+function saveoption_result_space_3_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes during object creation, after setting all properties.
+function saveoption_result_space_3_CreateFcn(hObject, eventdata, handles)
+
+    if ispc &amp;&amp; isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+        set(hObject,'BackgroundColor','white');
+    end
+
+end
+
+% --- Executes on selection change in saveoption_result_space_4.
+function saveoption_result_space_4_Callback(hObject, eventdata, handles)
+
+    handles = guidata(hObject);
+    guidata(hObject, handles);
+end
+
+% --- Executes during object creation, after setting all properties.
+function saveoption_result_space_4_CreateFcn(hObject, eventdata, handles)
+
+    if ispc &amp;&amp; isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+        set(hObject,'BackgroundColor','white');
+    end
+
+end
+
+
+% =============================================================
+
+function initControlUI(hObject, eventdata, handles)
+    %control texts
+    set(handles.text_control_2, 'Visible', 'off');
+    set(handles.text_control_3, 'Visible', 'off');
+    %control popupmenus
+    set(handles.popupmenu_control_2, 'Visible', 'off');
+    set(handles.popupmenu_control_3, 'Visible', 'off');
+
+    %control button and description
+    set(handles.pushbutton_control_go, 'Visible', 'off');
+    set(handles.control_description, 'Visible', 'off');
+
+end
+function initResultUI(hObject, eventdata, handles)
+
+    %colorpicker
+    set(handles.text_result_colorpicker_1, 'Visible', 'off');
+    set(handles.text_result_colorpicker_2, 'Visible', 'off');
+    %savebuttons for colorpicker
+    set(handles.pushbotton_colorpicker_analysis, 'Visible', 'off');
+    set(handles.pushbutton_colorpicker_color, 'Visible', 'off');
+    %colorpicker results
+    set(handles.axes_result_colorpicker_color, 'Visible', 'off');
+    cla(handles.axes_result_colorpicker_color);
+    set(handles.axes_result_colorpicker_analysis, 'Visible', 'off');
+    cla(handles.axes_result_colorpicker_analysis);
+
+    %color space
+    set(handles.text_result_space_1, 'Visible', 'off');
+    set(handles.axes_result_space_1, 'Visible', 'off');
+    set(handles.saveoption_result_space_1, 'Visible', 'off');
+    set(handles.button_result_space_1, 'Visible', 'off');
+    cla(handles.axes_result_space_1);
+
+    set(handles.text_result_space_2, 'Visible', 'off');
+    set(handles.axes_result_space_2, 'Visible', 'off');
+    set(handles.saveoption_result_space_2, 'Visible', 'off');
+    set(handles.button_result_space_2, 'Visible', 'off');
+    cla(handles.axes_result_space_2);
+
+    set(handles.text_result_space_3, 'Visible', 'off');
+    set(handles.axes_result_space_3, 'Visible', 'off');
+    set(handles.saveoption_result_space_3, 'Visible', 'off');
+    set(handles.button_result_space_3, 'Visible', 'off');
+    cla(handles.axes_result_space_3);
+
+    set(handles.text_result_space_4, 'Visible', 'off');
+    set(handles.axes_result_space_4, 'Visible', 'off');
+    set(handles.saveoption_result_space_4, 'Visible', 'off');
+    set(handles.button_result_space_4, 'Visible', 'off');
+    cla(handles.axes_result_space_4);
+
+end
+function mode_RGB(hObject, eventdata, handles)
+    handles.control_description.String = 'RGB color model is an additive color model that uses Red, Green, Blue to produce visible colors. Press [Go] to continue.';
+    set(handles.control_description, 'Visible', 'on');
+    set(handles.pushbutton_control_go, 'Visible', 'on');
+end
+function mode_CMY(hObject, eventdata, handles)
+    handles.control_description.String = 'CMY color model is a subtractive color model that uses Cyan, Magenta, Yellow to produce visible colors. Press [Go] to continue.';
+    set(handles.control_description, 'Visible', 'on');
+    set(handles.pushbutton_control_go, 'Visible', 'on');
+end
+function mode_CMYK(hObject, eventdata, handles)
+    handles.control_description.String = 'CMYK color model is an extension of CMY color model, with black added. It is used on usual printers, for economic reasons - black inks are usually cheaper than other colored inks. Press [Go] to continue.';
+    set(handles.control_description, 'Visible', 'on');
+    set(handles.pushbutton_control_go, 'Visible', 'on');
+end
+function mode_HSV(hObject, eventdata, handles)
+    handles.control_description.String = 'HSV color model is a color model consisting of Hue, Saturation, and Value.';
+    set(handles.control_description, 'Visible', 'on');
+    set(handles.pushbutton_control_go, 'Visible', 'on');
+end
+function mode_ColorpickerBasic(hObject, eventdata, handles)
+
+    handles.control_description.String = 'Choosing the [representative] colors from the image. K-means clustering is used. [Downsampling] option is inspired by the JPEG compression. Higher downsampling gives up a bit of accuracy for performance.';
+    set(handles.control_description, 'Visible', 'on');
+
+    handles.text_control_2.String = '2. Number of colors to pick:';
+    set(handles.text_control_2, 'Visible', 'on');
+    handles.text_control_3.String = '3. Downsampling coefficient: ';
+    set(handles.text_control_3, 'Visible', 'on');
+
+    handles.popupmenu_control_2.String = {'1', '2', '3', '4', '5', '6', ...
+    '7', '8', '9', '10', '12', '15', '18', '20', '30', '40', '50'};
+    set(handles.popupmenu_control_2, 'Visible', 'on');
+    handles.popupmenu_control_3.String = {'None', '2*2', '4*4', '5*5', ...
+    '7*7', '10*10', '20*20', '100*100'};
+    set(handles.popupmenu_control_3, 'Visible', 'on');
+
+    set(handles.pushbutton_control_go, 'Visible', 'on');
+
+end
+
+function run_RGB(hObject, eventdata, handles)
+    obj_image = handles.obj_main;
+    [r, g, b] = divideSpace3(obj_image);
+    %color space
+    handles.text_result_space_1.String = &quot;Red&quot;;
+    set(handles.text_result_space_1, 'Visible', 'on');
+    set(handles.axes_result_space_1, 'Visible', 'on');
+    %%%%%set(handles.button_result_space_1, 'Visible', 'on');
+    axes(handles.axes_result_space_1);
+    imshow(uint8(r));
+
+    handles.text_result_space_2.String = &quot;Green&quot;;
+    set(handles.text_result_space_2, 'Visible', 'on');
+    set(handles.axes_result_space_2, 'Visible', 'on');
+    %%%%%set(handles.button_result_space_2, 'Visible', 'on');
+    axes(handles.axes_result_space_2);
+    imshow(uint8(g));
+
+    handles.text_result_space_3.String = &quot;Blue&quot;;
+    set(handles.text_result_space_3, 'Visible', 'on');
+    set(handles.axes_result_space_3, 'Visible', 'on');
+    %%%set(handles.button_result_space_3, 'Visible', 'on');
+    axes(handles.axes_result_space_3);
+    imshow(uint8(b));
+
+end
+function run_CMY(hObject, eventdata, handles)
+    obj_ima = handles.obj_main;
+    cmy_ima = convertRGB2CMY(obj_ima);
+    [c, mag, yel] = divideSpace3(cmy_ima);
+
+    c = convertCMY2RGB(c);
+    mag = convertCMY2RGB(mag);
+    yel = convertCMY2RGB(yel);
+
+    %color space
+    handles.text_result_space_1.String = &quot;Cyan&quot;;
+    set(handles.text_result_space_1, 'Visible', 'on');
+    set(handles.axes_result_space_1, 'Visible', 'on');
+    %%%%%set(handles.button_result_space_1, 'Visible', 'on');
+    axes(handles.axes_result_space_1);
+    %imshow(CMY2RGB(cmy_ima));
+    imshow(uint8(c));
+
+    handles.text_result_space_2.String = &quot;Magenta&quot;;
+    set(handles.text_result_space_2, 'Visible', 'on');
+    set(handles.axes_result_space_2, 'Visible', 'on');
+    %%%set(handles.button_result_space_2, 'Visible', 'on');
+    axes(handles.axes_result_space_2);
+    imshow(uint8(mag));
+
+    handles.text_result_space_3.String = &quot;Yellow&quot;;
+    set(handles.text_result_space_3, 'Visible', 'on');
+    set(handles.axes_result_space_3, 'Visible', 'on');
+    %%%set(handles.button_result_space_3, 'Visible', 'on');
+    axes(handles.axes_result_space_3);
+    imshow(uint8(yel));
+
+end
+function run_CMYK(hObject, eventdata, handles)
+    obj_ima = handles.obj_main;
+    cmy_ima = convertRGB2CMY(obj_ima);
+    cmyk_ima = convertCMY2CMYK(cmy_ima);
+    [c, m, y, k] = divideSpace4(cmyk_ima);
+    size(c)
+    c = convertCMY2RGB(c);
+    m = convertCMY2RGB(m);
+    y = convertCMY2RGB(y);
+    k = convertCMY2RGB(k);
+
+    %color space
+    handles.text_result_space_1.String = &quot;Cyan&quot;;
+    set(handles.text_result_space_1, 'Visible', 'on');
+    set(handles.axes_result_space_1, 'Visible', 'on');
+    %%%%set(handles.button_result_space_1, 'Visible', 'on');
+    axes(handles.axes_result_space_1);
+    %imshow(CMY2RGB(cmy_ima));
+    imshow(uint8(c));
+
+    handles.text_result_space_2.String = &quot;Magenta&quot;;
+    set(handles.text_result_space_2, 'Visible', 'on');
+    set(handles.axes_result_space_2, 'Visible', 'on');
+    %%set(handles.button_result_space_2, 'Visible', 'on');
+    axes(handles.axes_result_space_2);
+    imshow(uint8(m));
+
+    handles.text_result_space_3.String = &quot;Yellow&quot;;
+    set(handles.text_result_space_3, 'Visible', 'on');
+    set(handles.axes_result_space_3, 'Visible', 'on');
+    %%set(handles.button_result_space_3, 'Visible', 'on');
+    axes(handles.axes_result_space_3);
+    imshow(uint8(y));
+
+    handles.text_result_space_4.String = &quot;Black&quot;;
+    set(handles.text_result_space_4, 'Visible', 'on');
+    set(handles.axes_result_space_4, 'Visible', 'on');
+    set(handles.button_result_space_4, 'Visible', 'on');
+    axes(handles.axes_result_space_4);
+    imshow(uint8(k));
+
+end
+function run_HSV(hObject, eventdata, handles)
+    obj_ima = handles.obj_main;
+    hsv_ima = convertRGB2HSV(obj_ima);
+
+    % Trick to displaying HSV images.
+    % H: set every s and v to 0 and 1.
+    % S, V: map [0, 1] to [0, 255], and put it in cmyk format as all black.
+    [height, width, n] = size(hsv_ima);
+    h_trick = zeros(height, width, 3); % HSV format
+    s_trick = zeros(height, width, 4); % CMYK format
+    v_trick = zeros(height, width, 4); % CMYK format
+
+    for r = 1:height
+        for c = 1:width
+            h_trick(r, c, 1) = hsv_ima(r, c, 1);
+            h_trick(r, c, 2) = 0.5;
+            h_trick(r, c, 3) = 1;
+
+            s_trick(r, c, 4) = hsv_ima(r, c, 2)*255;
+            v_trick(r, c, 4) = hsv_ima(r, c, 3)*255;
+        end
+    end
+
+    h = convertHSV2RGB(h_trick);
+    s_temp = convertCMYK2CMY(s_trick);
+    s = convertCMY2RGB(s_temp);
+    v_temp = convertCMYK2CMY(v_trick);
+    v = convertCMY2RGB(v_temp);
+
+    %color space
+    handles.text_result_space_1.String = &quot;Hue&quot;;
+    set(handles.text_result_space_1, 'Visible', 'on');
+    set(handles.axes_result_space_1, 'Visible', 'on');
+    %%%%set(handles.button_result_space_1, 'Visible', 'on');
+    axes(handles.axes_result_space_1);
+    %imshow(CMY2RGB(cmy_ima));
+    imshow(uint8(h));
+
+    handles.text_result_space_2.String = &quot;Saturation&quot;;
+    set(handles.text_result_space_2, 'Visible', 'on');
+    set(handles.axes_result_space_2, 'Visible', 'on');
+    %%set(handles.button_result_space_2, 'Visible', 'on');
+    axes(handles.axes_result_space_2);
+    imshow(uint8(s));
+
+    handles.text_result_space_3.String = &quot;Value&quot;;
+    set(handles.text_result_space_3, 'Visible', 'on');
+    set(handles.axes_result_space_3, 'Visible', 'on');
+    %%set(handles.button_result_space_3, 'Visible', 'on');
+    axes(handles.axes_result_space_3);
+    imshow(uint8(v));
+
+end
+
+function run_Colorpicker1(hObject, eventdata, handles)
+    sample_obj = downsample(handles.obj_input, handles.cont_3);
+
+    %colorpicker
+    set(handles.text_result_colorpicker_1, 'Visible', 'on');
+    set(handles.text_result_colorpicker_2, 'Visible', 'on');
+    %savebuttons for colorpicker
+    set(handles.pushbotton_colorpicker_analysis, 'Visible', 'on');
+    set(handles.pushbutton_colorpicker_color, 'Visible', 'on');
+    %colorpicker results
+    set(handles.axes_result_colorpicker_color, 'Visible', 'on');
+    set(handles.axes_result_colorpicker_analysis, 'Visible', 'on');
+
+    obj_image = handles.obj_main;
+    [height, width, n] = size(obj_image);
+
+    %constructing color bins......
+    colorBin = zeros(256, 256, 256);
+    for r = 1:height
+        for c = 1:width
+            colorBin(obj_image(r, c, 1)+1, obj_image(r, c, 2)+1, obj_image(r, c, 3)+1) ...
+            = colorBin(obj_image(r, c, 1)+1, obj_image(r, c, 2)+1, obj_image(r, c, 3)+1)+1;
+        end
+    end
+
+    [maxVal, color] = max(colorBin, [], 3, 'linear');
+    pal = zeros(handles.cont_2, 3);
+    for i = 1:handles.cont_2
+        pal(i, 1) = floor(color(i)/(256*3));
+        pal(i, 2) = floor((color(i)-(pal(i, 1)*256*3))/3);
+        pal(i, 3) = mod(color(i), 3)+1;
+    end
+    size(maxVal)
+    size(color)
+    size(pal)
+
+    axes(handles.axes_result_colorpicker_color);
+    imshow(pal);
+    %rgbScatterPlot(sample_obj, centers, handles.axes_result_colorpicker_analysis);
+
+end
+function run_ColorpickerBasic(hObject, eventdata, handles)
+    sample_obj = downsample(handles.obj_input, handles.cont_3);
+
+    %colorpicker
+    set(handles.text_result_colorpicker_1, 'Visible', 'on');
+    set(handles.text_result_colorpicker_2, 'Visible', 'on');
+    %savebuttons for colorpicker
+    %set(handles.pushbotton_colorpicker_analysis, 'Visible', 'on');
+    %set(handles.pushbutton_colorpicker_color, 'Visible', 'on');
+    %colorpicker results
+    set(handles.axes_result_colorpicker_color, 'Visible', 'on');
+    set(handles.axes_result_colorpicker_analysis, 'Visible', 'on');
+
+
+    [pal, centers, centered_image] = makePalette(sample_obj, handles.cont_2);
+    axes(handles.axes_result_colorpicker_color);
+    imshow(pal);
+    rgbScatterPlot(sample_obj, centers, handles.axes_result_colorpicker_analysis);
+
+end
+
+
+function [palette, centers, centered_image] = makePalette(obj_image, k)
+    [centered_image, centers] = imsegkmeans(uint8(obj_image),k);
+
+
+    %B = labeloverlay(obj_image, centered_image, 'Colormap', double(centers/256));
+    %imshow(B);
+    palette = zeros(k, 1, 3);
+    for i=1:k
+        palette(i, 1, 1) = centers(i, 1);
+        palette(i, 1, 2) = centers(i, 2);
+        palette(i, 1, 3) = centers(i, 3);
+    end
+    palette = uint8(palette);
+end
+
+function hsv = convertRGB2HSV(rgb)
+    %https://cs.stackexchange.com/questions/64549/convert-hsv-to-rgb-colors
+    % H [0,360]. S [0,1]. V [0,1].
+    [height, width, n] = size(rgb);
+    hsv = zeros(height, width, n);
+    for r = 1:height
+        for c = 1:width
+            % max = max(R, G, B). min = min(R, G, B).
+            max = 'R';
+            max_val = rgb(r, c, 1);
+            min = 'R';
+            min_val = rgb(r, c, 1);
+            if (rgb(r, c, 2) &gt; max_val)
+                max = 'G';
+                max_val = rgb(r, c, 2);
+            elseif (rgb(r, c, 2) &lt; min_val)
+                min = 'G';
+                min_val = rgb(r, c, 2);
+            end
+            if (rgb(r, c, 3) &gt; max_val)
+                max = 'B';
+                max_val = rgb(r, c, 3);
+            elseif (rgb(r, c, 3) &lt; min_val)
+                min = 'B';
+                min_val = rgb(r, c, 3);
+            end
+
+            max_val = double(max_val)/255;
+            min_val = double(min_val)/255;
+
+            hsv(r, c, 3) = max_val;
+            if (max_val == 0)
+                hsv(r, c, 2) = 0;
+            else
+                hsv(r, c, 2) = (double(max_val)-double(min_val))/double(max_val);
+            end
+
+            r_var = double(rgb(r, c, 1))/255;
+            g_var = double(rgb(r, c, 2))/255;
+            b_var = double(rgb(r, c, 3))/255;
+
+            if (max == 'R')
+                hsv(r, c, 1) = 60*(0 + (g_var-b_var)/(max_val-min_val));
+            elseif (max == 'G')
+                hsv(r, c, 1) = 60*(2 + (b_var-r_var)/(max_val-min_val));
+            else
+                hsv(r, c, 1) = 60*(4 + (r_var-g_var)/(max_val-min_val));
+            end
+            if (hsv(r, c, 1) &lt; 0)
+                hsv(r, c, 1) = hsv(r, c, 1) + 360;
+            end
+
+        end
+    end
+
+end
+
+function rgb = convertHSV2RGB(hsv)
+    %https://www.rapidtables.com/convert/color/hsv-to-rgb.html
+    [height, width, n] = size(hsv);
+    rgb = zeros(height, width, n);
+    hsv = double(hsv);
+    for r = 1:height
+        for c = 1:width
+            c_par = hsv(r, c, 2) * hsv(r, c, 3); % C=V*S
+            x_par = c_par*((1 - abs(mod(floor(hsv(r, c, 1)/60), 2)-1))); % X=C*(1-|(H/60)mod2-1|)
+            m_par = hsv(r, c, 3)-c_par; % m = V-C
+            if (hsv(r, c, 1) &lt; 60)
+                R_prime = c_par;
+                G_prime = x_par;
+                B_prime = 0;
+            elseif (hsv(r, c, 1) &lt; 120)
+                R_prime = x_par;
+                G_prime = c_par;
+                B_prime = 0;
+            elseif (hsv(r, c, 1) &lt; 180)
+                R_prime = 0;
+                G_prime = c_par;
+                B_prime = x_par;
+            elseif (hsv(r, c, 1) &lt; 240)
+                R_prime = 0;
+                G_prime = x_par;
+                B_prime = c_par;
+            elseif (hsv(r, c, 1) &lt; 300)
+                R_prime = x_par;
+                G_prime = 0;
+                B_prime = c_par;
+            else
+                R_prime = c_par;
+                G_prime = 0;
+                B_prime = x_par;
+            end
+
+            rgb(r, c, 1) = (R_prime+m_par)*255;
+            rgb(r, c, 2) = (G_prime+m_par)*255;
+            rgb(r, c, 3) = (B_prime+m_par)*255;
+
+        end
+    end
+
+
+end
+
+function [A, B, C] = divideSpace3(abc)
+    [height, width, n] = size(abc);
+
+    A = zeros(height, width, n);
+    B = zeros(height, width, n);
+    C = zeros(height, width, n);
+
+    for r = 1:height
+        for c = 1:width
+            A(r, c, 1) = abc(r, c, 1);
+            B(r, c, 2) = abc(r, c, 2);
+            C(r, c, 3) = abc(r, c, 3);
+        end
+    end
+
+end
+
+function [A, B, C, D] = divideSpace4(abcd)
+    [height, width, n] = size(abcd);
+    n = 3;
+    A = uint8(zeros(height, width, n));
+    B = uint8(zeros(height, width, n));
+    C = uint8(zeros(height, width, n));
+    D = uint8(zeros(height, width, n));
+
+    for r = 1:height
+        for c = 1:width
+            A(r, c, 1) = abcd(r, c, 1);
+            B(r, c, 2) = abcd(r, c, 2);
+            C(r, c, 3) = abcd(r, c, 3);
+            D(r, c, 1) = abcd(r, c, 4)/3;
+            D(r, c, 2) = abcd(r, c, 4)/3;
+            D(r, c, 3) = abcd(r, c, 4)/3;
+        end
+    end
+
+end
+
+
+function cmy = convertRGB2CMY(rgb)
+    %returns height*width*3 size matrix, each Cyan, Magenta and Yellow.
+    [height, width, n] = size(rgb);
+    cmy = zeros(height, width, n);
+    for r = 1:height
+        for c = 1:width
+            cmy(r, c, 1) = 255 - rgb(r, c, 1);
+            cmy(r, c, 2) = 255 - rgb(r, c, 2);
+            cmy(r, c, 3) = 255 - rgb(r, c, 3);
+        end
+    end
+end
+
+function rgb = convertCMY2RGB(cmy)
+    %returns height*width*3 size matrix, each Cyan, Magenta and Yellow.
+    [height, width, n] = size(cmy);
+    rgb = zeros(height, width, n);
+    for r = 1:height
+        for c = 1:width
+            %RGB8 = uint8(round(RGB64*255));
+            rgb(r, c, 1) = 255 - cmy(r, c, 1);
+            rgb(r, c, 2) = 255 - cmy(r, c, 2);
+            rgb(r, c, 3) = 255 - cmy(r, c, 3);
+        end
+    end
+end
+
+function cmyk = convertCMY2CMYK(cmy)
+    [height, width, n] = size(cmy);
+    cmyk = zeros(height, width, 4);
+    for r = 1:height
+        for c = 1:width
+            %cmyk(r, c, 4) = min([cmy(r, c, 1), cmy(r, c, 2), cmy(r, c, 3)])
+            cmyk(r, c, 4) = cmy(r, c, 1);
+            if (cmy(r, c, 2) &lt; cmyk(r, c, 4))
+                cmyk(r, c, 4) = cmy(r, c, 2);
+            end
+            if (cmy(r, c, 3) &lt; cmyk(r, c, 4))
+                cmyk(r, c, 4) = cmy(r, c, 3);
+            end
+            cmyk(r, c, 1) = cmy(r, c, 1) - cmyk(r, c, 4);
+            cmyk(r, c, 2) = cmy(r, c, 2) - cmyk(r, c, 4);
+            cmyk(r, c, 3) = cmy(r, c, 2) - cmyk(r, c, 4);
+        end
+    end
+end
+function cmy = convertCMYK2CMY(cmyk)
+    [height, width, n] = size(cmyk);
+    cmy = zeros(height, width, 3);
+    for r = 1:height
+        for c = 1:width
+            cmy(r, c, 1) = cmyk(r, c, 1) + cmyk(r, c, 4);
+            cmy(r, c, 2) = cmyk(r, c, 2) + cmyk(r, c, 4);
+            cmy(r, c, 3) = cmyk(r, c, 2) + cmyk(r, c, 4);
+        end
+    end
+end
+function rgbScatterPlot(obj_image, centers, place)
+    set(place, 'Units', 'Normalized');
+    axes(place);
+    %let's plot the colors yay!
+    [height, width, n] = size(obj_image);
+    colors = zeros(256, 256, 256);
+    for r = 1:height
+        for c = 1:width
+            colors(obj_image(r, c, 1)+1, obj_image(r, c, 2)+1, obj_image(r, c, 3)+1) = ...
+            colors(obj_image(r, c, 1)+1, obj_image(r, c, 2)+1, obj_image(r, c, 3)+1) + 1;
+        end
+    end
+    [a, b, c] = ind2sub(size(colors), find(colors));
+    scatter3(a, b, c, '.y');
+    hold on;
+    [a, b, c] = ind2sub(size(colors), find(floor(colors/10)));
+    scatter3(a, b, c, '.g');
+    hold on;
+    [a, b, c] = ind2sub(size(colors), find(floor(colors/100)));
+    scatter3(a, b, c, '.b');
+    hold on;
+    scatter3(centers(:, 1), centers(:, 2), centers(:, 3), 'or');
+
+    xlabel(&quot;Red&quot;);
+    ylabel(&quot;Green&quot;);
+    zlabel(&quot;Blue&quot;);
+end
+
+function smaller = downsample(original, k)
+
+    [height, width, n_] = size(original);
+    smaller = zeros(floor(height/k), floor(width/k), 3);
+    for i = 1:floor(height/k)-1
+        for j = 1:floor(width/k)-1
+            for n = 1:3
+                smaller(i, j, n) = uint8(original(i*k+floor(k/2), j*k+floor(k/2), n));
+            end
+
+        end
+    end
+end
+
+% ===============================================================
+
+&lt;/code&gt;&lt;/pre&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="code" />
+      
+
+      
+        <summary type="html">MATLAB code for project ColorQuirrel. For details and explanation, please read: ColorQuirrel</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Competitive Programming</title>
+      <link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Competitive Programming" />
+      <published>2020-04-22T17:00:00+09:00</published>
+      <updated>2020-04-22T17:00:00+09:00</updated>
+      <id>http://localhost:4000/competitive-programming</id>
+      <content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;p&gt;Come back later!&lt;/p&gt;
+&lt;!--&lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.--&gt;
+&lt;!--&lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;--&gt;
+&lt;!--&lt;/blockquote&gt;--&gt;
+
+&lt;!--&lt;h1&gt;Competitive Programming&lt;/h1&gt;--&gt;
+&lt;!--&lt;br&gt;--&gt;
+
+&lt;!--&lt;p&gt;TODO: Write this.&lt;/p&gt;--&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Getting started" />
+      
+
+      
+        <summary type="html">Come back later!</summary>
+      
+
+      
+      
+    </entry>
   
 </feed>
