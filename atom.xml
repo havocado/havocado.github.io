@@ -10,8 +10,10 @@
       <item>
         <title>Welcome to my blog!</title>
         
-          <description>&lt;!--(TODO: Insert picture here)--&gt;
-&lt;p&gt;&lt;strong&gt;This blog is not done. Come back later!&lt;/strong&gt;&lt;/p&gt;
+          <description>&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
+&lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
+&lt;p&gt;Below is more about me!&lt;/p&gt;
+&lt;hr&gt;
 
 </description>
         

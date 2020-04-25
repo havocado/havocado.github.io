@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/about/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-25T20:04:26+09:00</updated>
+  <updated>2020-04-25T20:17:43+09:00</updated>
   <id>http://localhost:4000/tag/about/feed.xml</id>
 
   
@@ -37,28 +37,28 @@
       <published>2020-04-23T19:00:00+09:00</published>
       <updated>2020-04-23T19:00:00+09:00</updated>
       <id>http://localhost:4000/welcome</id>
-      <content type="html" xml:base="http://localhost:4000/welcome">&lt;!--(TODO: Insert picture here)--&gt;
-&lt;p&gt;&lt;strong&gt;This blog is not done. Come back later!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
-&lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC, Canada. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
+      <content type="html" xml:base="http://localhost:4000/welcome">&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
+&lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
 &lt;p&gt;Below is more about me!&lt;/p&gt;
 &lt;hr&gt;
 
 &lt;h2&gt;Math &amp; Computer Science&lt;/h2&gt;
 &lt;br&gt;
-&lt;p&gt;I’m a third year undergraduate student majoring in Mathematics and Computing Science (a.k.a. MACM). MACM is a program for students who came to decide their major between (1) Mathematics and (2) Computing Science, and thought:&lt;/p&gt;
+&lt;p&gt;I’m a third year undergraduate student majoring in &lt;a href=&quot;http://www.sfu.ca/students/calendar/2020/summer/programs/mathematics-and-computing-science/joint-major/bachelor-of-science.html&quot;&gt;Mathematics and Computing Science (a.k.a. MACM)&lt;/a&gt;. MACM is a program for students who came to decide their major between (1) Mathematics and (2) Computing Science, and thought:&lt;/p&gt;
 &lt;blockquote&gt;“Why give up one? Let’s learn both!”&lt;/blockquote&gt;
 &lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I like it.&lt;/p&gt;
-&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to learn myself. I’m confident with my self-learning skills, but some things are better to learn in school – basic knowledge that won't change. I want to build up my cornerstone for math and programming in university, and I will build up the rest myself.&lt;/p&gt;
+&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. (Write some more here)&lt;/p&gt;
 
 &lt;h2&gt;My projects&lt;/h2&gt;
 &lt;br&gt;
 &lt;p&gt;(TODO: Projects list goes here)&lt;/p&gt;
 
-&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;h2&gt;Tools I use&lt;/h2&gt;
 &lt;br&gt;
-&lt;p&gt;(TODO: Write this)&lt;/p&gt;</content>
+&lt;p&gt;(TODO: Write this)&lt;/p&gt;
+
+
+&lt;p&gt;&lt;strong&gt;This blog is not done. Come back later!&lt;/strong&gt;&lt;/p&gt;</content>
 
       
       
@@ -79,7 +79,7 @@
       
 
       
-        <summary type="html">This blog is not done. Come back later!</summary>
+        <summary type="html">Hi, I’m Hailey! I’m a software engineer studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends. Below is more about me!</summary>
       
 
       
