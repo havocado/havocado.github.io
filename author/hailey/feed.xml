@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/hailey/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-25T20:17:43+09:00</updated>
+  <updated>2020-04-26T15:28:29+09:00</updated>
   <id>http://localhost:4000/author/hailey/feed.xml</id>
 
   
@@ -46,12 +46,22 @@
 &lt;br&gt;
 &lt;p&gt;I’m a third year undergraduate student majoring in &lt;a href=&quot;http://www.sfu.ca/students/calendar/2020/summer/programs/mathematics-and-computing-science/joint-major/bachelor-of-science.html&quot;&gt;Mathematics and Computing Science (a.k.a. MACM)&lt;/a&gt;. MACM is a program for students who came to decide their major between (1) Mathematics and (2) Computing Science, and thought:&lt;/p&gt;
 &lt;blockquote&gt;“Why give up one? Let’s learn both!”&lt;/blockquote&gt;
-&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I like it.&lt;/p&gt;
+&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I enjoy applying data structures and algorithms while solving programming problems. You can see my codes &lt;a&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. (Write some more here)&lt;/p&gt;
 
 &lt;h2&gt;My projects&lt;/h2&gt;
 &lt;br&gt;
-&lt;p&gt;(TODO: Projects list goes here)&lt;/p&gt;
+&lt;h3&gt;&lt;a&gt;Special Fortification Unit&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;Special Fortification Unit (in short, 'S.F.U.') is......(explanation here)&lt;/p&gt;
+
+&lt;h3&gt;&lt;a&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;(TODO: ColorQuirrel explanation)&lt;/p&gt;
+
+&lt;h3&gt;&lt;a&gt;Sapiens&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;(TODO: Sapiens explanation)&lt;/p&gt;
 
 &lt;h2&gt;Tools I use&lt;/h2&gt;
 &lt;br&gt;
