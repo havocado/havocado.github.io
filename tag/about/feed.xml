@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/about/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-26T15:28:29+09:00</updated>
+  <updated>2020-04-26T15:47:03+09:00</updated>
   <id>http://localhost:4000/tag/about/feed.xml</id>
 
   
@@ -49,11 +49,21 @@
 &lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I enjoy applying data structures and algorithms while solving programming problems. You can see my codes &lt;a&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. (Write some more here)&lt;/p&gt;
 
-&lt;h2&gt;My projects&lt;/h2&gt;
+&lt;h2&gt;My Projects&lt;/h2&gt;
 &lt;br&gt;
 &lt;h3&gt;&lt;a&gt;Special Fortification Unit&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
-&lt;p&gt;Special Fortification Unit (in short, 'S.F.U.') is......(explanation here)&lt;/p&gt;
+&lt;p&gt;(TODO: Put some image and write more)&lt;/p&gt;
+&lt;p&gt;Special Fortification Unit (S.F.U.) is a web-based, real-time, multiplayer survival
+    game (with a twist!) set at SFU Burnaby. Four students come to SFU for classes on a snowy
+    day. Due to heavy snowfall, their classes get cancelled, leaving the students stranded on
+    campus. Then, some mysterious enemies attack! Dear SFU students, we know you are
+    already burned out from assignments and exams, but please stay safe from the evil
+    enemies! The game features playable maps based on the SFU Burnaby campus and four
+    playable characters cooperating with each other. Mysterious enemies with different attack
+    patterns, as well as intuitive leveling, health, and money systems provide an excellent
+    experience for players.
+&lt;/p&gt;
 
 &lt;h3&gt;&lt;a&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
@@ -63,7 +73,7 @@
 &lt;br&gt;
 &lt;p&gt;(TODO: Sapiens explanation)&lt;/p&gt;
 
-&lt;h2&gt;Tools I use&lt;/h2&gt;
+&lt;h2&gt;Favorite Tools&lt;/h2&gt;
 &lt;br&gt;
 &lt;p&gt;(TODO: Write this)&lt;/p&gt;
 
