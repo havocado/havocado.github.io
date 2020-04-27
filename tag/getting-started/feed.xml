@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/getting-started/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-26T15:47:03+09:00</updated>
+  <updated>2020-04-27T22:33:13+09:00</updated>
   <id>http://localhost:4000/tag/getting-started/feed.xml</id>
 
   
@@ -71,15 +71,18 @@
       <published>2020-04-22T17:00:00+09:00</published>
       <updated>2020-04-22T17:00:00+09:00</updated>
       <id>http://localhost:4000/competitive-programming</id>
-      <content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;p&gt;Come back later!&lt;/p&gt;
-&lt;!--&lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.--&gt;
-&lt;!--&lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;--&gt;
-&lt;!--&lt;/blockquote&gt;--&gt;
+      <content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;!--&lt;p&gt;Come back later!&lt;/p&gt;--&gt;
+&lt;h1&gt;Competitive Programming&lt;/h1&gt;
+&lt;br&gt;
 
-&lt;!--&lt;h1&gt;Competitive Programming&lt;/h1&gt;--&gt;
-&lt;!--&lt;br&gt;--&gt;
+&lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.
+&lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;
+&lt;/blockquote&gt;
 
-&lt;!--&lt;p&gt;TODO: Write this.&lt;/p&gt;--&gt;</content>
+
+&lt;br&gt;
+
+&lt;p&gt;TODO: Write this.&lt;/p&gt;</content>
 
       
       
@@ -100,7 +103,7 @@
       
 
       
-        <summary type="html">Come back later!</summary>
+        <summary type="html">Competitive Programming</summary>
       
 
       

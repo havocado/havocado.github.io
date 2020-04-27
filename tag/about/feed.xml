@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/about/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-26T15:47:03+09:00</updated>
+  <updated>2020-04-27T22:33:13+09:00</updated>
   <id>http://localhost:4000/tag/about/feed.xml</id>
 
   
@@ -67,11 +67,11 @@
 
 &lt;h3&gt;&lt;a&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
-&lt;p&gt;(TODO: ColorQuirrel explanation)&lt;/p&gt;
+&lt;p&gt;ColorQuirrel is a MATLAB image processing program that plays around color spaces. It converts the image to several different ways to represent the data, extracts the representative color from the image by clustering the data, and uses down-sampling method to speed up the procedure.&lt;/p&gt;
 
 &lt;h3&gt;&lt;a&gt;Sapiens&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
-&lt;p&gt;(TODO: Sapiens explanation)&lt;/p&gt;
+&lt;p&gt;Sapiens is a human civilization simulator written in Javascript. (TODO: Write more)&lt;/p&gt;
 
 &lt;h2&gt;Favorite Tools&lt;/h2&gt;
 &lt;br&gt;
