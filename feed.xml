@@ -1,67 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-27T22:33:13+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><subtitle>...is under construction! Come back later!</subtitle><entry><title type="html">C++ April 2020</title><link href="http://localhost:4000/cpp" rel="alternate" type="text/html" title="C++ April 2020" /><published>2020-04-26T23:18:00+09:00</published><updated>2020-04-26T23:18:00+09:00</updated><id>http://localhost:4000/cpp</id><content type="html" xml:base="http://localhost:4000/cpp">&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-28T17:17:59+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><subtitle>...is under construction! Come back later!</subtitle><entry><title type="html">C++ April 2020</title><link href="http://localhost:4000/cpp" rel="alternate" type="text/html" title="C++ April 2020" /><published>2020-04-26T23:18:00+09:00</published><updated>2020-04-26T23:18:00+09:00</updated><id>http://localhost:4000/cpp</id><content type="html" xml:base="http://localhost:4000/cpp">&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
 
-&lt;p style=&quot;margin-bottom:0;color:cornflowerblue&quot;&gt;- April 17th, 2020&lt;/p&gt;
-&lt;h3&gt;Codeforces 1334C - Circle of Monsters&lt;/h3&gt;
-&lt;p&gt;Tags: brute force, constructive algorithms, greedy, math, *1600
-    | &lt;a href=&quot;https://codeforces.com/problemset/problem/1334/C&quot;&gt;Problem link&lt;/a&gt;&lt;/p&gt;
-&lt;details id=&quot;0417_1334C&quot; style=&quot;width:100%&quot;&gt;
-    &lt;summary&gt;&lt;strong style=&quot;color:orange&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;
-&lt;/details&gt;
-&lt;br&gt;
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
 
-&lt;p style=&quot;margin-bottom:0;color:cornflowerblue&quot;&gt;- April 16th, 2020&lt;/p&gt;
-&lt;h3&gt;Codeforces 1336A - Linova and Kingdom&lt;/h3&gt;
-&lt;p&gt;Tags: brute force, constructive algorithms, greedy, math, *1600
-    | &lt;a href=&quot;https://codeforces.com/problemset/problem/1336/A&quot;&gt;Problem link&lt;/a&gt;&lt;/p&gt;
-&lt;details id=&quot;0416_1336A&quot; style=&quot;width:100%&quot;&gt;
-    &lt;summary&gt;&lt;strong style=&quot;color:orange&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;
-&lt;/details&gt;
-&lt;br&gt;
+&lt;script&gt;
+    var contents = [
+      {
+        title: &quot;Codeforces 1256C - Platforms Jumping&quot;,
+        date: &quot;April 26, 2020&quot;,
+        tags: &quot;greedy,    *1700&quot;,
+        link: &quot;https://codeforces.com/contest/1256/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0426_1256C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1341C - Nastya and Strange Generator&quot;,
+        date: &quot;April 24, 2020&quot;,
+        tags: &quot;  greedy,    implementation,    *1500&quot;,
+        link: &quot;https://codeforces.com/contest/1341/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1341B - Nastya and Door&quot;,
+        date: &quot;April 24, 2020&quot;,
+        tags: &quot;  greedy,    implementation,    *1300&quot;,
+        link: &quot;https://codeforces.com/contest/1341/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1341A - Nastya and Rice&quot;,
+        date: &quot;April 24, 2020&quot;,
+        tags: &quot;math,    *1000&quot;,
+        link: &quot;https://codeforces.com/contest/1341/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1250H - Happy Birthday&quot;,
+        date: &quot;April 23, 2020&quot;,
+        tags: &quot;math,    *1500&quot;,
+        link: &quot;https://codeforces.com/contest/1250/problem/H&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0423_1250H.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1343C - Alternating Subsequence&quot;,
+        date: &quot;April 22st, 2020&quot;,
+        tags: &quot;  dp,    greedy,    two pointers,    *1200&quot;,
+        link: &quot;https://codeforces.com/contest/1343/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1343B - Balanced Array&quot;,
+        date: &quot;April 22st, 2020&quot;,
+        tags: &quot; constructive algorithms,    math,    *800&quot;,
+        link: &quot;https://codeforces.com/contest/1343/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1343A - Candies&quot;,
+        date: &quot;April 22st, 2020&quot;,
+        tags: &quot;brute force,    math ,   *900&quot;,
+        link: &quot;https://codeforces.com/contest/1343/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1270B - Interesting Subarray&quot;,
+        date: &quot;April 21st, 2020&quot;,
+        tags: &quot; constructive algorithms,    greedy,    math,    *1300&quot;,
+        link: &quot;https://codeforces.com/contest/1270/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1270B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1334C - Circle of Monsters&quot;,
+        date: &quot;April 17th, 2020&quot;,
+        tags: &quot;brute force, constructive algorithms, greedy, math, *1600&quot;,
+        link: &quot;https://codeforces.com/problemset/problem/1334/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0417_1334C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1336A - Linova and Kingdom&quot;,
+        date: &quot;April 16th, 2020&quot;,
+        tags: &quot;dfs and similar, dp, greedy, sortings, trees, *1700&quot;,
+        link: &quot;https://codeforces.com/problemset/problem/1336/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0416_1336A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1255C - Changing Volume&quot;,
+        date: &quot;April 15th, 2020&quot;,
+        tags: &quot;math, *700&quot;,
+        link: &quot;https://codeforces.com/problemset/problem/1255/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0415_1255C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335A - Candies and Two Sisters&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;math, *700&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335B - Construct the String&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;constructive algorithms, *1000&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335C - Two Teams Composing&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;binary search, greedy, implementation, sortings, *1100&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335D - Anti-Sudoku&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;constructive algorithms, implementation, *1300&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/D&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_D.cpp&quot;
+      }
+    ];
 
-&lt;p style=&quot;margin-bottom:0;color:cornflowerblue&quot;&gt;- April 15th, 2020&lt;/p&gt;
-&lt;h3&gt;Codeforces 1255C - Changing Volume&lt;/h3&gt;
-&lt;p&gt;Tags: math,    *700
-    | &lt;a href=&quot;https://codeforces.com/problemset/problem/1255/A&quot;&gt;Problem link&lt;/a&gt;&lt;/p&gt;
-&lt;details id=&quot;0415_1255C&quot; style=&quot;width:100%&quot;&gt;
-    &lt;summary&gt;&lt;strong style=&quot;color:orange&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;
-&lt;/details&gt;
-&lt;br&gt;
+&lt;/script&gt;
 
-&lt;p style=&quot;margin-bottom:0;color:cornflowerblue&quot;&gt;- April 14th, 2020&lt;/p&gt;
-&lt;h3&gt;Codeforces 1335A - Candies and Two Sisters&lt;/h3&gt;
-&lt;p&gt;Tags:  math,    *700
-    | &lt;a href=&quot;https://codeforces.com/contest/1335/problem/A&quot;&gt;Problem link&lt;/a&gt;&lt;/p&gt;
-&lt;details id=&quot;0414_1335A&quot; style=&quot;width:100%&quot;&gt;
-    &lt;summary&gt;&lt;strong style=&quot;color:orange&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;
-&lt;/details&gt;
-&lt;br&gt;
-&lt;h3&gt;Codeforces 1335B -  Construct the String&lt;/h3&gt;
-&lt;p&gt;Tags: constructive algorithms,    *1000
-    | &lt;a href=&quot;https://codeforces.com/contest/1335/problem/B&quot;&gt;Problem link&lt;/a&gt;&lt;/p&gt;
-&lt;details id=&quot;0414_1335B&quot; style=&quot;width:100%&quot;&gt;
-    &lt;summary&gt;&lt;strong style=&quot;color:orange&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;
-&lt;/details&gt;
-&lt;br&gt;
-&lt;h3&gt;Codeforces 1335C - Two Teams Composing&lt;/h3&gt;
-&lt;p&gt;Tags:  binary search,    greedy,    implementation,    sortings,    *1100
-    | &lt;a href=&quot;https://codeforces.com/contest/1335/problem/C&quot;&gt;Problem link&lt;/a&gt;&lt;/p&gt;
-&lt;details id=&quot;0414_1335C&quot; style=&quot;width:100%&quot;&gt;
-    &lt;summary&gt;&lt;strong style=&quot;color:orange&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;
-&lt;/details&gt;
-&lt;br&gt;
-&lt;h3&gt;Codeforces 1335D - Anti-Sudoku&lt;/h3&gt;
-&lt;p&gt;Tags: constructive algorithms,    implementation,    *1300
-    | &lt;a href=&quot;https://codeforces.com/contest/1335/problem/D&quot;&gt;Problem link&lt;/a&gt;&lt;/p&gt;
-&lt;details id=&quot;0414_1335D&quot; style=&quot;width:100%&quot;&gt;
-    &lt;summary&gt;&lt;strong style=&quot;color:orange&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;
-&lt;/details&gt;
-&lt;br&gt;
 
 &lt;p&gt;This page is still being updated!&lt;/p&gt;
 
 
-&lt;!--Scripts for showing and hiding codes--&gt;
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
 &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
 &lt;script&gt;
   function openCodeFile(file, parentInDocument) {
     var rawFile = new XMLHttpRequest();
@@ -89,28 +159,36 @@
     }
 &lt;/script&gt;
 &lt;script&gt;
-  var code_container;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; contents.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+    // Problems with same dates are shown together with single 'date'.
+    if (i == 0 || contents[i - 1].date !== contents[i].date) {
+      problem.innerHTML += &quot;&lt;p style=\&quot;margin-bottom:0;color:cornflowerblue\&quot;&gt;- &quot; + contents[i].date + &quot;&lt;/p&gt;&quot;;
+    }
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = contents[i].title;
+    problem.appendChild(problem_title);
 
-  code_container = document.getElementById(&quot;0417_1334C&quot;);
-  showCode(&quot;storage/code-fractions/Cpp/2020_04_Apr/0417_1334C.cpp&quot;, code_container);
+    // Add tags
+    var problem_tags = document.createElement(&quot;p&quot;);
+    problem_tags.innerHTML = &quot;Tags: &quot; + contents[i].tags +
+      &quot;| &lt;a href=\&quot;&quot; + contents[i].link + &quot;\&quot;&gt;Problem link&lt;/a&gt;&quot;;
+    problem.appendChild(problem_tags);
 
-  code_container = document.getElementById(&quot;0416_1336A&quot;);
-  showCode(&quot;storage/code-fractions/Cpp/2020_04_Apr/0416_1336A.cpp&quot;, code_container);
+    var problem_code = document.createElement(&quot;details&quot;);
+    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
 
-  code_container = document.getElementById(&quot;0415_1255C&quot;);
-  showCode(&quot;storage/code-fractions/Cpp/2020_04_Apr/0415_1255C.cpp&quot;, code_container);
+    showCode(contents[i].source, problem_code);
 
-  code_container = document.getElementById(&quot;0414_1335A&quot;);
-  showCode(&quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_A.cpp&quot;, code_container);
-
-  code_container = document.getElementById(&quot;0414_1335B&quot;);
-  showCode(&quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_B.cpp&quot;, code_container);
-
-  code_container = document.getElementById(&quot;0414_1335C&quot;);
-  showCode(&quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_C.cpp&quot;, code_container);
-
-  code_container = document.getElementById(&quot;0414_1335D&quot;);
-  showCode(&quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_D.cpp&quot;, code_container);
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
 &lt;/script&gt;</content><author><name>Hailey Ahn</name></author><category term="code" /><summary type="html">Problems solved in April, 2020</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-04-23T19:00:00+09:00</published><updated>2020-04-23T19:00:00+09:00</updated><id>http://localhost:4000/welcome</id><content type="html" xml:base="http://localhost:4000/welcome">&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
 &lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
 &lt;p&gt;Below is more about me!&lt;/p&gt;
