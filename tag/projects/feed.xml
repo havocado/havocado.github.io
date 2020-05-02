@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/projects/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-28T17:17:59+09:00</updated>
+  <updated>2020-05-02T17:38:12+09:00</updated>
   <id>http://localhost:4000/tag/projects/feed.xml</id>
 
   
@@ -15,8 +15,6 @@
     <title type="html">Hailey’s Programming Blog | </title>
   
 
-  
-    <subtitle>...is under construction! Come back later!</subtitle>
   
 
   
@@ -30,6 +28,98 @@
   
   
 
+  
+    <entry>
+      <title type="html">Special Fortification Unit</title>
+      <link href="http://localhost:4000/special-fortification-unit-proposal" rel="alternate" type="text/html" title="Special Fortification Unit" />
+      <published>2020-04-23T17:00:00+09:00</published>
+      <updated>2020-04-23T17:00:00+09:00</updated>
+      <id>http://localhost:4000/special-fortification-unit-proposal</id>
+      <content type="html" xml:base="http://localhost:4000/special-fortification-unit-proposal">&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">*This page is still being prepared!</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Competitive Programming</title>
+      <link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Competitive Programming" />
+      <published>2020-04-22T17:00:00+09:00</published>
+      <updated>2020-04-22T17:00:00+09:00</updated>
+      <id>http://localhost:4000/competitive-programming</id>
+      <content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;!--&lt;p&gt;Come back later!&lt;/p&gt;--&gt;
+&lt;h1&gt;Competitive Programming&lt;/h1&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.
+&lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+&lt;h2&gt;C++ Codes&lt;/h2&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;a href=&quot;cpp-2020-april&quot;&gt;April 2020 Code Submissions&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;hr&gt;
+
+
+&lt;h2&gt;Codeforces&lt;/h2&gt;
+&lt;br&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://codeforces.com/profile/HaileyA&quot;&gt;Codeforces Profile Page Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://codeforces.com/contests/with/HaileyA&quot;&gt;Recent Codeforces Online Contests Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">Competitive Programming</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">ColorQuirrel</title>
@@ -48,6 +138,9 @@
 &lt;p&gt;ColorQuirrel is a MATLAB based program that plays around color spaces. It converts the image to several different ways to represent the data, extracts the representative color from the image by clustering the data, and uses down-sampling method to speed up the procedure.&lt;/p&gt;
 &lt;p&gt;Below is the description for my project.&lt;/p&gt;
 
+&lt;h3&gt;Code&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;You can find the code &lt;a href=&quot;colorquirrel-code&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;Instructions on running the program (General):&lt;/h3&gt;
 &lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-1.png&quot; alt=&quot;colorquirrel HSV conversion screenshot&quot;&gt;
@@ -164,38 +257,6 @@
 
       
         <summary type="html">Project: A MATLAB program for image processing</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Special Fortification Unit</title>
-      <link href="http://localhost:4000/special-fortification-unit-proposal" rel="alternate" type="text/html" title="Special Fortification Unit" />
-      <published>2020-04-23T17:00:00+09:00</published>
-      <updated>2020-04-23T17:00:00+09:00</updated>
-      <id>http://localhost:4000/special-fortification-unit-proposal</id>
-      <content type="html" xml:base="http://localhost:4000/special-fortification-unit-proposal"></content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Hailey Ahn</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="projects" />
-      
-
       
 
       

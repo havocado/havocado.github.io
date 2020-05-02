@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="http://localhost:4000/tag/code/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/tag/codes/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-28T17:17:59+09:00</updated>
-  <id>http://localhost:4000/tag/code/feed.xml</id>
+  <updated>2020-05-02T17:38:12+09:00</updated>
+  <id>http://localhost:4000/tag/codes/feed.xml</id>
 
   
   
@@ -15,8 +15,6 @@
     <title type="html">Hailey’s Programming Blog | </title>
   
 
-  
-    <subtitle>...is under construction! Come back later!</subtitle>
   
 
   
@@ -33,11 +31,11 @@
   
     <entry>
       <title type="html">C++ April 2020</title>
-      <link href="http://localhost:4000/cpp" rel="alternate" type="text/html" title="C++ April 2020" />
-      <published>2020-04-26T23:18:00+09:00</published>
-      <updated>2020-04-26T23:18:00+09:00</updated>
-      <id>http://localhost:4000/cpp</id>
-      <content type="html" xml:base="http://localhost:4000/cpp">&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
+      <link href="http://localhost:4000/cpp-2020-april" rel="alternate" type="text/html" title="C++ April 2020" />
+      <published>2020-04-01T10:23:00+09:00</published>
+      <updated>2020-04-01T10:23:00+09:00</updated>
+      <id>http://localhost:4000/cpp-2020-april</id>
+      <content type="html" xml:base="http://localhost:4000/cpp-2020-april">&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
 
 &lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
 
@@ -245,7 +243,7 @@
       
 
       
-        <category term="code" />
+        <category term="codes" />
       
 
       
@@ -262,12 +260,7 @@
       <published>2020-04-23T17:00:00+09:00</published>
       <updated>2020-04-23T17:00:00+09:00</updated>
       <id>http://localhost:4000/colorquirrel-code</id>
-      <content type="html" xml:base="http://localhost:4000/colorquirrel-code">&lt;!--Using hightlight.js--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css&quot;&gt;
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;p&gt;MATLAB code for project ColorQuirrel. For details and explanation, please read: &lt;a href=&quot;/ColorQuirrel&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/p&gt;
+      <content type="html" xml:base="http://localhost:4000/colorquirrel-code">&lt;p&gt;MATLAB code for project ColorQuirrel. For details and explanation, please read: &lt;a href=&quot;/ColorQuirrel&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Downloads&lt;/h2&gt;
 &lt;br&gt;
@@ -277,7 +270,7 @@
 &lt;/ul&gt;
 
 &lt;h2&gt;ColorQuirrel.m&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;matlab&quot;&gt;% Colorquirrel.m
+&lt;pre&gt;&lt;code class=&quot;&quot;&gt;% Colorquirrel.m
 % Execute this file to run ColorQuirrel
 
 close ALL;
@@ -290,7 +283,7 @@ ColorquirrelUI(obj_image);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;ColorquirrelUI.m&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;Matlab&quot;&gt;% ColorquirrelUI.m
+&lt;pre&gt;&lt;code class=&quot;&quot;&gt;% ColorquirrelUI.m
 
 function varargout = ColorquirrelUI(varargin)
     % Begin initialization code - DO NOT EDIT
@@ -1135,7 +1128,17 @@ end
 
 % ===============================================================
 
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;!--&amp;lt;!&amp;ndash;Prism CDN for code highlighting&amp;ndash;&amp;gt;--&gt;
+&lt;!--&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;--&gt;
+&lt;!--&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;!--&lt;script&gt;--&gt;
+&lt;!--  for (var block in document.getElementsByClassName('pre code')) {--&gt;
+&lt;!--    block.innerHTML = Prism.highlight(block.innerHTML, Prism.languages.matlab, 'matlab');--&gt;
+&lt;!--  };--&gt;
+&lt;!--&lt;/script&gt;--&gt;</content>
 
       
       
@@ -1152,11 +1155,11 @@ end
       
 
       
-        <category term="code" />
+        <category term="codes" />
       
 
       
-        <summary type="html"></summary>
+        <summary type="html">MATLAB code for project ColorQuirrel. For details and explanation, please read: ColorQuirrel</summary>
       
 
       

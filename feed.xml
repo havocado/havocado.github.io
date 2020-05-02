@@ -1,195 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-28T17:17:59+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><subtitle>...is under construction! Come back later!</subtitle><entry><title type="html">C++ April 2020</title><link href="http://localhost:4000/cpp" rel="alternate" type="text/html" title="C++ April 2020" /><published>2020-04-26T23:18:00+09:00</published><updated>2020-04-26T23:18:00+09:00</updated><id>http://localhost:4000/cpp</id><content type="html" xml:base="http://localhost:4000/cpp">&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
-
-&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-    var contents = [
-      {
-        title: &quot;Codeforces 1256C - Platforms Jumping&quot;,
-        date: &quot;April 26, 2020&quot;,
-        tags: &quot;greedy,    *1700&quot;,
-        link: &quot;https://codeforces.com/contest/1256/problem/C&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0426_1256C.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1341C - Nastya and Strange Generator&quot;,
-        date: &quot;April 24, 2020&quot;,
-        tags: &quot;  greedy,    implementation,    *1500&quot;,
-        link: &quot;https://codeforces.com/contest/1341/problem/C&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341C.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1341B - Nastya and Door&quot;,
-        date: &quot;April 24, 2020&quot;,
-        tags: &quot;  greedy,    implementation,    *1300&quot;,
-        link: &quot;https://codeforces.com/contest/1341/problem/B&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341B.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1341A - Nastya and Rice&quot;,
-        date: &quot;April 24, 2020&quot;,
-        tags: &quot;math,    *1000&quot;,
-        link: &quot;https://codeforces.com/contest/1341/problem/A&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341A.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1250H - Happy Birthday&quot;,
-        date: &quot;April 23, 2020&quot;,
-        tags: &quot;math,    *1500&quot;,
-        link: &quot;https://codeforces.com/contest/1250/problem/H&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0423_1250H.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1343C - Alternating Subsequence&quot;,
-        date: &quot;April 22st, 2020&quot;,
-        tags: &quot;  dp,    greedy,    two pointers,    *1200&quot;,
-        link: &quot;https://codeforces.com/contest/1343/problem/C&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343C.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1343B - Balanced Array&quot;,
-        date: &quot;April 22st, 2020&quot;,
-        tags: &quot; constructive algorithms,    math,    *800&quot;,
-        link: &quot;https://codeforces.com/contest/1343/problem/B&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343B.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1343A - Candies&quot;,
-        date: &quot;April 22st, 2020&quot;,
-        tags: &quot;brute force,    math ,   *900&quot;,
-        link: &quot;https://codeforces.com/contest/1343/problem/A&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343A.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1270B - Interesting Subarray&quot;,
-        date: &quot;April 21st, 2020&quot;,
-        tags: &quot; constructive algorithms,    greedy,    math,    *1300&quot;,
-        link: &quot;https://codeforces.com/contest/1270/problem/B&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1270B.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1334C - Circle of Monsters&quot;,
-        date: &quot;April 17th, 2020&quot;,
-        tags: &quot;brute force, constructive algorithms, greedy, math, *1600&quot;,
-        link: &quot;https://codeforces.com/problemset/problem/1334/C&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0417_1334C.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1336A - Linova and Kingdom&quot;,
-        date: &quot;April 16th, 2020&quot;,
-        tags: &quot;dfs and similar, dp, greedy, sortings, trees, *1700&quot;,
-        link: &quot;https://codeforces.com/problemset/problem/1336/A&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0416_1336A.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1255C - Changing Volume&quot;,
-        date: &quot;April 15th, 2020&quot;,
-        tags: &quot;math, *700&quot;,
-        link: &quot;https://codeforces.com/problemset/problem/1255/A&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0415_1255C.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1335A - Candies and Two Sisters&quot;,
-        date: &quot;April 14th, 2020&quot;,
-        tags: &quot;math, *700&quot;,
-        link: &quot;https://codeforces.com/contest/1335/problem/A&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_A.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1335B - Construct the String&quot;,
-        date: &quot;April 14th, 2020&quot;,
-        tags: &quot;constructive algorithms, *1000&quot;,
-        link: &quot;https://codeforces.com/contest/1335/problem/B&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_B.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1335C - Two Teams Composing&quot;,
-        date: &quot;April 14th, 2020&quot;,
-        tags: &quot;binary search, greedy, implementation, sortings, *1100&quot;,
-        link: &quot;https://codeforces.com/contest/1335/problem/C&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_C.cpp&quot;
-      },
-      {
-        title: &quot;Codeforces 1335D - Anti-Sudoku&quot;,
-        date: &quot;April 14th, 2020&quot;,
-        tags: &quot;constructive algorithms, implementation, *1300&quot;,
-        link: &quot;https://codeforces.com/contest/1335/problem/D&quot;,
-        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_D.cpp&quot;
-      }
-    ];
-
-&lt;/script&gt;
-
-
-&lt;p&gt;This page is still being updated!&lt;/p&gt;
-
-
-
-&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
-&lt;!--========================================================--&gt;
-
-&lt;!--Prism CDN for code highlighting--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
-&lt;!--Scripts for showing and hiding codes--&gt;
-&lt;script&gt;
-  function openCodeFile(file, parentInDocument) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open(&quot;GET&quot;, file, false);
-    rawFile.onreadystatechange = function () {
-      if(rawFile.readyState === 4) {
-        if(rawFile.status === 200 || rawFile.status == 0) {
-          var allText = rawFile.responseText;
-          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
-          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
-          parentInDocument.innerHTML = allText;
-        }
-      }
-    };
-    rawFile.send(null);
-  }&lt;/script&gt;
-
-&lt;script&gt;
-    function showCode(src, parent_container) {
-      var pre_elem = document.createElement(&quot;pre&quot;);
-      var code_elem = document.createElement(&quot;code&quot;);
-      pre_elem.appendChild(code_elem);
-      openCodeFile(src, code_elem);
-      parent_container.appendChild(pre_elem);
-    }
-&lt;/script&gt;
-&lt;script&gt;
-  // Creating content with above
-  var code_show = document.getElementById(&quot;code-show&quot;);
-  for (var i = 0; i &lt; contents.length; i+=1) {
-    var problem = document.createElement(&quot;div&quot;);
-    problem.innerHTML = &quot;&quot;;
-    // Problems with same dates are shown together with single 'date'.
-    if (i == 0 || contents[i - 1].date !== contents[i].date) {
-      problem.innerHTML += &quot;&lt;p style=\&quot;margin-bottom:0;color:cornflowerblue\&quot;&gt;- &quot; + contents[i].date + &quot;&lt;/p&gt;&quot;;
-    }
-    // Add the title
-    var problem_title = document.createElement(&quot;h3&quot;);
-    problem_title.innerHTML = contents[i].title;
-    problem.appendChild(problem_title);
-
-    // Add tags
-    var problem_tags = document.createElement(&quot;p&quot;);
-    problem_tags.innerHTML = &quot;Tags: &quot; + contents[i].tags +
-      &quot;| &lt;a href=\&quot;&quot; + contents[i].link + &quot;\&quot;&gt;Problem link&lt;/a&gt;&quot;;
-    problem.appendChild(problem_tags);
-
-    var problem_code = document.createElement(&quot;details&quot;);
-    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
-    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
-    problem.appendChild(problem_code);
-
-    showCode(contents[i].source, problem_code);
-
-    problem.innerHTML += &quot;&lt;br&gt;&quot;;
-    code_show.appendChild(problem);
-  }
-&lt;/script&gt;</content><author><name>Hailey Ahn</name></author><category term="code" /><summary type="html">Problems solved in April, 2020</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-04-23T19:00:00+09:00</published><updated>2020-04-23T19:00:00+09:00</updated><id>http://localhost:4000/welcome</id><content type="html" xml:base="http://localhost:4000/welcome">&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-02T17:38:12+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><entry><title type="html">Contact</title><link href="http://localhost:4000/contact" rel="alternate" type="text/html" title="Contact" /><published>2020-04-28T19:00:00+09:00</published><updated>2020-04-28T19:00:00+09:00</updated><id>http://localhost:4000/contact</id><content type="html" xml:base="http://localhost:4000/contact">&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;br&gt;
+&lt;ul&gt;
+    &lt;li&gt;Hailey Ahn (Legal name: Hyeyoung Ahn)&lt;/li&gt;
+    &lt;li&gt;Mail: &lt;strong&gt;haa40@sfu.ca&lt;/strong&gt; | Reply: Within 24 hours&lt;/li&gt;
+    &lt;li&gt;School: &lt;a href=&quot;https://www.sfu.ca/&quot;&gt;Simon Fraser University&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="about" /><summary type="html">Contact Hailey Ahn (Legal name: Hyeyoung Ahn) Mail: haa40@sfu.ca | Reply: Within 24 hours School: Simon Fraser University</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-04-28T19:00:00+09:00</published><updated>2020-04-28T19:00:00+09:00</updated><id>http://localhost:4000/welcome</id><content type="html" xml:base="http://localhost:4000/welcome">&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
 &lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
 &lt;p&gt;Below is more about me!&lt;/p&gt;
 &lt;hr&gt;
@@ -198,39 +14,72 @@
 &lt;br&gt;
 &lt;p&gt;I’m a third year undergraduate student majoring in &lt;a href=&quot;http://www.sfu.ca/students/calendar/2020/summer/programs/mathematics-and-computing-science/joint-major/bachelor-of-science.html&quot;&gt;Mathematics and Computing Science (a.k.a. MACM)&lt;/a&gt;. MACM is a program for students who came to decide their major between (1) Mathematics and (2) Computing Science, and thought:&lt;/p&gt;
 &lt;blockquote&gt;“Why give up one? Let’s learn both!”&lt;/blockquote&gt;
-&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I enjoy applying data structures and algorithms while solving programming problems. You can see my codes &lt;a&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. (Write some more here)&lt;/p&gt;
+&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I enjoy applying data structures and algorithms while solving programming problems. You can see my codes here: &lt;a href=&quot;competitive-programming&quot;&gt;&lt;strong&gt;Competitive Programming with C++&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. Below are my projects and tools:&lt;/p&gt;
+
+&lt;hr&gt;
 
 &lt;h2&gt;My Projects&lt;/h2&gt;
 &lt;br&gt;
-&lt;h3&gt;&lt;a&gt;Special Fortification Unit&lt;/a&gt;&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt;(TODO: Put some image and write more)&lt;/p&gt;
-&lt;p&gt;Special Fortification Unit (S.F.U.) is a web-based, real-time, multiplayer survival
-    game (with a twist!) set at SFU Burnaby. Four students come to SFU for classes on a snowy
-    day. Due to heavy snowfall, their classes get cancelled, leaving the students stranded on
-    campus. Then, some mysterious enemies attack! Dear SFU students, we know you are
-    already burned out from assignments and exams, but please stay safe from the evil
-    enemies! The game features playable maps based on the SFU Burnaby campus and four
-    playable characters cooperating with each other. Mysterious enemies with different attack
-    patterns, as well as intuitive leveling, health, and money systems provide an excellent
-    experience for players.
-&lt;/p&gt;
 
-&lt;h3&gt;&lt;a&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;special-fortification-unit-proposal&quot;&gt;Special Fortification Unit&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;Special Fortification Unit (S.F.U.) is a web-based, real-time, multiplayer survival
+    game set at SFU Burnaby. The game was developed in a team of 5 students following the Agile software development process - 6 weeks of developments consisting of 3 iterations.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;S.F.U. is my team project for CMPT 276: Intro to Software Engineering.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;/ColorQuirrel/&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
 &lt;p&gt;ColorQuirrel is a MATLAB image processing program that plays around color spaces. It converts the image to several different ways to represent the data, extracts the representative color from the image by clustering the data, and uses down-sampling method to speed up the procedure.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ColorQuirrel is my individual project for CMPT 365: Multimedia Systems.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;&lt;a&gt;Sapiens&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
-&lt;p&gt;Sapiens is a human civilization simulator written in Javascript. (TODO: Write more)&lt;/p&gt;
+&lt;p&gt;Sapiens is a human civilization simulator written in Javascript. Humans communicate and interact with each other, each having different abilities and jobs, and the whole system will grow as time goes on......&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sapiens is my individual project, and is still under development.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;...and this blog!&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;My blog is made with &lt;strong&gt;Jekyll&lt;/strong&gt; using &lt;a href=&quot;http://jekyllthemes.org/themes/jasper2/&quot;&gt;Jasper2 Ghost theme&lt;/a&gt;. You can find the repository for my blog (&lt;em&gt;before&lt;/em&gt; Jekyll build) &lt;a href=&quot;https://github.com/havocado/jekyll_blog_maker&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some changes made by me:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Prism is used for highlighting codes.&lt;/li&gt;
+    &lt;li&gt;Posts are sorted in custom priority (Important posts first!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
 
 &lt;h2&gt;Favorite Tools&lt;/h2&gt;
 &lt;br&gt;
-&lt;p&gt;(TODO: Write this)&lt;/p&gt;
+&lt;p&gt;I mainly work with &lt;strong style=&quot;color:orange&quot;&gt;C++&lt;/strong&gt; and &lt;strong style=&quot;color:orange&quot;&gt;Node.js&lt;/strong&gt;. Those two are the languages I am most comfortable with.&lt;/p&gt;
+&lt;p&gt;I also have used:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Express.js, Socket.io&lt;/strong&gt; for an academic project&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;MySQL&lt;/strong&gt; with &lt;strong&gt;Workbench&lt;/strong&gt; for an online course&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;MATLAB&lt;/strong&gt; for a math course and an academic project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have used, but not yet fluent with:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Python3, Selenium, Openpyxl, WordCloud, Matplotlib&lt;/strong&gt; for an online course&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; for an academic project&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Chart.js&lt;/strong&gt; for a personal project&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Jekyll, Ruby on Rails, Gulp&lt;/strong&gt; for this blog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For non-technical tools, I use:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;XMind&lt;/strong&gt; for mind maps&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Calendar+&lt;/strong&gt; for time management&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Trello&lt;/strong&gt; for kanban task management&lt;/li&gt;
+&lt;/ul&gt;
 
 
-&lt;p&gt;&lt;strong&gt;This blog is not done. Come back later!&lt;/strong&gt;&lt;/p&gt;</content><author><name>Hailey Ahn</name></author><category term="about" /><summary type="html">Hi, I’m Hailey! I’m a software engineer studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends. Below is more about me!</summary></entry><entry><title type="html">Special Fortification Unit</title><link href="http://localhost:4000/special-fortification-unit-proposal" rel="alternate" type="text/html" title="Special Fortification Unit" /><published>2020-04-23T17:00:00+09:00</published><updated>2020-04-23T17:00:00+09:00</updated><id>http://localhost:4000/special-fortification-unit-proposal</id><content type="html" xml:base="http://localhost:4000/special-fortification-unit-proposal"></content><author><name>Hailey Ahn</name></author><category term="projects" /></entry><entry><title type="html">Title goes here</title><link href="http://localhost:4000/hi-does-this-work" rel="alternate" type="text/html" title="Title goes here" /><published>2020-04-23T17:00:00+09:00</published><updated>2020-04-23T17:00:00+09:00</updated><id>http://localhost:4000/hi-does-this-work</id><content type="html" xml:base="http://localhost:4000/hi-does-this-work">&lt;p&gt;Hi! Does this work?&lt;/p&gt;</content><author><name>Hailey Ahn</name></author><category term="Getting started" /><summary type="html">Hi! Does this work?</summary></entry><entry><title type="html">ColorQuirrel</title><link href="http://localhost:4000/ColorQuirrel" rel="alternate" type="text/html" title="ColorQuirrel" /><published>2020-04-23T17:00:00+09:00</published><updated>2020-04-23T17:00:00+09:00</updated><id>http://localhost:4000/ColorQuirrel</id><content type="html" xml:base="http://localhost:4000/ColorQuirrel">&lt;p style=&quot;display:none&quot;&gt;Project: A MATLAB program for image processing&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;Mail - haa40@sfu.ca | Reply: Within 24 hours&lt;/p&gt;
+
+&lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="about" /><summary type="html">Hi, I’m Hailey! I’m a software engineer studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends. Below is more about me!</summary></entry><entry><title type="html">Special Fortification Unit</title><link href="http://localhost:4000/special-fortification-unit-proposal" rel="alternate" type="text/html" title="Special Fortification Unit" /><published>2020-04-23T17:00:00+09:00</published><updated>2020-04-23T17:00:00+09:00</updated><id>http://localhost:4000/special-fortification-unit-proposal</id><content type="html" xml:base="http://localhost:4000/special-fortification-unit-proposal">&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">*This page is still being prepared!</summary></entry><entry><title type="html">ColorQuirrel</title><link href="http://localhost:4000/ColorQuirrel" rel="alternate" type="text/html" title="ColorQuirrel" /><published>2020-04-23T17:00:00+09:00</published><updated>2020-04-23T17:00:00+09:00</updated><id>http://localhost:4000/ColorQuirrel</id><content type="html" xml:base="http://localhost:4000/ColorQuirrel">&lt;p style=&quot;display:none&quot;&gt;Project: A MATLAB program for image processing&lt;/p&gt;
 
 &lt;h1&gt;ColorQuirrel&lt;/h1&gt;
 &lt;br&gt;
@@ -241,6 +90,9 @@
 &lt;p&gt;ColorQuirrel is a MATLAB based program that plays around color spaces. It converts the image to several different ways to represent the data, extracts the representative color from the image by clustering the data, and uses down-sampling method to speed up the procedure.&lt;/p&gt;
 &lt;p&gt;Below is the description for my project.&lt;/p&gt;
 
+&lt;h3&gt;Code&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;You can find the code &lt;a href=&quot;colorquirrel-code&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;Instructions on running the program (General):&lt;/h3&gt;
 &lt;img style=&quot;width:70%&quot; src=&quot;assets/images/z-colorquirrel-1.png&quot; alt=&quot;colorquirrel HSV conversion screenshot&quot;&gt;
@@ -335,12 +187,7 @@
     &lt;li&gt;Go over the data, skipping the entries depending on the downsampling parameter. This is O(height*width), but still much better compared to the running time of data clustering.&lt;/li&gt;
     &lt;li&gt;Use the downsampled image to 2.2. Colorpicker.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The result is almost non-distinguishable from the original version. However, the significant decrease of points displayed on the plot shows that the idea is successfully implemented.&lt;/p&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">Project: A MATLAB program for image processing</summary></entry><entry><title type="html">(Code) ColorQuirrel</title><link href="http://localhost:4000/colorquirrel-code" rel="alternate" type="text/html" title="(Code) ColorQuirrel" /><published>2020-04-23T17:00:00+09:00</published><updated>2020-04-23T17:00:00+09:00</updated><id>http://localhost:4000/colorquirrel-code</id><content type="html" xml:base="http://localhost:4000/colorquirrel-code">&lt;!--Using hightlight.js--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css&quot;&gt;
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-
-&lt;p&gt;MATLAB code for project ColorQuirrel. For details and explanation, please read: &lt;a href=&quot;/ColorQuirrel&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The result is almost non-distinguishable from the original version. However, the significant decrease of points displayed on the plot shows that the idea is successfully implemented.&lt;/p&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">Project: A MATLAB program for image processing</summary></entry><entry><title type="html">(Code) ColorQuirrel</title><link href="http://localhost:4000/colorquirrel-code" rel="alternate" type="text/html" title="(Code) ColorQuirrel" /><published>2020-04-23T17:00:00+09:00</published><updated>2020-04-23T17:00:00+09:00</updated><id>http://localhost:4000/colorquirrel-code</id><content type="html" xml:base="http://localhost:4000/colorquirrel-code">&lt;p&gt;MATLAB code for project ColorQuirrel. For details and explanation, please read: &lt;a href=&quot;/ColorQuirrel&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Downloads&lt;/h2&gt;
 &lt;br&gt;
@@ -350,7 +197,7 @@
 &lt;/ul&gt;
 
 &lt;h2&gt;ColorQuirrel.m&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;matlab&quot;&gt;% Colorquirrel.m
+&lt;pre&gt;&lt;code class=&quot;&quot;&gt;% Colorquirrel.m
 % Execute this file to run ColorQuirrel
 
 close ALL;
@@ -363,7 +210,7 @@ ColorquirrelUI(obj_image);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;ColorquirrelUI.m&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;Matlab&quot;&gt;% ColorquirrelUI.m
+&lt;pre&gt;&lt;code class=&quot;&quot;&gt;% ColorquirrelUI.m
 
 function varargout = ColorquirrelUI(varargin)
     % Begin initialization code - DO NOT EDIT
@@ -1208,15 +1055,229 @@ end
 
 % ===============================================================
 
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>Hailey Ahn</name></author><category term="code" /><summary type="html"></summary></entry><entry><title type="html">Competitive Programming</title><link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Competitive Programming" /><published>2020-04-22T17:00:00+09:00</published><updated>2020-04-22T17:00:00+09:00</updated><id>http://localhost:4000/competitive-programming</id><content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;!--&lt;p&gt;Come back later!&lt;/p&gt;--&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;!--&amp;lt;!&amp;ndash;Prism CDN for code highlighting&amp;ndash;&amp;gt;--&gt;
+&lt;!--&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;--&gt;
+&lt;!--&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;!--&lt;script&gt;--&gt;
+&lt;!--  for (var block in document.getElementsByClassName('pre code')) {--&gt;
+&lt;!--    block.innerHTML = Prism.highlight(block.innerHTML, Prism.languages.matlab, 'matlab');--&gt;
+&lt;!--  };--&gt;
+&lt;!--&lt;/script&gt;--&gt;</content><author><name>Hailey Ahn</name></author><category term="codes" /><summary type="html">MATLAB code for project ColorQuirrel. For details and explanation, please read: ColorQuirrel</summary></entry><entry><title type="html">Competitive Programming</title><link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Competitive Programming" /><published>2020-04-22T17:00:00+09:00</published><updated>2020-04-22T17:00:00+09:00</updated><id>http://localhost:4000/competitive-programming</id><content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;!--&lt;p&gt;Come back later!&lt;/p&gt;--&gt;
 &lt;h1&gt;Competitive Programming&lt;/h1&gt;
+&lt;br&gt;
 &lt;br&gt;
 
 &lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.
 &lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;
 &lt;/blockquote&gt;
 
-
+&lt;hr&gt;
+&lt;h2&gt;C++ Codes&lt;/h2&gt;
 &lt;br&gt;
+&lt;h3&gt;&lt;a href=&quot;cpp-2020-april&quot;&gt;April 2020 Code Submissions&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;hr&gt;
 
-&lt;p&gt;TODO: Write this.&lt;/p&gt;</content><author><name>Hailey Ahn</name></author><category term="Getting started" /><summary type="html">Competitive Programming</summary></entry></feed>
+
+&lt;h2&gt;Codeforces&lt;/h2&gt;
+&lt;br&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://codeforces.com/profile/HaileyA&quot;&gt;Codeforces Profile Page Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://codeforces.com/contests/with/HaileyA&quot;&gt;Recent Codeforces Online Contests Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">Competitive Programming</summary></entry><entry><title type="html">C++ April 2020</title><link href="http://localhost:4000/cpp-2020-april" rel="alternate" type="text/html" title="C++ April 2020" /><published>2020-04-01T10:23:00+09:00</published><updated>2020-04-01T10:23:00+09:00</updated><id>http://localhost:4000/cpp-2020-april</id><content type="html" xml:base="http://localhost:4000/cpp-2020-april">&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
+
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+    var contents = [
+      {
+        title: &quot;Codeforces 1256C - Platforms Jumping&quot;,
+        date: &quot;April 26, 2020&quot;,
+        tags: &quot;greedy,    *1700&quot;,
+        link: &quot;https://codeforces.com/contest/1256/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0426_1256C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1341C - Nastya and Strange Generator&quot;,
+        date: &quot;April 24, 2020&quot;,
+        tags: &quot;  greedy,    implementation,    *1500&quot;,
+        link: &quot;https://codeforces.com/contest/1341/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1341B - Nastya and Door&quot;,
+        date: &quot;April 24, 2020&quot;,
+        tags: &quot;  greedy,    implementation,    *1300&quot;,
+        link: &quot;https://codeforces.com/contest/1341/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1341A - Nastya and Rice&quot;,
+        date: &quot;April 24, 2020&quot;,
+        tags: &quot;math,    *1000&quot;,
+        link: &quot;https://codeforces.com/contest/1341/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0424_1341A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1250H - Happy Birthday&quot;,
+        date: &quot;April 23, 2020&quot;,
+        tags: &quot;math,    *1500&quot;,
+        link: &quot;https://codeforces.com/contest/1250/problem/H&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0423_1250H.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1343C - Alternating Subsequence&quot;,
+        date: &quot;April 22st, 2020&quot;,
+        tags: &quot;  dp,    greedy,    two pointers,    *1200&quot;,
+        link: &quot;https://codeforces.com/contest/1343/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1343B - Balanced Array&quot;,
+        date: &quot;April 22st, 2020&quot;,
+        tags: &quot; constructive algorithms,    math,    *800&quot;,
+        link: &quot;https://codeforces.com/contest/1343/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1343A - Candies&quot;,
+        date: &quot;April 22st, 2020&quot;,
+        tags: &quot;brute force,    math ,   *900&quot;,
+        link: &quot;https://codeforces.com/contest/1343/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1343A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1270B - Interesting Subarray&quot;,
+        date: &quot;April 21st, 2020&quot;,
+        tags: &quot; constructive algorithms,    greedy,    math,    *1300&quot;,
+        link: &quot;https://codeforces.com/contest/1270/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0421_1270B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1334C - Circle of Monsters&quot;,
+        date: &quot;April 17th, 2020&quot;,
+        tags: &quot;brute force, constructive algorithms, greedy, math, *1600&quot;,
+        link: &quot;https://codeforces.com/problemset/problem/1334/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0417_1334C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1336A - Linova and Kingdom&quot;,
+        date: &quot;April 16th, 2020&quot;,
+        tags: &quot;dfs and similar, dp, greedy, sortings, trees, *1700&quot;,
+        link: &quot;https://codeforces.com/problemset/problem/1336/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0416_1336A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1255C - Changing Volume&quot;,
+        date: &quot;April 15th, 2020&quot;,
+        tags: &quot;math, *700&quot;,
+        link: &quot;https://codeforces.com/problemset/problem/1255/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0415_1255C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335A - Candies and Two Sisters&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;math, *700&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335B - Construct the String&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;constructive algorithms, *1000&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335C - Two Teams Composing&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;binary search, greedy, implementation, sortings, *1100&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1335D - Anti-Sudoku&quot;,
+        date: &quot;April 14th, 2020&quot;,
+        tags: &quot;constructive algorithms, implementation, *1300&quot;,
+        link: &quot;https://codeforces.com/contest/1335/problem/D&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_D.cpp&quot;
+      }
+    ];
+
+&lt;/script&gt;
+
+
+&lt;p&gt;This page is still being updated!&lt;/p&gt;
+
+
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
+&lt;script&gt;
+  function openCodeFile(file, parentInDocument) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open(&quot;GET&quot;, file, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
+          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
+          parentInDocument.innerHTML = allText;
+        }
+      }
+    };
+    rawFile.send(null);
+  }&lt;/script&gt;
+
+&lt;script&gt;
+    function showCode(src, parent_container) {
+      var pre_elem = document.createElement(&quot;pre&quot;);
+      var code_elem = document.createElement(&quot;code&quot;);
+      pre_elem.appendChild(code_elem);
+      openCodeFile(src, code_elem);
+      parent_container.appendChild(pre_elem);
+    }
+&lt;/script&gt;
+&lt;script&gt;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; contents.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+    // Problems with same dates are shown together with single 'date'.
+    if (i == 0 || contents[i - 1].date !== contents[i].date) {
+      problem.innerHTML += &quot;&lt;p style=\&quot;margin-bottom:0;color:cornflowerblue\&quot;&gt;- &quot; + contents[i].date + &quot;&lt;/p&gt;&quot;;
+    }
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = contents[i].title;
+    problem.appendChild(problem_title);
+
+    // Add tags
+    var problem_tags = document.createElement(&quot;p&quot;);
+    problem_tags.innerHTML = &quot;Tags: &quot; + contents[i].tags +
+      &quot;| &lt;a href=\&quot;&quot; + contents[i].link + &quot;\&quot;&gt;Problem link&lt;/a&gt;&quot;;
+    problem.appendChild(problem_tags);
+
+    var problem_code = document.createElement(&quot;details&quot;);
+    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
+
+    showCode(contents[i].source, problem_code);
+
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
+&lt;/script&gt;</content><author><name>Hailey Ahn</name></author><category term="codes" /><summary type="html">Problems solved in April, 2020</summary></entry></feed>

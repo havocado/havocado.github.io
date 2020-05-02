@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> - Articles</title>
-    <description>...is under construction! Come back later!</description>
+    <description></description>
     <link>
     http://localhost:4000</link>
     
+
       
       <item>
-        <title>C++ April 2020</title>
+        <title>Contact</title>
         
-          <description>&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
-
-</description>
+          <description>&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;br&gt;
+&lt;ul&gt;
+    &lt;li&gt;Hailey Ahn (Legal name: Hyeyoung Ahn)&lt;/li&gt;
+    &lt;li&gt;Mail: &lt;strong&gt;haa40@sfu.ca&lt;/strong&gt; | Reply: Within 24 hours&lt;/li&gt;
+    &lt;li&gt;School: &lt;a href=&quot;https://www.sfu.ca/&quot;&gt;Simon Fraser University&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
         
-        <pubDate>Sun, 26 Apr 2020 23:18:00 +0900</pubDate>
+        <pubDate>Tue, 28 Apr 2020 19:00:00 +0900</pubDate>
         <link>
-        http://localhost:4000/cpp</link>
-        <guid isPermaLink="true">http://localhost:4000/cpp</guid>
+        http://localhost:4000/contact</link>
+        <guid isPermaLink="true">http://localhost:4000/contact</guid>
       </item>
       
     
+
       
       <item>
         <title>Welcome to my blog!</title>
@@ -32,18 +39,19 @@
 
 </description>
         
-        <pubDate>Thu, 23 Apr 2020 19:00:00 +0900</pubDate>
+        <pubDate>Tue, 28 Apr 2020 19:00:00 +0900</pubDate>
         <link>
         http://localhost:4000/welcome</link>
         <guid isPermaLink="true">http://localhost:4000/welcome</guid>
       </item>
       
     
+
       
       <item>
         <title>Special Fortification Unit</title>
         
-          <description></description>
+          <description>&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</description>
         
         <pubDate>Thu, 23 Apr 2020 17:00:00 +0900</pubDate>
         <link>
@@ -52,19 +60,7 @@
       </item>
       
     
-      
-      <item>
-        <title>Title goes here</title>
-        
-          <description>&lt;p&gt;Hi! Does this work?&lt;/p&gt;</description>
-        
-        <pubDate>Thu, 23 Apr 2020 17:00:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/hi-does-this-work</link>
-        <guid isPermaLink="true">http://localhost:4000/hi-does-this-work</guid>
-      </item>
-      
-    
+
       
       <item>
         <title>ColorQuirrel</title>
@@ -80,14 +76,12 @@
       </item>
       
     
+
       
       <item>
         <title>(Code) ColorQuirrel</title>
         
-          <description>&lt;!--Using hightlight.js--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css&quot;&gt;
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+          <description>&lt;p&gt;MATLAB code for project ColorQuirrel. For details and explanation, please read: &lt;a href=&quot;/ColorQuirrel&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/p&gt;
 
 </description>
         
@@ -98,12 +92,14 @@
       </item>
       
     
+
       
       <item>
         <title>Competitive Programming</title>
         
           <description>&lt;!--&lt;p&gt;Come back later!&lt;/p&gt;--&gt;
 &lt;h1&gt;Competitive Programming&lt;/h1&gt;
+&lt;br&gt;
 &lt;br&gt;
 
 </description>
@@ -112,6 +108,22 @@
         <link>
         http://localhost:4000/competitive-programming</link>
         <guid isPermaLink="true">http://localhost:4000/competitive-programming</guid>
+      </item>
+      
+    
+
+      
+      <item>
+        <title>C++ April 2020</title>
+        
+          <description>&lt;p&gt;Problems solved in April, 2020&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 01 Apr 2020 10:23:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/cpp-2020-april</link>
+        <guid isPermaLink="true">http://localhost:4000/cpp-2020-april</guid>
       </item>
       
     

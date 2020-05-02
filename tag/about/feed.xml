@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/about/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-04-28T17:17:59+09:00</updated>
+  <updated>2020-05-02T17:38:12+09:00</updated>
   <id>http://localhost:4000/tag/about/feed.xml</id>
 
   
@@ -15,8 +15,6 @@
     <title type="html">Hailey’s Programming Blog | </title>
   
 
-  
-    <subtitle>...is under construction! Come back later!</subtitle>
   
 
   
@@ -32,10 +30,51 @@
 
   
     <entry>
+      <title type="html">Contact</title>
+      <link href="http://localhost:4000/contact" rel="alternate" type="text/html" title="Contact" />
+      <published>2020-04-28T19:00:00+09:00</published>
+      <updated>2020-04-28T19:00:00+09:00</updated>
+      <id>http://localhost:4000/contact</id>
+      <content type="html" xml:base="http://localhost:4000/contact">&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;br&gt;
+&lt;ul&gt;
+    &lt;li&gt;Hailey Ahn (Legal name: Hyeyoung Ahn)&lt;/li&gt;
+    &lt;li&gt;Mail: &lt;strong&gt;haa40@sfu.ca&lt;/strong&gt; | Reply: Within 24 hours&lt;/li&gt;
+    &lt;li&gt;School: &lt;a href=&quot;https://www.sfu.ca/&quot;&gt;Simon Fraser University&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="about" />
+      
+
+      
+        <summary type="html">Contact Hailey Ahn (Legal name: Hyeyoung Ahn) Mail: haa40@sfu.ca | Reply: Within 24 hours School: Simon Fraser University</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Welcome to my blog!</title>
       <link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" />
-      <published>2020-04-23T19:00:00+09:00</published>
-      <updated>2020-04-23T19:00:00+09:00</updated>
+      <published>2020-04-28T19:00:00+09:00</published>
+      <updated>2020-04-28T19:00:00+09:00</updated>
       <id>http://localhost:4000/welcome</id>
       <content type="html" xml:base="http://localhost:4000/welcome">&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
 &lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
@@ -46,39 +85,72 @@
 &lt;br&gt;
 &lt;p&gt;I’m a third year undergraduate student majoring in &lt;a href=&quot;http://www.sfu.ca/students/calendar/2020/summer/programs/mathematics-and-computing-science/joint-major/bachelor-of-science.html&quot;&gt;Mathematics and Computing Science (a.k.a. MACM)&lt;/a&gt;. MACM is a program for students who came to decide their major between (1) Mathematics and (2) Computing Science, and thought:&lt;/p&gt;
 &lt;blockquote&gt;“Why give up one? Let’s learn both!”&lt;/blockquote&gt;
-&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I enjoy applying data structures and algorithms while solving programming problems. You can see my codes &lt;a&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. (Write some more here)&lt;/p&gt;
+&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I enjoy applying data structures and algorithms while solving programming problems. You can see my codes here: &lt;a href=&quot;competitive-programming&quot;&gt;&lt;strong&gt;Competitive Programming with C++&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. Below are my projects and tools:&lt;/p&gt;
+
+&lt;hr&gt;
 
 &lt;h2&gt;My Projects&lt;/h2&gt;
 &lt;br&gt;
-&lt;h3&gt;&lt;a&gt;Special Fortification Unit&lt;/a&gt;&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt;(TODO: Put some image and write more)&lt;/p&gt;
-&lt;p&gt;Special Fortification Unit (S.F.U.) is a web-based, real-time, multiplayer survival
-    game (with a twist!) set at SFU Burnaby. Four students come to SFU for classes on a snowy
-    day. Due to heavy snowfall, their classes get cancelled, leaving the students stranded on
-    campus. Then, some mysterious enemies attack! Dear SFU students, we know you are
-    already burned out from assignments and exams, but please stay safe from the evil
-    enemies! The game features playable maps based on the SFU Burnaby campus and four
-    playable characters cooperating with each other. Mysterious enemies with different attack
-    patterns, as well as intuitive leveling, health, and money systems provide an excellent
-    experience for players.
-&lt;/p&gt;
 
-&lt;h3&gt;&lt;a&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;special-fortification-unit-proposal&quot;&gt;Special Fortification Unit&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;Special Fortification Unit (S.F.U.) is a web-based, real-time, multiplayer survival
+    game set at SFU Burnaby. The game was developed in a team of 5 students following the Agile software development process - 6 weeks of developments consisting of 3 iterations.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;S.F.U. is my team project for CMPT 276: Intro to Software Engineering.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;/ColorQuirrel/&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
 &lt;p&gt;ColorQuirrel is a MATLAB image processing program that plays around color spaces. It converts the image to several different ways to represent the data, extracts the representative color from the image by clustering the data, and uses down-sampling method to speed up the procedure.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ColorQuirrel is my individual project for CMPT 365: Multimedia Systems.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;&lt;a&gt;Sapiens&lt;/a&gt;&lt;/h3&gt;
 &lt;br&gt;
-&lt;p&gt;Sapiens is a human civilization simulator written in Javascript. (TODO: Write more)&lt;/p&gt;
+&lt;p&gt;Sapiens is a human civilization simulator written in Javascript. Humans communicate and interact with each other, each having different abilities and jobs, and the whole system will grow as time goes on......&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sapiens is my individual project, and is still under development.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;...and this blog!&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;My blog is made with &lt;strong&gt;Jekyll&lt;/strong&gt; using &lt;a href=&quot;http://jekyllthemes.org/themes/jasper2/&quot;&gt;Jasper2 Ghost theme&lt;/a&gt;. You can find the repository for my blog (&lt;em&gt;before&lt;/em&gt; Jekyll build) &lt;a href=&quot;https://github.com/havocado/jekyll_blog_maker&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some changes made by me:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Prism is used for highlighting codes.&lt;/li&gt;
+    &lt;li&gt;Posts are sorted in custom priority (Important posts first!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
 
 &lt;h2&gt;Favorite Tools&lt;/h2&gt;
 &lt;br&gt;
-&lt;p&gt;(TODO: Write this)&lt;/p&gt;
+&lt;p&gt;I mainly work with &lt;strong style=&quot;color:orange&quot;&gt;C++&lt;/strong&gt; and &lt;strong style=&quot;color:orange&quot;&gt;Node.js&lt;/strong&gt;. Those two are the languages I am most comfortable with.&lt;/p&gt;
+&lt;p&gt;I also have used:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Express.js, Socket.io&lt;/strong&gt; for an academic project&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;MySQL&lt;/strong&gt; with &lt;strong&gt;Workbench&lt;/strong&gt; for an online course&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;MATLAB&lt;/strong&gt; for a math course and an academic project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have used, but not yet fluent with:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Python3, Selenium, Openpyxl, WordCloud, Matplotlib&lt;/strong&gt; for an online course&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; for an academic project&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Chart.js&lt;/strong&gt; for a personal project&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Jekyll, Ruby on Rails, Gulp&lt;/strong&gt; for this blog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For non-technical tools, I use:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;XMind&lt;/strong&gt; for mind maps&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Calendar+&lt;/strong&gt; for time management&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Trello&lt;/strong&gt; for kanban task management&lt;/li&gt;
+&lt;/ul&gt;
 
 
-&lt;p&gt;&lt;strong&gt;This blog is not done. Come back later!&lt;/strong&gt;&lt;/p&gt;</content>
+&lt;hr&gt;
+
+&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;Mail - haa40@sfu.ca | Reply: Within 24 hours&lt;/p&gt;
+
+&lt;hr&gt;</content>
 
       
       
