@@ -9,6 +9,36 @@
 
       
       <item>
+        <title>Sapiens</title>
+        
+          <description>&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</description>
+        
+        <pubDate>Sat, 02 May 2020 21:56:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/sapiens</link>
+        <guid isPermaLink="true">http://localhost:4000/sapiens</guid>
+      </item>
+      
+    
+
+      
+      <item>
+        <title>C++ May 2020</title>
+        
+          <description>&lt;p&gt;Problems solved in May, 2020&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 02 May 2020 02:49:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/cpp-2020-may</link>
+        <guid isPermaLink="true">http://localhost:4000/cpp-2020-may</guid>
+      </item>
+      
+    
+
+      
+      <item>
         <title>Contact</title>
         
           <description>&lt;h2&gt;Contact&lt;/h2&gt;
@@ -79,7 +109,7 @@
 
       
       <item>
-        <title>(Code) ColorQuirrel</title>
+        <title>(MATLAB Code) ColorQuirrel</title>
         
           <description>&lt;p&gt;MATLAB code for project ColorQuirrel. For details and explanation, please read: &lt;a href=&quot;/ColorQuirrel&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/p&gt;
 
