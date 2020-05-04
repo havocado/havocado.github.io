@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/hailey/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-05-03T20:40:24+09:00</updated>
+  <updated>2020-05-04T16:15:23+09:00</updated>
   <id>http://localhost:4000/author/hailey/feed.xml</id>
 
   
@@ -64,6 +64,357 @@
 
       
         <summary type="html">Contact Hailey Ahn (Legal name: Hyeyoung Ahn) Mail: haa40@sfu.ca | Reply: Within 24 hours School: Simon Fraser University</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">C++ January 2020</title>
+      <link href="http://localhost:4000/cpp-2020-january" rel="alternate" type="text/html" title="C++ January 2020" />
+      <published>2020-04-01T10:23:00+09:00</published>
+      <updated>2020-04-01T10:23:00+09:00</updated>
+      <id>http://localhost:4000/cpp-2020-january</id>
+      <content type="html" xml:base="http://localhost:4000/cpp-2020-january">&lt;p&gt;Problems solved in January, 2020&lt;/p&gt;
+
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var content_names = [
+    &quot;1288C.cpp&quot;
+  ];
+
+&lt;/script&gt;
+
+&lt;hr&gt;
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
+&lt;script&gt;
+  function openCodeFile(file, parentInDocument) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open(&quot;GET&quot;, file, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
+          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
+          parentInDocument.innerHTML = allText;
+        }
+      }
+    };
+    rawFile.send(null);
+  }&lt;/script&gt;
+
+&lt;script&gt;
+  function showCode(src, parent_container) {
+    var pre_elem = document.createElement(&quot;pre&quot;);
+    var code_elem = document.createElement(&quot;code&quot;);
+    pre_elem.appendChild(code_elem);
+    openCodeFile(src, code_elem);
+    parent_container.appendChild(pre_elem);
+  }
+&lt;/script&gt;
+&lt;script&gt;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; content_names.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = content_names[i];
+    problem.appendChild(problem_title);
+
+    var problem_code = document.createElement(&quot;details&quot;);
+    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
+
+    var content_source = &quot;storage/code-fractions/Cpp/2020_01_Jan/&quot; + content_names[i];
+    showCode(content_source, problem_code);
+
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codes" />
+      
+
+      
+        <summary type="html">Problems solved in January, 2020</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">C++ February 2020</title>
+      <link href="http://localhost:4000/cpp-2020-february" rel="alternate" type="text/html" title="C++ February 2020" />
+      <published>2020-04-01T10:23:00+09:00</published>
+      <updated>2020-04-01T10:23:00+09:00</updated>
+      <id>http://localhost:4000/cpp-2020-february</id>
+      <content type="html" xml:base="http://localhost:4000/cpp-2020-february">&lt;p&gt;Problems solved in February, 2020&lt;/p&gt;
+
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var content_names = [
+    &quot;122A.cpp&quot;,
+    &quot;1291A.cpp&quot;,
+    &quot;1291B.cpp&quot;,
+    &quot;1304A.cpp&quot;,
+    &quot;1304C.cpp&quot;,
+    &quot;1313A.cpp&quot;,
+    &quot;1313B.cpp&quot;,
+    &quot;1313C.cpp&quot;,
+    &quot;1313D.cpp&quot;,
+    &quot;160A.cpp&quot;,
+    &quot;401C.cpp&quot;,
+    &quot;SFU_vjudge_contest1_A.cpp&quot;,
+    &quot;SFU_vjudge_contest2_C_help.cpp&quot;,
+    &quot;SFU_vjudge_contest2_F.cpp&quot;,
+    &quot;SFU_vjudge_contest3_A_help.cpp&quot;,
+    &quot;SFU_vjudge_contest3_E.cpp&quot;,
+    &quot;SFU_vjudge_contest3_E_testcase_generator.cpp&quot;
+  ];
+
+&lt;/script&gt;
+
+&lt;hr&gt;
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
+&lt;script&gt;
+  function openCodeFile(file, parentInDocument) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open(&quot;GET&quot;, file, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
+          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
+          parentInDocument.innerHTML = allText;
+        }
+      }
+    };
+    rawFile.send(null);
+  }&lt;/script&gt;
+
+&lt;script&gt;
+  function showCode(src, parent_container) {
+    var pre_elem = document.createElement(&quot;pre&quot;);
+    var code_elem = document.createElement(&quot;code&quot;);
+    pre_elem.appendChild(code_elem);
+    openCodeFile(src, code_elem);
+    parent_container.appendChild(pre_elem);
+  }
+&lt;/script&gt;
+&lt;script&gt;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; content_names.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = content_names[i];
+    problem.appendChild(problem_title);
+
+    var problem_code = document.createElement(&quot;details&quot;);
+    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
+
+    var content_source = &quot;storage/code-fractions/Cpp/2020_02_Feb/&quot; + content_names[i];
+    showCode(content_source, problem_code);
+
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codes" />
+      
+
+      
+        <summary type="html">Problems solved in February, 2020</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">C++ March 2020</title>
+      <link href="http://localhost:4000/cpp-2020-march" rel="alternate" type="text/html" title="C++ March 2020" />
+      <published>2020-04-01T10:23:00+09:00</published>
+      <updated>2020-04-01T10:23:00+09:00</updated>
+      <id>http://localhost:4000/cpp-2020-march</id>
+      <content type="html" xml:base="http://localhost:4000/cpp-2020-march">&lt;p&gt;Problems solved in March, 2020&lt;/p&gt;
+
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var content_names = [
+    &quot;0329_LC376_medium.cpp&quot;,
+    &quot;0330_1243A_VC_Codeforces_Round_599.cpp&quot;,
+    &quot;0330_1243B1_VC_Codeforces_Round_599.cpp&quot;,
+    &quot;0331_1331A.cpp&quot;,
+    &quot;1251C.cpp&quot;,
+    &quot;1260C.cpp&quot;,
+    &quot;1268A.cpp&quot;,
+    &quot;1278C.cpp&quot;,
+    &quot;1282B.cpp&quot;,
+    &quot;1305A_Ozon_Tech_Challenge_202.cpp&quot;,
+    &quot;1305B_Ozon_Tech_Challenge_202.cpp&quot;,
+    &quot;1312A_VC_Educatonal_Codeforces_Round_83.cpp&quot;,
+    &quot;1312B_VC_Educatonal_Codeforces_Round_83.cpp&quot;,
+    &quot;1316A_CodeCraft_20.cpp&quot;,
+    &quot;1316B_CodeCraft_20.cpp&quot;,
+    &quot;1323A_Codeforces_Round_626_VC.cpp&quot;,
+    &quot;1323B_Codeforces_Round_626_VC.cpp&quot;,
+    &quot;1323C_Codeforces_Round_626_VC.cpp&quot;,
+    &quot;1326A_Codeforces_Global_Round_7.cpp&quot;,
+    &quot;1326B_Codeforces_Global_Round_7.cpp&quot;,
+    &quot;1326C_Codeforces_Global_Round_7.cpp&quot;,
+    &quot;1326D1_Codeforces_Global_Round_7.cpp&quot;,
+    &quot;1327A_Educational_Codeforces_Round_84.cpp&quot;,
+    &quot;1328A_Codeforces_Round_629.cpp&quot;,
+    &quot;1328B_Codeforces_Round_629.cpp&quot;,
+    &quot;1328C_Codeforces_Round_629.cpp&quot;,
+    &quot;1328D_Codeforces_Round_629.cpp&quot;
+  ];
+
+&lt;/script&gt;
+
+&lt;hr&gt;
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
+&lt;script&gt;
+  function openCodeFile(file, parentInDocument) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open(&quot;GET&quot;, file, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
+          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
+          parentInDocument.innerHTML = allText;
+        }
+      }
+    };
+    rawFile.send(null);
+  }&lt;/script&gt;
+
+&lt;script&gt;
+  function showCode(src, parent_container) {
+    var pre_elem = document.createElement(&quot;pre&quot;);
+    var code_elem = document.createElement(&quot;code&quot;);
+    pre_elem.appendChild(code_elem);
+    openCodeFile(src, code_elem);
+    parent_container.appendChild(pre_elem);
+  }
+&lt;/script&gt;
+&lt;script&gt;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; content_names.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = content_names[i];
+    problem.appendChild(problem_title);
+
+    var problem_code = document.createElement(&quot;details&quot;);
+    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
+
+    var content_source = &quot;storage/code-fractions/Cpp/2020_03_Mar/&quot; + content_names[i];
+    showCode(content_source, problem_code);
+
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codes" />
+      
+
+      
+        <summary type="html">Problems solved in March, 2020</summary>
       
 
       
@@ -193,6 +544,90 @@
         tags: &quot;constructive algorithms, implementation, *1300&quot;,
         link: &quot;https://codeforces.com/contest/1335/problem/D&quot;,
         source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0414_Codefoces_Round_634_D.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1339C - Powered Addition&quot;,
+        date: &quot;April 13th, 2020&quot;,
+        tags: &quot;  bitmasks,    brute force,   greedy,    *1500&quot;,
+        link: &quot;https://codeforces.com/contest/1339/problem/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0413_Codeforces_Round_633_C.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1339B - Sorted Adjacent Differences&quot;,
+        date: &quot;April 13th, 2020&quot;,
+        tags: &quot;    constructive algorithms,    sortings,    *1200&quot;,
+        link: &quot;https://codeforces.com/contest/1339/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0413_Codeforces_Round_633_B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1339A -  Filling Diamonds&quot;,
+        date: &quot;April 13th, 2020&quot;,
+        tags: &quot;brute force,    dp,    implementation,    math,    *900&quot;,
+        link: &quot;https://codeforces.com/contest/1339/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0413_Codeforces_Round_633_A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1252A -  Copying Homework&quot;,
+        date: &quot;April 12th, 2020&quot;,
+        tags: &quot;*1000&quot;,
+        link: &quot;https://codeforces.com/contest/1252/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0412_1252A.cpp&quot;
+      },
+      {
+        title: &quot;Google Code Jam 2020 Round 1A - A. Pattern Matching&quot;,
+        date: &quot;April 11th, 2020&quot;,
+        tags: &quot;google code jam&quot;,
+        link: &quot;https://codingcompetitions.withgoogle.com/codejam/round/000000000019fd74&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0411_Code_Jam_1A_A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1333A - Little Artem&quot;,
+        date: &quot;April 9th, 2020&quot;,
+        tags: &quot; constructive algorithms,    *1000&quot;,
+        link: &quot;https://codeforces.com/contest/1333/problem/A&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0409_1333A.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1251D - Salary Changing&quot;,
+        date: &quot;April 8th, 2020&quot;,
+        tags: &quot;binary search,    greedy,    sortings,    *1900&quot;,
+        link: &quot;https://codeforces.com/contest/1251/problem/D&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0408_1251D.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1271B - Blocks&quot;,
+        date: &quot;April 7th, 2020&quot;,
+        tags: &quot;  greedy,    math,    *1300&quot;,
+        link: &quot;https://codeforces.com/contest/1271/problem/B&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0407_1271B.cpp&quot;
+      },
+      {
+        title: &quot;Codeforces 1301C - Ayoub's function&quot;,
+        date: &quot;April 6th, 2020&quot;,
+        tags: &quot; binary search,    combinatorics,    greedy,    math,    strings,    *1700&quot;,
+        link: &quot;https://codeforces.com/problemset/problem/1301/C&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0406_1301C.cpp&quot;
+      },
+      {
+        title: &quot;Google Code Jam 2020 Qualification Round - C. Parenting Partnering Returns&quot;,
+        date: &quot;April 4th, 2020&quot;,
+        tags: &quot;google code jam&quot;,
+        link: &quot;https://codingcompetitions.withgoogle.com/codejam/round/000000000019fd27&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0404_Code_Jam_Qualification_C.cpp&quot;
+      },
+      {
+        title: &quot;Google Code Jam 2020 Qualification Round - B. Nesting Depth&quot;,
+        date: &quot;April 4th, 2020&quot;,
+        tags: &quot;google code jam&quot;,
+        link: &quot;https://codingcompetitions.withgoogle.com/codejam/round/000000000019fd27&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0404_Code_Jam_Qualification_B.cpp&quot;
+      },
+      {
+        title: &quot;Google Code Jam 2020 Qualification Round - A. Vestigium&quot;,
+        date: &quot;April 4th, 2020&quot;,
+        tags: &quot;google code jam&quot;,
+        link: &quot;https://codingcompetitions.withgoogle.com/codejam/round/000000000019fd27&quot;,
+        source: &quot;storage/code-fractions/Cpp/2020_04_Apr/0404_Code_Jam_Qualification_A.cpp&quot;
       }
     ];
 
@@ -286,6 +721,139 @@
 
       
         <summary type="html">Problems solved in April, 2020</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">C++ May 2020</title>
+      <link href="http://localhost:4000/cpp-2020-may" rel="alternate" type="text/html" title="C++ May 2020" />
+      <published>2020-05-02T02:49:00+09:00</published>
+      <updated>2020-05-02T02:49:00+09:00</updated>
+      <id>http://localhost:4000/cpp-2020-may</id>
+      <content type="html" xml:base="http://localhost:4000/cpp-2020-may">&lt;p&gt;Problems solved in May, 2020&lt;/p&gt;
+
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var contents = [
+    {
+      title: &quot;Google Code Jam 2020 Round 1C - A. Overexcited Fan&quot;,
+      date: &quot;May 2, 2020&quot;,
+      tags: &quot;google code jam&quot;,
+      link: &quot;https://codingcompetitions.withgoogle.com/codejam/round/000000000019fef4/0000000000317409&quot;,
+      source: &quot;storage/code-fractions/Cpp/2020_05_May/0502_Code_Jam_Round_1C_A.cpp&quot;
+    },
+    {
+      title: &quot;Codeforces 1348B - Phoenix and Beauty&quot;,
+      date: &quot;May 2, 2020&quot;,
+      tags: &quot; constructive algorithms,    data structures,    greedy,    sortings&quot;,
+      link: &quot;https://codeforces.com/contest/1348/problem/B&quot;,
+      source: &quot;storage/code-fractions/Cpp/2020_05_May/0502_1348B.cpp&quot;
+    },
+    {
+      title: &quot;Codeforces 1348A - Phoenix and Balance&quot;,
+      date: &quot;May 2, 2020&quot;,
+      tags: &quot; greedy,    math,    *800&quot;,
+      link: &quot;https://codeforces.com/contest/1348/problem/A&quot;,
+      source: &quot;storage/code-fractions/Cpp/2020_05_May/0502_1348A.cpp&quot;
+    }
+
+  ];
+
+&lt;/script&gt;
+
+&lt;hr&gt;
+
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
+&lt;script&gt;
+  function openCodeFile(file, parentInDocument) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open(&quot;GET&quot;, file, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
+          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
+          parentInDocument.innerHTML = allText;
+        }
+      }
+    };
+    rawFile.send(null);
+  }&lt;/script&gt;
+
+&lt;script&gt;
+  function showCode(src, parent_container) {
+    var pre_elem = document.createElement(&quot;pre&quot;);
+    var code_elem = document.createElement(&quot;code&quot;);
+    pre_elem.appendChild(code_elem);
+    openCodeFile(src, code_elem);
+    parent_container.appendChild(pre_elem);
+  }
+&lt;/script&gt;
+&lt;script&gt;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; contents.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+    // Problems with same dates are shown together with single 'date'.
+    if (i == 0 || contents[i - 1].date !== contents[i].date) {
+      problem.innerHTML += &quot;&lt;p style=\&quot;margin-bottom:0;color:cornflowerblue\&quot;&gt;- &quot; + contents[i].date + &quot;&lt;/p&gt;&quot;;
+    }
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = contents[i].title;
+    problem.appendChild(problem_title);
+
+    // Add tags
+    var problem_tags = document.createElement(&quot;p&quot;);
+    problem_tags.innerHTML = &quot;Tags: &quot; + contents[i].tags +
+      &quot;| &lt;a href=\&quot;&quot; + contents[i].link + &quot;\&quot;&gt;Problem link&lt;/a&gt;&quot;;
+    problem.appendChild(problem_tags);
+
+    var problem_code = document.createElement(&quot;details&quot;);
+    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
+
+    showCode(contents[i].source, problem_code);
+
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codes" />
+      
+
+      
+        <summary type="html">Problems solved in May, 2020</summary>
       
 
       
@@ -1205,139 +1773,6 @@ end
     </entry>
   
     <entry>
-      <title type="html">C++ May 2020</title>
-      <link href="http://localhost:4000/cpp-2020-may" rel="alternate" type="text/html" title="C++ May 2020" />
-      <published>2020-05-02T02:49:00+09:00</published>
-      <updated>2020-05-02T02:49:00+09:00</updated>
-      <id>http://localhost:4000/cpp-2020-may</id>
-      <content type="html" xml:base="http://localhost:4000/cpp-2020-may">&lt;p&gt;Problems solved in May, 2020&lt;/p&gt;
-
-&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  var contents = [
-    {
-      title: &quot;Google Code Jam 2020 Round 1C - A. Overexcited Fan&quot;,
-      date: &quot;May 2, 2020&quot;,
-      tags: &quot;google code jam&quot;,
-      link: &quot;https://codingcompetitions.withgoogle.com/codejam/round/000000000019fef4/0000000000317409&quot;,
-      source: &quot;storage/code-fractions/Cpp/2020_05_May/0502_Code_Jam_Round_1C_A.cpp&quot;
-    },
-    {
-      title: &quot;Codeforces 1348B - Phoenix and Beauty&quot;,
-      date: &quot;May 2, 2020&quot;,
-      tags: &quot; constructive algorithms,    data structures,    greedy,    sortings&quot;,
-      link: &quot;https://codeforces.com/contest/1348/problem/B&quot;,
-      source: &quot;storage/code-fractions/Cpp/2020_05_May/0502_1348B.cpp&quot;
-    },
-    {
-      title: &quot;Codeforces 1348A - Phoenix and Balance&quot;,
-      date: &quot;May 2, 2020&quot;,
-      tags: &quot; greedy,    math,    *800&quot;,
-      link: &quot;https://codeforces.com/contest/1348/problem/A&quot;,
-      source: &quot;storage/code-fractions/Cpp/2020_05_May/0502_1348A.cpp&quot;
-    }
-
-  ];
-
-&lt;/script&gt;
-
-&lt;hr&gt;
-
-
-&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
-&lt;!--========================================================--&gt;
-
-&lt;!--Prism CDN for code highlighting--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
-&lt;!--Scripts for showing and hiding codes--&gt;
-&lt;script&gt;
-  function openCodeFile(file, parentInDocument) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open(&quot;GET&quot;, file, false);
-    rawFile.onreadystatechange = function () {
-      if(rawFile.readyState === 4) {
-        if(rawFile.status === 200 || rawFile.status == 0) {
-          var allText = rawFile.responseText;
-          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
-          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
-          parentInDocument.innerHTML = allText;
-        }
-      }
-    };
-    rawFile.send(null);
-  }&lt;/script&gt;
-
-&lt;script&gt;
-  function showCode(src, parent_container) {
-    var pre_elem = document.createElement(&quot;pre&quot;);
-    var code_elem = document.createElement(&quot;code&quot;);
-    pre_elem.appendChild(code_elem);
-    openCodeFile(src, code_elem);
-    parent_container.appendChild(pre_elem);
-  }
-&lt;/script&gt;
-&lt;script&gt;
-  // Creating content with above
-  var code_show = document.getElementById(&quot;code-show&quot;);
-  for (var i = 0; i &lt; contents.length; i+=1) {
-    var problem = document.createElement(&quot;div&quot;);
-    problem.innerHTML = &quot;&quot;;
-    // Problems with same dates are shown together with single 'date'.
-    if (i == 0 || contents[i - 1].date !== contents[i].date) {
-      problem.innerHTML += &quot;&lt;p style=\&quot;margin-bottom:0;color:cornflowerblue\&quot;&gt;- &quot; + contents[i].date + &quot;&lt;/p&gt;&quot;;
-    }
-    // Add the title
-    var problem_title = document.createElement(&quot;h3&quot;);
-    problem_title.innerHTML = contents[i].title;
-    problem.appendChild(problem_title);
-
-    // Add tags
-    var problem_tags = document.createElement(&quot;p&quot;);
-    problem_tags.innerHTML = &quot;Tags: &quot; + contents[i].tags +
-      &quot;| &lt;a href=\&quot;&quot; + contents[i].link + &quot;\&quot;&gt;Problem link&lt;/a&gt;&quot;;
-    problem.appendChild(problem_tags);
-
-    var problem_code = document.createElement(&quot;details&quot;);
-    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
-    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
-    problem.appendChild(problem_code);
-
-    showCode(contents[i].source, problem_code);
-
-    problem.innerHTML += &quot;&lt;br&gt;&quot;;
-    code_show.appendChild(problem);
-  }
-&lt;/script&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Hailey Ahn</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="codes" />
-      
-
-      
-        <summary type="html">Problems solved in May, 2020</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">Special Fortification Unit</title>
       <link href="http://localhost:4000/special-fortification-unit-proposal" rel="alternate" type="text/html" title="Special Fortification Unit" />
       <published>2020-04-23T17:00:00+09:00</published>
@@ -1541,173 +1976,6 @@ end
 
       
         <summary type="html">Project: A MATLAB program for image processing</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Competitive Programming</title>
-      <link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Competitive Programming" />
-      <published>2020-04-22T17:00:00+09:00</published>
-      <updated>2020-04-22T17:00:00+09:00</updated>
-      <id>http://localhost:4000/competitive-programming</id>
-      <content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;!--&lt;p&gt;Come back later!&lt;/p&gt;--&gt;
-&lt;h1&gt;Competitive Programming&lt;/h1&gt;
-&lt;br&gt;
-&lt;br&gt;
-
-&lt;blockquote&gt;Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Contestants are referred to as sport programmers.
-&lt;br&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Competitive_programming&quot; style=&quot;float:right&quot;&gt;-Wikipedia&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;hr&gt;
-&lt;h2&gt;C++ Codes&lt;/h2&gt;
-&lt;br&gt;
-&lt;h3&gt;&lt;a href=&quot;cpp-2020-may&quot;&gt;May 2020 Code Submissions&lt;/a&gt;&lt;/h3&gt;&lt;br&gt;
-&lt;h3&gt;&lt;a href=&quot;cpp-2020-april&quot;&gt;April 2020 Code Submissions&lt;/a&gt;&lt;/h3&gt;
-&lt;br&gt;
-&lt;hr&gt;
-
-
-&lt;h2&gt;Codeforces&lt;/h2&gt;
-&lt;br&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://codeforces.com/profile/HaileyA&quot;&gt;Codeforces Profile Page Link&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;http://codeforces.com/contests/with/HaileyA&quot;&gt;Recent Codeforces Online Contests Link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Hailey Ahn</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="projects" />
-      
-
-      
-        <summary type="html">Competitive Programming</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Welcome to my blog!</title>
-      <link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" />
-      <published>2020-04-28T19:00:00+09:00</published>
-      <updated>2020-04-28T19:00:00+09:00</updated>
-      <id>http://localhost:4000/welcome</id>
-      <content type="html" xml:base="http://localhost:4000/welcome">&lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
-&lt;p&gt;I’m a &lt;strong&gt;software engineer&lt;/strong&gt; studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends.&lt;/p&gt;
-&lt;p&gt;Below is more about me!&lt;/p&gt;
-&lt;hr&gt;
-
-&lt;h2&gt;Math &amp; Computer Science&lt;/h2&gt;
-&lt;br&gt;
-&lt;p&gt;I’m a third year undergraduate student majoring in &lt;a href=&quot;http://www.sfu.ca/students/calendar/2020/summer/programs/mathematics-and-computing-science/joint-major/bachelor-of-science.html&quot;&gt;Mathematics and Computing Science (a.k.a. MACM)&lt;/a&gt;. MACM is a program for students who came to decide their major between (1) Mathematics and (2) Computing Science, and thought:&lt;/p&gt;
-&lt;blockquote&gt;“Why give up one? Let’s learn both!”&lt;/blockquote&gt;
-&lt;p&gt;Yes! I am a programmer with strong mathematical background, or in other direction, a mathematician with strong programming skills. I enjoy applying data structures and algorithms while solving programming problems. You can see my codes here: &lt;a href=&quot;competitive-programming&quot;&gt;&lt;strong&gt;Competitive Programming with C++&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;My university goal is to be able to understand any math / computer related papers and articles I want to read myself. Below are my projects and tools:&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2&gt;My Projects&lt;/h2&gt;
-&lt;br&gt;
-
-&lt;h3&gt;&lt;a href=&quot;special-fortification-unit-proposal&quot;&gt;Special Fortification Unit&lt;/a&gt;&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt;Special Fortification Unit (S.F.U.) is a web-based, real-time, multiplayer survival
-    game set at SFU Burnaby. The game was developed in a team of 5 students following the Agile software development process - 6 weeks of developments consisting of 3 iterations.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;S.F.U. is my team project for CMPT 276: Intro to Software Engineering.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;&lt;a href=&quot;/ColorQuirrel/&quot;&gt;ColorQuirrel&lt;/a&gt;&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt;ColorQuirrel is a MATLAB image processing program that plays around color spaces. It converts the image to several different ways to represent the data, extracts the representative color from the image by clustering the data, and uses down-sampling method to speed up the procedure.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;ColorQuirrel is my individual project for CMPT 365: Multimedia Systems.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;&lt;a&gt;Sapiens&lt;/a&gt;&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt;Sapiens is a human civilization simulator written in Javascript. Humans communicate and interact with each other, each having different abilities and jobs, and the whole system will grow as time goes on......&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Sapiens is my individual project, and is still under development.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;...and this blog!&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt;My blog is made with &lt;strong&gt;Jekyll&lt;/strong&gt; using &lt;a href=&quot;http://jekyllthemes.org/themes/jasper2/&quot;&gt;Jasper2 Ghost theme&lt;/a&gt;. You can find the repository for my blog (&lt;em&gt;before&lt;/em&gt; Jekyll build) &lt;a href=&quot;https://github.com/havocado/jekyll_blog_maker&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Some changes made by me:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Prism is used for highlighting codes.&lt;/li&gt;
-    &lt;li&gt;Posts are sorted in custom priority (Important posts first!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2&gt;Favorite Tools&lt;/h2&gt;
-&lt;br&gt;
-&lt;p&gt;I mainly work with &lt;strong style=&quot;color:orange&quot;&gt;C++&lt;/strong&gt; and &lt;strong style=&quot;color:orange&quot;&gt;Node.js&lt;/strong&gt;. Those two are the languages I am most comfortable with.&lt;/p&gt;
-&lt;p&gt;I also have used:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Express.js, Socket.io&lt;/strong&gt; for an academic project&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;MySQL&lt;/strong&gt; with &lt;strong&gt;Workbench&lt;/strong&gt; for an online course&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;MATLAB&lt;/strong&gt; for a math course and an academic project&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I have used, but not yet fluent with:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Python3, Selenium, Openpyxl, WordCloud, Matplotlib&lt;/strong&gt; for an online course&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; for an academic project&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Chart.js&lt;/strong&gt; for a personal project&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Jekyll, Ruby on Rails, Gulp&lt;/strong&gt; for this blog&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For non-technical tools, I use:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;XMind&lt;/strong&gt; for mind maps&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Calendar+&lt;/strong&gt; for time management&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Trello&lt;/strong&gt; for kanban task management&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;hr&gt;
-
-&lt;h2&gt;Contact&lt;/h2&gt;
-&lt;br&gt;
-&lt;p&gt;Mail - haa40@sfu.ca | Reply: Within 24 hours&lt;/p&gt;
-
-&lt;hr&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Hailey Ahn</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="about" />
-      
-
-      
-        <summary type="html">Hi, I’m Hailey! I’m a software engineer studying Mathematics and Computing science at Simon Fraser University, Vancouver, BC. I like finding patterns and solving challenging problems. I spend my free time writing codes, debugging them until they work, and hanging out with my nerdy friends. Below is more about me!</summary>
       
 
       
