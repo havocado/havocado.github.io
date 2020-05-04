@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/codes/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-05-04T16:52:36+09:00</updated>
+  <updated>2020-05-04T16:56:27+09:00</updated>
   <id>http://localhost:4000/tag/codes/feed.xml</id>
 
   
@@ -110,7 +110,7 @@
     problem.appendChild(problem_title);
 
     var problem_code = document.createElement(&quot;details&quot;);
-    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
     problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
     problem.appendChild(problem_code);
 
@@ -213,7 +213,7 @@
     problem.appendChild(problem_title);
 
     var problem_code = document.createElement(&quot;details&quot;);
-    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
     problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
     problem.appendChild(problem_code);
 
@@ -342,7 +342,7 @@
     problem.appendChild(problem_title);
 
     var problem_code = document.createElement(&quot;details&quot;);
-    problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
     problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
     problem.appendChild(problem_code);
 
