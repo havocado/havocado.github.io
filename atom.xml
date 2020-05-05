@@ -9,6 +9,30 @@
 
       
       <item>
+        <title>Symmetric Days</title>
+        
+          <description>&lt;h1&gt;Symmetric Days&lt;/h1&gt;
+&lt;br&gt;
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;If you write May 5, 2020 in YYYY/MM/DD form, in 7 segment digit system, it looks like this:&lt;/p&gt;
+&lt;img src=&quot;assets/images/z-sym-digit.png&quot; alt=&quot;2020 05 05 shown in 7 segment digit system&quot; style=&quot;width:30%&quot;&gt;
+&lt;br&gt;
+&lt;p&gt;If you bring a mirror and place it in the middle, facing either left or right, the number is going to be still same. In other words, the date is symmetric in y-axis!&lt;/p&gt;
+&lt;p&gt;Can you find out which dates are symmetric in this way, in the given interval? For convenience, we assume all months have 30 days each. (For example, 2020 February 30 is a valid date.)&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 04 May 2020 17:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/symmetric-days</link>
+        <guid isPermaLink="true">http://localhost:4000/symmetric-days</guid>
+      </item>
+      
+    
+
+      
+      <item>
         <title>Sapiens</title>
         
           <description>&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</description>

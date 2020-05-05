@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/codes/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-05-04T16:56:27+09:00</updated>
+  <updated>2020-05-05T13:05:44+09:00</updated>
   <id>http://localhost:4000/tag/codes/feed.xml</id>
 
   
@@ -28,228 +28,6 @@
   
   
 
-  
-    <entry>
-      <title type="html">C++ February 2020</title>
-      <link href="http://localhost:4000/cpp-2020-february" rel="alternate" type="text/html" title="C++ February 2020" />
-      <published>2020-04-01T10:23:00+09:00</published>
-      <updated>2020-04-01T10:23:00+09:00</updated>
-      <id>http://localhost:4000/cpp-2020-february</id>
-      <content type="html" xml:base="http://localhost:4000/cpp-2020-february">&lt;p&gt;Problems solved in February, 2020&lt;/p&gt;
-
-&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  var content_names = [
-    &quot;122A.cpp&quot;,
-    &quot;1291A.cpp&quot;,
-    &quot;1291B.cpp&quot;,
-    &quot;1304A.cpp&quot;,
-    &quot;1304C.cpp&quot;,
-    &quot;1313A.cpp&quot;,
-    &quot;1313B.cpp&quot;,
-    &quot;1313C.cpp&quot;,
-    &quot;1313D.cpp&quot;,
-    &quot;160A.cpp&quot;,
-    &quot;401C.cpp&quot;,
-    &quot;SFU_vjudge_contest1_A.cpp&quot;,
-    &quot;SFU_vjudge_contest2_C_help.cpp&quot;,
-    &quot;SFU_vjudge_contest2_F.cpp&quot;,
-    &quot;SFU_vjudge_contest3_A_help.cpp&quot;,
-    &quot;SFU_vjudge_contest3_E.cpp&quot;,
-    &quot;SFU_vjudge_contest3_E_testcase_generator.cpp&quot;
-  ];
-
-&lt;/script&gt;
-
-&lt;hr&gt;
-
-&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
-&lt;!--========================================================--&gt;
-
-&lt;!--Prism CDN for code highlighting--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
-&lt;!--Scripts for showing and hiding codes--&gt;
-&lt;script&gt;
-  function openCodeFile(file, parentInDocument) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open(&quot;GET&quot;, file, false);
-    rawFile.onreadystatechange = function () {
-      if(rawFile.readyState === 4) {
-        if(rawFile.status === 200 || rawFile.status == 0) {
-          var allText = rawFile.responseText;
-          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
-          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
-          parentInDocument.innerHTML = allText;
-        }
-      }
-    };
-    rawFile.send(null);
-  }&lt;/script&gt;
-
-&lt;script&gt;
-  function showCode(src, parent_container) {
-    var pre_elem = document.createElement(&quot;pre&quot;);
-    var code_elem = document.createElement(&quot;code&quot;);
-    pre_elem.appendChild(code_elem);
-    openCodeFile(src, code_elem);
-    parent_container.appendChild(pre_elem);
-  }
-&lt;/script&gt;
-&lt;script&gt;
-  // Creating content with above
-  var code_show = document.getElementById(&quot;code-show&quot;);
-  for (var i = 0; i &lt; content_names.length; i+=1) {
-    var problem = document.createElement(&quot;div&quot;);
-    problem.innerHTML = &quot;&quot;;
-
-    // Add the title
-    var problem_title = document.createElement(&quot;h3&quot;);
-    problem_title.innerHTML = content_names[i];
-    problem.appendChild(problem_title);
-
-    var problem_code = document.createElement(&quot;details&quot;);
-    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
-    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
-    problem.appendChild(problem_code);
-
-    var content_source = &quot;storage/code-fractions/Cpp/2020_02_Feb/&quot; + content_names[i];
-    showCode(content_source, problem_code);
-
-    problem.innerHTML += &quot;&lt;br&gt;&quot;;
-    code_show.appendChild(problem);
-  }
-&lt;/script&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Hailey Ahn</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="codes" />
-      
-
-      
-        <summary type="html">Problems solved in February, 2020</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">C++ January 2020</title>
-      <link href="http://localhost:4000/cpp-2020-january" rel="alternate" type="text/html" title="C++ January 2020" />
-      <published>2020-04-01T10:23:00+09:00</published>
-      <updated>2020-04-01T10:23:00+09:00</updated>
-      <id>http://localhost:4000/cpp-2020-january</id>
-      <content type="html" xml:base="http://localhost:4000/cpp-2020-january">&lt;p&gt;Problems solved in January, 2020&lt;/p&gt;
-
-&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  var content_names = [
-    &quot;1288C.cpp&quot;
-  ];
-
-&lt;/script&gt;
-
-&lt;hr&gt;
-
-&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
-&lt;!--========================================================--&gt;
-
-&lt;!--Prism CDN for code highlighting--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
-&lt;!--Scripts for showing and hiding codes--&gt;
-&lt;script&gt;
-  function openCodeFile(file, parentInDocument) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open(&quot;GET&quot;, file, false);
-    rawFile.onreadystatechange = function () {
-      if(rawFile.readyState === 4) {
-        if(rawFile.status === 200 || rawFile.status == 0) {
-          var allText = rawFile.responseText;
-          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
-          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
-          parentInDocument.innerHTML = allText;
-        }
-      }
-    };
-    rawFile.send(null);
-  }&lt;/script&gt;
-
-&lt;script&gt;
-  function showCode(src, parent_container) {
-    var pre_elem = document.createElement(&quot;pre&quot;);
-    var code_elem = document.createElement(&quot;code&quot;);
-    pre_elem.appendChild(code_elem);
-    openCodeFile(src, code_elem);
-    parent_container.appendChild(pre_elem);
-  }
-&lt;/script&gt;
-&lt;script&gt;
-  // Creating content with above
-  var code_show = document.getElementById(&quot;code-show&quot;);
-  for (var i = 0; i &lt; content_names.length; i+=1) {
-    var problem = document.createElement(&quot;div&quot;);
-    problem.innerHTML = &quot;&quot;;
-
-    // Add the title
-    var problem_title = document.createElement(&quot;h3&quot;);
-    problem_title.innerHTML = content_names[i];
-    problem.appendChild(problem_title);
-
-    var problem_code = document.createElement(&quot;details&quot;);
-    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
-    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
-    problem.appendChild(problem_code);
-
-    var content_source = &quot;storage/code-fractions/Cpp/2020_01_Jan/&quot; + content_names[i];
-    showCode(content_source, problem_code);
-
-    problem.innerHTML += &quot;&lt;br&gt;&quot;;
-    code_show.appendChild(problem);
-  }
-&lt;/script&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Hailey Ahn</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="codes" />
-      
-
-      
-        <summary type="html">Problems solved in January, 2020</summary>
-      
-
-      
-      
-    </entry>
   
     <entry>
       <title type="html">C++ March 2020</title>
@@ -374,6 +152,228 @@
 
       
         <summary type="html">Problems solved in March, 2020</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">C++ January 2020</title>
+      <link href="http://localhost:4000/cpp-2020-january" rel="alternate" type="text/html" title="C++ January 2020" />
+      <published>2020-04-01T10:23:00+09:00</published>
+      <updated>2020-04-01T10:23:00+09:00</updated>
+      <id>http://localhost:4000/cpp-2020-january</id>
+      <content type="html" xml:base="http://localhost:4000/cpp-2020-january">&lt;p&gt;Problems solved in January, 2020&lt;/p&gt;
+
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var content_names = [
+    &quot;1288C.cpp&quot;
+  ];
+
+&lt;/script&gt;
+
+&lt;hr&gt;
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
+&lt;script&gt;
+  function openCodeFile(file, parentInDocument) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open(&quot;GET&quot;, file, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
+          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
+          parentInDocument.innerHTML = allText;
+        }
+      }
+    };
+    rawFile.send(null);
+  }&lt;/script&gt;
+
+&lt;script&gt;
+  function showCode(src, parent_container) {
+    var pre_elem = document.createElement(&quot;pre&quot;);
+    var code_elem = document.createElement(&quot;code&quot;);
+    pre_elem.appendChild(code_elem);
+    openCodeFile(src, code_elem);
+    parent_container.appendChild(pre_elem);
+  }
+&lt;/script&gt;
+&lt;script&gt;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; content_names.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = content_names[i];
+    problem.appendChild(problem_title);
+
+    var problem_code = document.createElement(&quot;details&quot;);
+    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
+
+    var content_source = &quot;storage/code-fractions/Cpp/2020_01_Jan/&quot; + content_names[i];
+    showCode(content_source, problem_code);
+
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codes" />
+      
+
+      
+        <summary type="html">Problems solved in January, 2020</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">C++ February 2020</title>
+      <link href="http://localhost:4000/cpp-2020-february" rel="alternate" type="text/html" title="C++ February 2020" />
+      <published>2020-04-01T10:23:00+09:00</published>
+      <updated>2020-04-01T10:23:00+09:00</updated>
+      <id>http://localhost:4000/cpp-2020-february</id>
+      <content type="html" xml:base="http://localhost:4000/cpp-2020-february">&lt;p&gt;Problems solved in February, 2020&lt;/p&gt;
+
+&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var content_names = [
+    &quot;122A.cpp&quot;,
+    &quot;1291A.cpp&quot;,
+    &quot;1291B.cpp&quot;,
+    &quot;1304A.cpp&quot;,
+    &quot;1304C.cpp&quot;,
+    &quot;1313A.cpp&quot;,
+    &quot;1313B.cpp&quot;,
+    &quot;1313C.cpp&quot;,
+    &quot;1313D.cpp&quot;,
+    &quot;160A.cpp&quot;,
+    &quot;401C.cpp&quot;,
+    &quot;SFU_vjudge_contest1_A.cpp&quot;,
+    &quot;SFU_vjudge_contest2_C_help.cpp&quot;,
+    &quot;SFU_vjudge_contest2_F.cpp&quot;,
+    &quot;SFU_vjudge_contest3_A_help.cpp&quot;,
+    &quot;SFU_vjudge_contest3_E.cpp&quot;,
+    &quot;SFU_vjudge_contest3_E_testcase_generator.cpp&quot;
+  ];
+
+&lt;/script&gt;
+
+&lt;hr&gt;
+
+&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
+&lt;!--========================================================--&gt;
+
+&lt;!--Prism CDN for code highlighting--&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--Scripts for showing and hiding codes--&gt;
+&lt;script&gt;
+  function openCodeFile(file, parentInDocument) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open(&quot;GET&quot;, file, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
+          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
+          parentInDocument.innerHTML = allText;
+        }
+      }
+    };
+    rawFile.send(null);
+  }&lt;/script&gt;
+
+&lt;script&gt;
+  function showCode(src, parent_container) {
+    var pre_elem = document.createElement(&quot;pre&quot;);
+    var code_elem = document.createElement(&quot;code&quot;);
+    pre_elem.appendChild(code_elem);
+    openCodeFile(src, code_elem);
+    parent_container.appendChild(pre_elem);
+  }
+&lt;/script&gt;
+&lt;script&gt;
+  // Creating content with above
+  var code_show = document.getElementById(&quot;code-show&quot;);
+  for (var i = 0; i &lt; content_names.length; i+=1) {
+    var problem = document.createElement(&quot;div&quot;);
+    problem.innerHTML = &quot;&quot;;
+
+    // Add the title
+    var problem_title = document.createElement(&quot;h3&quot;);
+    problem_title.innerHTML = content_names[i];
+    problem.appendChild(problem_title);
+
+    var problem_code = document.createElement(&quot;details&quot;);
+    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
+    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
+    problem.appendChild(problem_code);
+
+    var content_source = &quot;storage/code-fractions/Cpp/2020_02_Feb/&quot; + content_names[i];
+    showCode(content_source, problem_code);
+
+    problem.innerHTML += &quot;&lt;br&gt;&quot;;
+    code_show.appendChild(problem);
+  }
+&lt;/script&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codes" />
+      
+
+      
+        <summary type="html">Problems solved in February, 2020</summary>
       
 
       
@@ -680,6 +680,81 @@
 
       
         <summary type="html">Problems solved in April, 2020</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Symmetric Days</title>
+      <link href="http://localhost:4000/symmetric-days" rel="alternate" type="text/html" title="Symmetric Days" />
+      <published>2020-05-04T17:00:00+09:00</published>
+      <updated>2020-05-04T17:00:00+09:00</updated>
+      <id>http://localhost:4000/symmetric-days</id>
+      <content type="html" xml:base="http://localhost:4000/symmetric-days">&lt;h1&gt;Symmetric Days&lt;/h1&gt;
+&lt;br&gt;
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;If you write May 5, 2020 in YYYY/MM/DD form, in 7 segment digit system, it looks like this:&lt;/p&gt;
+&lt;img src=&quot;assets/images/z-sym-digit.png&quot; alt=&quot;2020 05 05 shown in 7 segment digit system&quot; style=&quot;width:30%&quot;&gt;
+&lt;br&gt;
+&lt;p&gt;If you bring a mirror and place it in the middle, facing either left or right, the number is going to be still same. In other words, the date is symmetric in y-axis!&lt;/p&gt;
+&lt;p&gt;Can you find out which dates are symmetric in this way, in the given interval? For convenience, we assume all months have 30 days each. (For example, 2020 February 30 is a valid date.)&lt;/p&gt;
+
+&lt;h3&gt;Input&lt;/h3&gt;
+&lt;br&gt;
+&lt;p style=&quot;margin-bottom:0.7em&quot;&gt;The first line of input will be &lt;strong&gt;t&lt;/strong&gt; – the number of test cases.&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:0.7em&quot;&gt;The following t test cases consists of two lines, each containing:&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:0.7em&quot;&gt;&lt;strong&gt;y&lt;sub&gt;1&lt;/sub&gt;, m&lt;sub&gt;1&lt;/sub&gt;, d&lt;sub&gt;1&lt;/sub&gt;&lt;/strong&gt; – the starting date&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:0.7em&quot;&gt;&lt;strong&gt;y&lt;sub&gt;2&lt;/sub&gt;, m&lt;sub&gt;2&lt;/sub&gt;, d&lt;sub&gt;2&lt;/sub&gt;&lt;/strong&gt;  - the ending date&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:0.7em&quot;&gt;Constraints: 1 &amp;le; &lt;strong&gt;y&lt;sub&gt;j&lt;/sub&gt;&lt;/strong&gt; &amp;le; 9999, 1 &amp;le; &lt;strong&gt;m&lt;sub&gt;j&lt;/sub&gt;&lt;/strong&gt; &amp;le; 12, 1 &amp;le; &lt;strong&gt;d&lt;sub&gt;j&lt;/sub&gt;&lt;/strong&gt; &amp;le; 30 for all  &lt;strong&gt;j&lt;/strong&gt; &amp;isin; {1, 2}&lt;/p&gt;
+
+&lt;h3&gt;Output&lt;/h3&gt;
+&lt;br&gt;
+&lt;p style=&quot;margin-bottom:0.7em&quot;&gt;For each test case, the first line contains an integer &lt;strong&gt;n&lt;/strong&gt; – the number of symmetric dates between the starting date and the ending date inclusive.&lt;/p&gt;
+&lt;p style=&quot;margin-bottom:0.7em&quot;&gt;The following &lt;strong&gt;n&lt;/strong&gt; lines contain the symmetric dates, &lt;strong&gt;y&lt;sub&gt;i&lt;/sub&gt;, m&lt;sub&gt;i&lt;/sub&gt;, d&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; (1 &amp;le; &lt;strong&gt;i&lt;/strong&gt; &amp;le; &lt;strong&gt;n&lt;/strong&gt;), sorted in increasing order. The leading zeroes should be printed too.&lt;/p&gt;
+
+&lt;h3&gt;Example&lt;/h3&gt;
+&lt;br&gt;
+&lt;p style=&quot;margin-bottom:0&quot;&gt;Input&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;3
+2020 05 04
+2020 05 05
+2020 01 01
+2020 01 03
+2021 15 03
+2022 01 07&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p style=&quot;margin-bottom:0&quot;&gt;Output&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1
+2020 05 05
+0
+1
+2021 15 05&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codes" />
+      
+
+      
+        <summary type="html">Symmetric Days Problem If you write May 5, 2020 in YYYY/MM/DD form, in 7 segment digit system, it looks like this: If you bring a mirror and place it in the middle, facing either left or right, the number is going to be still same. In other words, the date is symmetric in y-axis! Can you find out which dates are symmetric in this way, in the given interval? For convenience, we assume all months have 30 days each. (For example, 2020 February 30 is a valid date.)</summary>
       
 
       
