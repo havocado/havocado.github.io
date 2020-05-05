@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-05T13:05:44+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><entry><title type="html">Symmetric Days</title><link href="http://localhost:4000/symmetric-days" rel="alternate" type="text/html" title="Symmetric Days" /><published>2020-05-04T17:00:00+09:00</published><updated>2020-05-04T17:00:00+09:00</updated><id>http://localhost:4000/symmetric-days</id><content type="html" xml:base="http://localhost:4000/symmetric-days">&lt;h1&gt;Symmetric Days&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-05T13:12:08+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><entry><title type="html">Symmetric Days</title><link href="http://localhost:4000/symmetric-days" rel="alternate" type="text/html" title="Symmetric Days" /><published>2020-05-04T17:00:00+09:00</published><updated>2020-05-04T17:00:00+09:00</updated><id>http://localhost:4000/symmetric-days</id><content type="html" xml:base="http://localhost:4000/symmetric-days">&lt;h1&gt;Symmetric Days&lt;/h1&gt;
 &lt;br&gt;
 &lt;h3&gt;Problem&lt;/h3&gt;
 &lt;br&gt;
@@ -29,15 +29,15 @@
 2020 05 05
 2020 01 01
 2020 01 03
-2021 15 03
-2022 01 07&lt;/code&gt;&lt;/pre&gt;
+2051 12 03
+2052 01 07&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p style=&quot;margin-bottom:0&quot;&gt;Output&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;1
 2020 05 05
 0
 1
-2021 15 05&lt;/code&gt;&lt;/pre&gt;
+2051 12 05&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="codes" /><summary type="html">Symmetric Days Problem If you write May 5, 2020 in YYYY/MM/DD form, in 7 segment digit system, it looks like this: If you bring a mirror and place it in the middle, facing either left or right, the number is going to be still same. In other words, the date is symmetric in y-axis! Can you find out which dates are symmetric in this way, in the given interval? For convenience, we assume all months have 30 days each. (For example, 2020 February 30 is a valid date.)</summary></entry><entry><title type="html">Sapiens</title><link href="http://localhost:4000/sapiens" rel="alternate" type="text/html" title="Sapiens" /><published>2020-05-02T21:56:00+09:00</published><updated>2020-05-02T21:56:00+09:00</updated><id>http://localhost:4000/sapiens</id><content type="html" xml:base="http://localhost:4000/sapiens">&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">*This page is still being prepared!</summary></entry><entry><title type="html">C++ May 2020</title><link href="http://localhost:4000/cpp-2020-may" rel="alternate" type="text/html" title="C++ May 2020" /><published>2020-05-02T02:49:00+09:00</published><updated>2020-05-02T02:49:00+09:00</updated><id>http://localhost:4000/cpp-2020-may</id><content type="html" xml:base="http://localhost:4000/cpp-2020-may">&lt;p&gt;Problems solved in May, 2020&lt;/p&gt;
 
