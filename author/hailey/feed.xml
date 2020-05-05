@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/hailey/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-05-05T13:12:08+09:00</updated>
+  <updated>2020-05-05T13:16:11+09:00</updated>
   <id>http://localhost:4000/author/hailey/feed.xml</id>
 
   
@@ -755,6 +755,12 @@
 &lt;br&gt;
 &lt;p style=&quot;margin-bottom:0.7em&quot;&gt;For each test case, the first line contains an integer &lt;strong&gt;n&lt;/strong&gt; – the number of symmetric dates between the starting date and the ending date inclusive.&lt;/p&gt;
 &lt;p style=&quot;margin-bottom:0.7em&quot;&gt;The following &lt;strong&gt;n&lt;/strong&gt; lines contain the symmetric dates, &lt;strong&gt;y&lt;sub&gt;i&lt;/sub&gt;, m&lt;sub&gt;i&lt;/sub&gt;, d&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; (1 &amp;le; &lt;strong&gt;i&lt;/strong&gt; &amp;le; &lt;strong&gt;n&lt;/strong&gt;), sorted in increasing order. The leading zeroes should be printed too.&lt;/p&gt;
+
+&lt;h3&gt;Note&lt;/h3&gt;
+&lt;br&gt;
+&lt;ul&gt;
+    &lt;li&gt;The date is symmetric only if all the segments are preserved after flipping y-axis. For example, 1111 November 11 is &lt;strong&gt;NOT&lt;/strong&gt; symmetric.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Example&lt;/h3&gt;
 &lt;br&gt;
