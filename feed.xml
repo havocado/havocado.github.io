@@ -1,4 +1,245 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-05T13:37:39+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><entry><title type="html">Symmetric Days</title><link href="http://localhost:4000/symmetric-days" rel="alternate" type="text/html" title="Symmetric Days" /><published>2020-05-04T17:00:00+09:00</published><updated>2020-05-04T17:00:00+09:00</updated><id>http://localhost:4000/symmetric-days</id><content type="html" xml:base="http://localhost:4000/symmetric-days">&lt;h1&gt;Symmetric Days&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-06T21:54:31+09:00</updated><id>http://localhost:4000/</id><title type="html">Hailey’s Programming Blog</title><entry><title type="html">Cobwebbing Analysis for Discrete Logistic Model</title><link href="http://localhost:4000/cobwebbing" rel="alternate" type="text/html" title="Cobwebbing Analysis for Discrete Logistic Model" /><published>2020-06-06T00:58:00+09:00</published><updated>2020-06-06T00:58:00+09:00</updated><id>http://localhost:4000/cobwebbing</id><content type="html" xml:base="http://localhost:4000/cobwebbing">&lt;h2&gt;Cobwebbing Analysis for Discrete Logistic Model&lt;/h2&gt;
+&lt;hr&gt;
+&lt;canvas id=&quot;cobweb-canvas&quot; width=&quot;700&quot; height=&quot;500&quot;&gt;&lt;/canvas&gt;
+&lt;br&gt;
+
+&lt;div class=&quot;slidecontainer&quot; style=&quot;width:100%;float:left;text-align:left&quot;&gt;
+  &lt;p&gt;Modify &lt;var&gt;r&lt;/var&gt;&lt;/p&gt;
+  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;4000&quot; value=&quot;3300&quot; class=&quot;slider&quot; id=&quot;r-slider&quot;&gt;
+
+  &lt;p&gt;Modify Cobwebbing Update Time&lt;/p&gt;
+  &lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;4000&quot; value=&quot;200&quot; class=&quot;slider&quot; id=&quot;interval-slider&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+  &lt;li&gt;The graph is plotted via Chart.js.&lt;/li&gt;
+  &lt;li&gt;Explanations for this will be updated later when I'm not busy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    let cobweb_canvas = document.getElementById(&quot;cobweb-canvas&quot;);
+    let cobweb_ctx = cobweb_canvas.getContext(&quot;2d&quot;);
+    let cobweb_chart = new Chart(cobweb_ctx, {
+      type: 'line',
+      animation: false,
+      data: {
+        datasets: [],
+      },
+      options: {
+        annotation: {
+          drawTime: 'afterDatasetsDraw',
+          annotations: []
+        }
+      }
+    });
+
+    // Parameter r
+    let r_slider = document.getElementById(&quot;r-slider&quot;);
+    let r = 3.3;
+
+    // Parameters for the plot
+    let x_max = 1;
+    let x_size = 100;
+
+    // Parameters for cobwebbing
+    let do_cobweb = true;
+    let starting_point = 0.4;
+    let num_cobwebbing_steps = 50;
+    let interval_slider = document.getElementById(&quot;interval-slider&quot;)
+    let cobweb_interval_time = 200;
+
+    // Setting up x-axis
+    // equivalent to: x = linspace(0, x_max, x_size);
+    let x = [];
+    let x_label = [];
+    for (let i = 0; i &lt; x_size; i++) {
+      x.push(i*x_max/x_size);
+    }
+
+    // Setting up x-labels
+    for (let i = 0; i &lt; x_size; i++) {
+      x_label.push(i*x_max/x_size);
+    }
+    cobweb_chart.data.labels = x_label;
+
+    // Plotting y=x
+    let y_eq_x = {
+      label: 'y = x',
+      fill: false,
+      pointRadius: 0,
+      borderColor: &quot;green&quot;,
+      data: x
+    };
+    cobweb_chart.data.datasets.push(y_eq_x);
+
+    // Plotting the graph for cobwebbing
+    let model_data = [];
+    for (let i = 0; i &lt; x_size; i++) {
+      let par = x[i];
+      par = r*par*(1-par);
+      model_data.push(par);
+    }
+
+    let model = {
+      label: 'Discrete Logistic Model',
+      fill: false,
+      pointRadius: 0,
+      borderColor: &quot;blue&quot;,
+      data: model_data
+    };
+    cobweb_chart.data.datasets.push(model);
+
+    cobweb_chart.update();
+
+    // Cobwebbing
+    if (do_cobweb) {
+      let cobweb_handle;
+      let cobweb = [];
+      cobweb.push(0);
+      cobweb.push(starting_point);
+      var step = 0;
+      cobweb_chart.update();
+
+      r_slider.oninput = function() {
+        clearTimeout(cobweb_handle);
+        r = this.value/1000;
+        cobweb_chart.data.datasets[1].data = [];
+        for (let i = 0; i &lt; x_size; i++) {
+          let par = x[i];
+          par = r*par*(1-par);
+          cobweb_chart.data.datasets[1].data.push(par);
+        }
+        cobweb_chart.update();
+        cobweb = [];
+        cobweb.push(0);
+        cobweb.push(starting_point);
+        step = 0;
+        cobweb_chart.options.annotation.annotations = [];
+        cobweb_chart.update();
+        cobweb_handle = setTimeout(perform_cobweb, cobweb_interval_time*3);
+      };
+
+      interval_slider.oninput = function() {
+        clearTimeout(cobweb_handle);
+        interval_slider = this.value;
+        cobweb_handle = setTimeout(perform_cobweb, cobweb_interval_time*3);
+      };
+
+      let perform_cobweb = function() {
+        step++;
+        let par = cobweb[step];
+        par = r * par * (1 - par);
+        cobweb.push(par);
+
+        setTimeout(draw_vert_cobweb, cobweb_interval_time);
+        setTimeout(draw_horiz_cobweb, cobweb_interval_time*2);
+
+        if (step &lt; num_cobwebbing_steps) {
+          cobweb_handle = setTimeout(perform_cobweb, cobweb_interval_time*3);
+        }
+      };
+
+      let draw_vert_cobweb = function() {
+        cobweb_chart.options.annotation.annotations.push({
+          type: 'box',
+          xScaleID: 'x-axis-0',
+          yScaleID: 'y-axis-0',
+          borderColor: 'pink',
+          borderWidth: 3.2,
+          xMin: x_label[Math.floor((cobweb[step - 2] || 0) * x_size / x_max)],
+          xMax: x_label[Math.floor((cobweb[step - 2] || 0) * x_size / x_max)],
+          yMin: cobweb[step - 2] || 0,
+          yMax: cobweb[step - 1] || 0
+        });
+
+        cobweb_chart.options.annotation.annotations.push({
+          type: 'box',
+          xScaleID: 'x-axis-0',
+          yScaleID: 'y-axis-0',
+          borderColor: 'red',
+          borderWidth: 3,
+          xMin: x_label[Math.floor(cobweb[step - 1] * x_size / x_max)],
+          xMax: x_label[Math.floor(cobweb[step - 1] * x_size / x_max)],
+          yMin: cobweb[step - 1] || 0,
+          yMax: cobweb[step]
+        });
+        cobweb_chart.update();
+      };
+
+      let draw_horiz_cobweb = function() {
+        cobweb_chart.options.annotation.annotations.push({
+          type: 'box',
+          xScaleID: 'x-axis-0',
+          yScaleID: 'y-axis-0',
+          borderColor: 'pink',
+          borderWidth: 3.2,
+          xMin: x_label[Math.floor((cobweb[step - 2] || 0) * x_size / x_max)],
+          xMax: x_label[Math.floor(cobweb[step - 1] * x_size / x_max)],
+          yMin: cobweb[step - 1] || 0,
+          yMax: cobweb[step - 1] || 0
+        });
+        cobweb_chart.options.annotation.annotations.push({
+          type: 'box',
+          xScaleID: 'x-axis-0',
+          yScaleID: 'y-axis-0',
+          borderColor: 'red',
+          borderWidth: 3,
+          xMin: x_label[Math.floor(cobweb[step - 1] * x_size / x_max)],
+          xMax: x_label[Math.floor(cobweb[step] * x_size / x_max)],
+          yMin: cobweb[step],
+          yMax: cobweb[step]
+        });
+        cobweb_chart.update();
+      };
+
+      cobweb_handle = setTimeout(perform_cobweb, cobweb_interval_time*3);
+    }
+
+&lt;/script&gt;
+&lt;style&gt;
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+&lt;/style&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">Cobwebbing Analysis for Discrete Logistic Model</summary></entry><entry><title type="html">Symmetric Days</title><link href="http://localhost:4000/symmetric-days" rel="alternate" type="text/html" title="Symmetric Days" /><published>2020-05-04T17:00:00+09:00</published><updated>2020-05-04T17:00:00+09:00</updated><id>http://localhost:4000/symmetric-days</id><content type="html" xml:base="http://localhost:4000/symmetric-days">&lt;h1&gt;Symmetric Days&lt;/h1&gt;
 &lt;br&gt;
 &lt;h3&gt;Problem&lt;/h3&gt;
 &lt;br&gt;
@@ -151,7 +392,7 @@
     &lt;li&gt;Mail: &lt;strong&gt;haa40@sfu.ca&lt;/strong&gt; | Reply: Within 24 hours&lt;/li&gt;
     &lt;li&gt;School: &lt;a href=&quot;https://www.sfu.ca/&quot;&gt;Simon Fraser University&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="about" /><summary type="html">Contact Hailey Ahn (Legal name: Hyeyoung Ahn) Mail: haa40@sfu.ca | Reply: Within 24 hours School: Simon Fraser University</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-04-28T19:00:00+09:00</published><updated>2020-04-28T19:00:00+09:00</updated><id>http://localhost:4000/welcome</id><content type="html" xml:base="http://localhost:4000/welcome">&lt;p style=&quot;disply:none&quot;&gt;About me and my programming blog: &lt;/p&gt;
+&lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="about" /><summary type="html">Contact Hailey Ahn (Legal name: Hyeyoung Ahn) Mail: haa40@sfu.ca | Reply: Within 24 hours School: Simon Fraser University</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="http://localhost:4000/welcome" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-04-28T19:00:00+09:00</published><updated>2020-04-28T19:00:00+09:00</updated><id>http://localhost:4000/welcome</id><content type="html" xml:base="http://localhost:4000/welcome">&lt;p style=&quot;display:none&quot;&gt;About me and my programming blog: &lt;/p&gt;
 &lt;p&gt;Hi, I’m Hailey!&lt;/p&gt;
 
 
@@ -1245,99 +1486,4 @@ end
     &lt;li&gt;&lt;a href=&quot;http://codeforces.com/contests/with/HaileyA&quot;&gt;Recent Codeforces Online Contests Link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">Coding contests and practice codes in C++</summary></entry><entry><title type="html">C++ March 2020</title><link href="http://localhost:4000/cpp-2020-march" rel="alternate" type="text/html" title="C++ March 2020" /><published>2020-04-01T10:23:00+09:00</published><updated>2020-04-01T10:23:00+09:00</updated><id>http://localhost:4000/cpp-2020-march</id><content type="html" xml:base="http://localhost:4000/cpp-2020-march">&lt;p&gt;Problems solved in March, 2020&lt;/p&gt;
-
-&lt;div id=&quot;code-show&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  var content_names = [
-    &quot;0329_LC376_medium.cpp&quot;,
-    &quot;0330_1243A_VC_Codeforces_Round_599.cpp&quot;,
-    &quot;0330_1243B1_VC_Codeforces_Round_599.cpp&quot;,
-    &quot;0331_1331A.cpp&quot;,
-    &quot;1251C.cpp&quot;,
-    &quot;1260C.cpp&quot;,
-    &quot;1268A.cpp&quot;,
-    &quot;1278C.cpp&quot;,
-    &quot;1282B.cpp&quot;,
-    &quot;1305A_Ozon_Tech_Challenge_202.cpp&quot;,
-    &quot;1305B_Ozon_Tech_Challenge_202.cpp&quot;,
-    &quot;1312A_VC_Educatonal_Codeforces_Round_83.cpp&quot;,
-    &quot;1312B_VC_Educatonal_Codeforces_Round_83.cpp&quot;,
-    &quot;1316A_CodeCraft_20.cpp&quot;,
-    &quot;1316B_CodeCraft_20.cpp&quot;,
-    &quot;1323A_Codeforces_Round_626_VC.cpp&quot;,
-    &quot;1323B_Codeforces_Round_626_VC.cpp&quot;,
-    &quot;1323C_Codeforces_Round_626_VC.cpp&quot;,
-    &quot;1326A_Codeforces_Global_Round_7.cpp&quot;,
-    &quot;1326B_Codeforces_Global_Round_7.cpp&quot;,
-    &quot;1326C_Codeforces_Global_Round_7.cpp&quot;,
-    &quot;1326D1_Codeforces_Global_Round_7.cpp&quot;,
-    &quot;1327A_Educational_Codeforces_Round_84.cpp&quot;,
-    &quot;1328A_Codeforces_Round_629.cpp&quot;,
-    &quot;1328B_Codeforces_Round_629.cpp&quot;,
-    &quot;1328C_Codeforces_Round_629.cpp&quot;,
-    &quot;1328D_Codeforces_Round_629.cpp&quot;
-  ];
-
-&lt;/script&gt;
-
-&lt;hr&gt;
-
-&lt;!--This is the end of the visible content. Below are codes for showing codes.--&gt;
-&lt;!--========================================================--&gt;
-
-&lt;!--Prism CDN for code highlighting--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css&quot;&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;&lt;/script&gt;
-&lt;!--Scripts for showing and hiding codes--&gt;
-&lt;script&gt;
-  function openCodeFile(file, parentInDocument) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open(&quot;GET&quot;, file, false);
-    rawFile.onreadystatechange = function () {
-      if(rawFile.readyState === 4) {
-        if(rawFile.status === 200 || rawFile.status == 0) {
-          var allText = rawFile.responseText;
-          allText = Prism.highlight(allText, Prism.languages.clike, 'clike');
-          // allText = String(allText).replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/&gt;/g, '&amp;gt;').replace(/&quot;/g, '&amp;quot;');
-          parentInDocument.innerHTML = allText;
-        }
-      }
-    };
-    rawFile.send(null);
-  }&lt;/script&gt;
-
-&lt;script&gt;
-  function showCode(src, parent_container) {
-    var pre_elem = document.createElement(&quot;pre&quot;);
-    var code_elem = document.createElement(&quot;code&quot;);
-    pre_elem.appendChild(code_elem);
-    openCodeFile(src, code_elem);
-    parent_container.appendChild(pre_elem);
-  }
-&lt;/script&gt;
-&lt;script&gt;
-  // Creating content with above
-  var code_show = document.getElementById(&quot;code-show&quot;);
-  for (var i = 0; i &lt; content_names.length; i+=1) {
-    var problem = document.createElement(&quot;div&quot;);
-    problem.innerHTML = &quot;&quot;;
-
-    // Add the title
-    var problem_title = document.createElement(&quot;h3&quot;);
-    problem_title.innerHTML = content_names[i];
-    problem.appendChild(problem_title);
-
-    var problem_code = document.createElement(&quot;details&quot;);
-    // problem_code.setAttribute(&quot;style&quot;, &quot;width:100%&quot;);
-    problem_code.innerHTML = &quot;&lt;summary&gt;&lt;strong style=\&quot;color:orange\&quot;&gt;Click here&lt;/strong&gt; to view code&lt;/summary&gt;&quot;;
-    problem.appendChild(problem_code);
-
-    var content_source = &quot;storage/code-fractions/Cpp/2020_03_Mar/&quot; + content_names[i];
-    showCode(content_source, problem_code);
-
-    problem.innerHTML += &quot;&lt;br&gt;&quot;;
-    code_show.appendChild(problem);
-  }
-&lt;/script&gt;</content><author><name>Hailey Ahn</name></author><category term="codes" /><summary type="html">Problems solved in March, 2020</summary></entry></feed>
+&lt;hr&gt;</content><author><name>Hailey Ahn</name></author><category term="projects" /><summary type="html">Coding contests and practice codes in C++</summary></entry></feed>
