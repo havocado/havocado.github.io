@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/projects/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-06-06T21:54:31+09:00</updated>
+  <updated>2020-06-16T00:46:47+09:00</updated>
   <id>http://localhost:4000/tag/projects/feed.xml</id>
 
   
@@ -233,6 +233,297 @@
 
       
         <summary type="html">Project: A MATLAB program for image processing</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Strogatz Love Affairs Model</title>
+      <link href="http://localhost:4000/Strogatz" rel="alternate" type="text/html" title="Strogatz Love Affairs Model" />
+      <published>2020-06-06T00:58:00+09:00</published>
+      <updated>2020-06-06T00:58:00+09:00</updated>
+      <id>http://localhost:4000/Strogatz</id>
+      <content type="html" xml:base="http://localhost:4000/Strogatz">&lt;h2&gt;Strogatz Love Affairs Model&lt;/h2&gt;
+&lt;hr&gt;
+&lt;canvas id=&quot;strogatz-canvas&quot; width=&quot;50%&quot; height=&quot;30%&quot;&gt;&lt;/canvas&gt;
+&lt;br&gt;
+
+&lt;div class=&quot;slidecontainer&quot; style=&quot;width:100%;float:left;text-align:left&quot;&gt;
+  &lt;p id=&quot;a_r-message&quot;&gt;Modify &lt;var&gt;a&lt;sub&gt;r&lt;/sub&gt;&lt;/var&gt;&lt;/p&gt;
+  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;4000&quot; value=&quot;2000&quot; class=&quot;slider&quot; id=&quot;a_r-slider&quot;&gt;
+
+  &lt;p id=&quot;a_j-message&quot;&gt;Modify &lt;var&gt;a_j&lt;/var&gt;&lt;/p&gt;
+  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;4000&quot; value=&quot;2000&quot; class=&quot;slider&quot; id=&quot;a_j-slider&quot;&gt;
+
+  &lt;p id=&quot;p_r-message&quot;&gt;Modify &lt;var&gt;p_r&lt;/var&gt;&lt;/p&gt;
+  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;4000&quot; value=&quot;2000&quot; class=&quot;slider&quot; id=&quot;p_r-slider&quot;&gt;
+
+  &lt;p id=&quot;p_j-message&quot;&gt;Modify &lt;var&gt;p_j&lt;/var&gt;&lt;/p&gt;
+  &lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;4000&quot; value=&quot;2000&quot; class=&quot;slider&quot; id=&quot;p_j-slider&quot;&gt;
+
+  &lt;button id=&quot;convert-log-scale&quot; type=&quot;button&quot;&gt;Draw in Log scale&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+  &lt;li&gt;The graph is plotted via Chart.js.&lt;/li&gt;
+  &lt;li&gt;Explanations for this will be updated later when I'm not busy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  let strogatz_canvas = document.getElementById(&quot;strogatz-canvas&quot;);
+  let strogatz_ctx = strogatz_canvas.getContext(&quot;2d&quot;);
+  let strogatz_chart = new Chart(strogatz_ctx, {
+    type: 'line',
+    animation: false,
+    data: {
+      datasets: [],
+    },
+    options: {
+      annotation: {
+        drawTime: 'afterDatasetsDraw',
+        annotations: []
+      }
+    }
+  });
+
+  // Constants (Parameters)
+  let a_r = 1;
+  let a_j = 1;
+  let p_r = 0.2;
+  let p_j = -0.2;
+
+  // Romeo and Juliet in (t = 0)
+  let r_0 = 1;
+  let j_0 = 1;
+
+  // Parameters for plotting
+  let t_start = 0;
+  let t_max = 100;
+  let plot_handle;
+  let update_interval = 0;
+  let log_scale = false;
+
+  // Setting up t-axis for time
+  let t = [];
+  let t_label = [];
+  for (let i = t_start; i &lt;= t_max; i++) {
+    t.push(i);
+    t_label.push(i);
+  }
+  strogatz_chart.data.labels = t_label;
+
+  // Settings for Romeo
+  let romeo_data = [];
+  let romeo = {
+    label: 'Romeo',
+    fill: false,
+    pointRadius: 0,
+    borderColor: &quot;red&quot;,
+    data: romeo_data
+  };
+  strogatz_chart.data.datasets.push(romeo);
+
+  // Settings for Juliet
+  let juliet_data = [];
+  let juliet = {
+    label: 'Juliet',
+    fill: false,
+    pointRadius: 0,
+    borderColor: &quot;blue&quot;,
+    data: juliet_data
+  };
+  strogatz_chart.data.datasets.push(juliet);
+
+  // Plot Love;
+  let plot_Love = function() {
+    clearTimeout(plot_handle);
+
+    strogatz_chart.data.datasets[0].data = []; // Romeo
+    strogatz_chart.data.datasets[1].data = []; // Juliet
+
+    if (log_scale) {
+      strogatz_chart.data.datasets[0].data.push(Math.log10(r_0));
+      strogatz_chart.data.datasets[1].data.push(Math.log10(j_0));
+    }
+    else {
+      strogatz_chart.data.datasets[0].data.push(r_0);
+      strogatz_chart.data.datasets[1].data.push(j_0);
+    }
+
+    let r_prev = r_0;
+    let j_prev = j_0;
+
+    let i = t_start;
+    let run_process = function() {
+      // Calculate current
+      let r_current = a_r * r_prev + p_r * j_prev;
+      let j_current = a_j * j_prev + p_j * r_prev;
+
+      // Push calculated data
+      if (log_scale) {
+        if (r_current &gt; 0) {
+          strogatz_chart.data.datasets[0].data.push(Math.log10(r_current));
+        }
+        else if (r_current &lt; 0) {
+          strogatz_chart.data.datasets[0].data.push(-Math.log10(Math.abs(r_current)));
+        }
+        if (j_current &gt; 0) {
+          strogatz_chart.data.datasets[1].data.push(Math.log10(j_current));
+        }
+        else if (j_current &lt; 0) {
+          strogatz_chart.data.datasets[1].data.push(-Math.log10(Math.abs(j_current)));
+        }
+      }
+      else {
+        strogatz_chart.data.datasets[0].data.push(r_current);
+        strogatz_chart.data.datasets[1].data.push(j_current);
+      }
+
+      // Update prev
+      r_prev = r_current;
+      j_prev = j_current;
+
+      strogatz_chart.update(); // Uncomment for updating each steps
+
+      i++;
+      if (i &gt; t_max) {
+        strogatz_chart.update();
+        return;
+      }
+      plot_handle = setTimeout(run_process, update_interval);
+    };
+    run_process();
+
+
+    strogatz_chart.update(); // Uncomment (with above) for updating each steps
+  };
+
+  // Sliders
+  let a_r_slider = document.getElementById(&quot;a_r-slider&quot;);
+  a_r_slider.value = a_r*200 + 2000;
+  let a_j_slider = document.getElementById(&quot;a_j-slider&quot;);
+  a_j_slider.value = a_j*200 + 2000;
+  let p_r_slider = document.getElementById(&quot;p_r-slider&quot;);
+  p_r_slider.value = p_r*200 + 2000;
+  let p_j_slider = document.getElementById(&quot;p_j-slider&quot;);
+  p_j_slider.value = p_j*200 + 2000;
+  let a_r_message = document.getElementById(&quot;a_r-message&quot;);
+  a_r_message.innerHTML = &quot;Modify &lt;var&gt;a&lt;sub&gt;r&lt;/sub&gt;&lt;/var&gt; =  &quot; + a_r;
+  let a_j_message = document.getElementById(&quot;a_j-message&quot;);
+  a_j_message.innerHTML = &quot;Modify &lt;var&gt;a&lt;sub&gt;j&lt;/sub&gt;&lt;/var&gt; =  &quot; + a_j;
+  let p_r_message = document.getElementById(&quot;p_r-message&quot;);
+  p_r_message.innerHTML = &quot;Modify &lt;var&gt;p&lt;sub&gt;r&lt;/sub&gt;&lt;/var&gt; =  &quot; + p_r;
+  let p_j_message = document.getElementById(&quot;p_j-message&quot;);
+  p_j_message.innerHTML = &quot;Modify &lt;var&gt;p&lt;sub&gt;j&lt;/sub&gt;&lt;/var&gt; =  &quot; + p_j;
+  let convert_scale_botton = document.getElementById(&quot;convert-log-scale&quot;);
+
+  // Slider callbacks
+  a_r_slider.oninput = function(){
+    a_r = (this.value - 2000)/200;
+    a_r_message.innerHTML = &quot;Modify &lt;var&gt;a&lt;sub&gt;r&lt;/sub&gt;&lt;/var&gt; =  &quot; + a_r;
+    plot_Love();
+  };
+  a_j_slider.oninput = function(){
+    a_j = (this.value - 2000)/200;
+    a_j_message.innerHTML = &quot;Modify &lt;var&gt;a&lt;sub&gt;j&lt;/sub&gt;&lt;/var&gt; =  &quot; + a_j;
+    plot_Love();
+  };
+  p_r_slider.oninput = function(){
+    p_r = (this.value - 2000)/200;
+    p_r_message.innerHTML = &quot;Modify &lt;var&gt;p&lt;sub&gt;r&lt;/sub&gt;&lt;/var&gt; =  &quot; + p_r;
+    plot_Love();
+  };
+  p_j_slider.oninput = function(){
+    p_j = (this.value - 2000)/200;
+    p_j_message.innerHTML = &quot;Modify &lt;var&gt;p&lt;sub&gt;j&lt;/sub&gt;&lt;/var&gt; =  &quot; + p_j;
+    plot_Love();
+  };
+
+  // Button callbacks
+  convert_scale_botton.onclick = function() {
+    if (log_scale) {
+      convert_scale_botton.innerHTML = &quot;Draw in Log scale&quot;;
+    }
+    else {
+      convert_scale_botton.innerHTML = &quot;Draw without Log scale&quot;;
+    }
+    log_scale = !log_scale;
+
+    plot_Love();
+  };
+
+  // Initial graph plotted here
+  strogatz_chart.update();
+  plot_Love();
+
+
+&lt;/script&gt;
+&lt;style&gt;
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+&lt;/style&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hailey Ahn</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">Strogatz Love Affairs Model</summary>
       
 
       

@@ -9,6 +9,25 @@
 
       
       <item>
+        <title>Strogatz Love Affairs Model</title>
+        
+          <description>&lt;h2&gt;Strogatz Love Affairs Model&lt;/h2&gt;
+&lt;hr&gt;
+&lt;canvas id=&quot;strogatz-canvas&quot; width=&quot;50%&quot; height=&quot;30%&quot;&gt;&lt;/canvas&gt;
+&lt;br&gt;
+
+</description>
+        
+        <pubDate>Sat, 06 Jun 2020 00:58:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/Strogatz</link>
+        <guid isPermaLink="true">http://localhost:4000/Strogatz</guid>
+      </item>
+      
+    
+
+      
+      <item>
         <title>Cobwebbing Analysis for Discrete Logistic Model</title>
         
           <description>&lt;h2&gt;Cobwebbing Analysis for Discrete Logistic Model&lt;/h2&gt;
