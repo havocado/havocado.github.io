@@ -78,6 +78,7 @@
 
   The graph is plotted via Chart.js.
   Explanations for this will be updated later when I'm not busy.
+  Details: http://ai.stanford.edu/~rajatr/articles/SS_love_dEq.pdf
 
 
 
@@ -90,8 +91,8 @@
     <meta property="og:image" content="http://localhost:4000/assets/images/cover-strogatz.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2020-06-06T00:58:00+09:00" />
-    <meta property="article:modified_time" content="2020-06-06T00:58:00+09:00" />
+    <meta property="article:published_time" content="2020-06-16T00:58:00+09:00" />
+    <meta property="article:modified_time" content="2020-06-16T00:58:00+09:00" />
     <meta property="article:tag" content="Projects" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Strogatz Model of Romeo and Juliet" />
@@ -120,6 +121,7 @@
 
   The graph is plotted via Chart.js.
   Explanations for this will be updated later when I'm not busy.
+  Details: http://ai.stanford.edu/~rajatr/articles/SS_love_dEq.pdf
 
 
 
@@ -184,6 +186,7 @@
 
   The graph is plotted via Chart.js.
   Explanations for this will be updated later when I'm not busy.
+  Details: http://ai.stanford.edu/~rajatr/articles/SS_love_dEq.pdf
 
 
 
@@ -259,7 +262,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 6 June 2020"> 6 June 2020</time>
+                    <time class="post-full-meta-date" datetime="16 June 2020">16 June 2020</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -304,6 +307,7 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>The graph is plotted via Chart.js.</li>
   <li>Explanations for this will be updated later when I'm not busy.</li>
+  <li>Details: <a href="http://ai.stanford.edu/~rajatr/articles/SS_love_dEq.pdf">http://ai.stanford.edu/~rajatr/articles/SS_love_dEq.pdf</a></li>
 </ul>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
@@ -439,13 +443,13 @@ into the {body} of the default.hbs template -->
 
   // Sliders
   let a_r_slider = document.getElementById("a_r-slider");
-  a_r_slider.value = a_r*200 + 2000;
+  a_r_slider.value = a_r*400 + 2000;
   let a_j_slider = document.getElementById("a_j-slider");
-  a_j_slider.value = a_j*200 + 2000;
+  a_j_slider.value = a_j*400 + 2000;
   let p_r_slider = document.getElementById("p_r-slider");
-  p_r_slider.value = p_r*200 + 2000;
+  p_r_slider.value = p_r*400 + 2000;
   let p_j_slider = document.getElementById("p_j-slider");
-  p_j_slider.value = p_j*200 + 2000;
+  p_j_slider.value = p_j*400 + 2000;
   let a_r_message = document.getElementById("a_r-message");
   a_r_message.innerHTML = "Modify <var>a<sub>r</sub></var> =  " + a_r;
   let a_j_message = document.getElementById("a_j-message");
@@ -458,22 +462,22 @@ into the {body} of the default.hbs template -->
 
   // Slider callbacks
   a_r_slider.oninput = function(){
-    a_r = (this.value - 2000)/200;
+    a_r = (this.value - 2000)/400;
     a_r_message.innerHTML = "Modify <var>a<sub>r</sub></var> =  " + a_r;
     plot_Love();
   };
   a_j_slider.oninput = function(){
-    a_j = (this.value - 2000)/200;
+    a_j = (this.value - 2000)/400;
     a_j_message.innerHTML = "Modify <var>a<sub>j</sub></var> =  " + a_j;
     plot_Love();
   };
   p_r_slider.oninput = function(){
-    p_r = (this.value - 2000)/200;
+    p_r = (this.value - 2000)/400;
     p_r_message.innerHTML = "Modify <var>p<sub>r</sub></var> =  " + p_r;
     plot_Love();
   };
   p_j_slider.oninput = function(){
-    p_j = (this.value - 2000)/200;
+    p_j = (this.value - 2000)/400;
     p_j_message.innerHTML = "Modify <var>p<sub>j</sub></var> =  " + p_j;
     plot_Love();
   };
@@ -611,6 +615,15 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
+                                            <li><a href="/Strogatz-2">Ver.2 Strogatz Model of Romeo and Juliet - Midterm version</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
                                             <li><a href="/cobwebbing">Cobwebbing Analysis for Discrete Logistic Model</a></li>
                                         
                                     
@@ -636,8 +649,6 @@ into the {body} of the default.hbs template -->
                                   
                                     
                                         
-                                        
-                                            <li><a href="/special-fortification-unit-proposal">Special Fortification Unit</a></li>
                                         
                                     
                                   
@@ -671,7 +682,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/projects/">
                                 
-                                    See all 5 posts  →
+                                    See all 6 posts  →
                                 
                             </a>
                         </footer>
@@ -688,12 +699,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/cobwebbing">
-                <div class="post-card-image" style="background-image: url(/assets/images/cover-cobweb.png)"></div>
+            <a class="post-card-image-link" href="/Strogatz-2">
+                <div class="post-card-image" style="background-image: url(/assets/images/cover-strogatz-2.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/cobwebbing">
+            <a class="post-card-content-link" href="/Strogatz-2">
                 <header class="post-card-header">
                     
                         
@@ -703,7 +714,7 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">Cobwebbing Analysis for Discrete Logistic Model</h2>
+                    <h2 class="post-card-title">Ver.2 Strogatz Model of Romeo and Juliet - Midterm version</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
