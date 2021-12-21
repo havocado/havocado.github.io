@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/projects/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-06-16T04:28:11+09:00</updated>
+  <updated>2021-12-20T20:26:36-08:00</updated>
   <id>http://localhost:4000/tag/projects/feed.xml</id>
 
   
@@ -32,8 +32,8 @@
     <entry>
       <title type="html">Sapiens</title>
       <link href="http://localhost:4000/sapiens" rel="alternate" type="text/html" title="Sapiens" />
-      <published>2020-05-02T21:56:00+09:00</published>
-      <updated>2020-05-02T21:56:00+09:00</updated>
+      <published>2020-05-02T05:56:00-07:00</published>
+      <updated>2020-05-02T05:56:00-07:00</updated>
       <id>http://localhost:4000/sapiens</id>
       <content type="html" xml:base="http://localhost:4000/sapiens">&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</content>
 
@@ -66,8 +66,8 @@
     <entry>
       <title type="html">Special Fortification Unit</title>
       <link href="http://localhost:4000/special-fortification-unit-proposal" rel="alternate" type="text/html" title="Special Fortification Unit" />
-      <published>2020-04-23T17:00:00+09:00</published>
-      <updated>2020-04-23T17:00:00+09:00</updated>
+      <published>2020-04-23T01:00:00-07:00</published>
+      <updated>2020-04-23T01:00:00-07:00</updated>
       <id>http://localhost:4000/special-fortification-unit-proposal</id>
       <content type="html" xml:base="http://localhost:4000/special-fortification-unit-proposal">&lt;p&gt;*This page is still being prepared!&lt;/p&gt;</content>
 
@@ -100,8 +100,8 @@
     <entry>
       <title type="html">Cobwebbing Analysis for Discrete Logistic Model</title>
       <link href="http://localhost:4000/cobwebbing" rel="alternate" type="text/html" title="Cobwebbing Analysis for Discrete Logistic Model" />
-      <published>2020-06-06T00:58:00+09:00</published>
-      <updated>2020-06-06T00:58:00+09:00</updated>
+      <published>2020-06-05T08:58:00-07:00</published>
+      <updated>2020-06-05T08:58:00-07:00</updated>
       <id>http://localhost:4000/cobwebbing</id>
       <content type="html" xml:base="http://localhost:4000/cobwebbing">&lt;h2&gt;Cobwebbing Analysis for Discrete Logistic Model&lt;/h2&gt;
 &lt;hr&gt;
@@ -375,8 +375,8 @@
     <entry>
       <title type="html">ColorQuirrel</title>
       <link href="http://localhost:4000/ColorQuirrel" rel="alternate" type="text/html" title="ColorQuirrel" />
-      <published>2020-04-23T17:00:00+09:00</published>
-      <updated>2020-04-23T17:00:00+09:00</updated>
+      <published>2020-04-23T01:00:00-07:00</published>
+      <updated>2020-04-23T01:00:00-07:00</updated>
       <id>http://localhost:4000/ColorQuirrel</id>
       <content type="html" xml:base="http://localhost:4000/ColorQuirrel">&lt;p style=&quot;display:none&quot;&gt;Project: A MATLAB program for image processing&lt;/p&gt;
 
@@ -517,8 +517,8 @@
     <entry>
       <title type="html">Strogatz Model of Romeo and Juliet</title>
       <link href="http://localhost:4000/Strogatz" rel="alternate" type="text/html" title="Strogatz Model of Romeo and Juliet" />
-      <published>2020-06-16T00:58:00+09:00</published>
-      <updated>2020-06-16T00:58:00+09:00</updated>
+      <published>2020-06-15T08:58:00-07:00</published>
+      <updated>2020-06-15T08:58:00-07:00</updated>
       <id>http://localhost:4000/Strogatz</id>
       <content type="html" xml:base="http://localhost:4000/Strogatz">&lt;h2&gt;Strogatz Model of Romeo and Juliet&lt;/h2&gt;
 &lt;hr&gt;
@@ -809,8 +809,8 @@
     <entry>
       <title type="html">Ver.2 Strogatz Model of Romeo and Juliet - Midterm version</title>
       <link href="http://localhost:4000/Strogatz-2" rel="alternate" type="text/html" title="Ver.2 Strogatz Model of Romeo and Juliet - Midterm version" />
-      <published>2020-06-16T00:58:00+09:00</published>
-      <updated>2020-06-16T00:58:00+09:00</updated>
+      <published>2020-06-15T08:58:00-07:00</published>
+      <updated>2020-06-15T08:58:00-07:00</updated>
       <id>http://localhost:4000/Strogatz-2</id>
       <content type="html" xml:base="http://localhost:4000/Strogatz-2">&lt;h2&gt;Strogatz Model of Romeo and Juliet (Midterm Version)&lt;/h2&gt;
 &lt;hr&gt;
@@ -1101,8 +1101,8 @@
     <entry>
       <title type="html">Competitive Programming</title>
       <link href="http://localhost:4000/competitive-programming" rel="alternate" type="text/html" title="Competitive Programming" />
-      <published>2020-04-22T17:00:00+09:00</published>
-      <updated>2020-04-22T17:00:00+09:00</updated>
+      <published>2020-04-22T01:00:00-07:00</published>
+      <updated>2020-04-22T01:00:00-07:00</updated>
       <id>http://localhost:4000/competitive-programming</id>
       <content type="html" xml:base="http://localhost:4000/competitive-programming">&lt;p style=&quot;display:none&quot;&gt;Coding contests and practice codes in C++&lt;/p&gt;
 
